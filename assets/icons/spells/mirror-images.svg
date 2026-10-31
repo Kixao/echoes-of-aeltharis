@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Mirror Images: a caster and two shimmering illusion doubles">
+<defs>
+  <linearGradient id="mi2-left" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b5ffff" stop-opacity=".95"/><stop offset=".45" stop-color="#55bdcb" stop-opacity=".68"/><stop offset="1" stop-color="#2e6a96" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mi2-right" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5caff" stop-opacity=".92"/><stop offset=".45" stop-color="#a77bfa" stop-opacity=".74"/><stop offset="1" stop-color="#4b3a9e" stop-opacity=".13"/></linearGradient>
+  <linearGradient id="mi2-main" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c2d4ec"/><stop offset=".32" stop-color="#7e98be"/><stop offset=".74" stop-color="#414a7c"/><stop offset="1" stop-color="#22254b"/></linearGradient>
+  <linearGradient id="mi2-glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#adffff"/><stop offset=".5" stop-color="#cfbaff"/><stop offset="1" stop-color="#9b79ff"/></linearGradient>
+  <radialGradient id="mi2-aura"><stop stop-color="#d7edff" stop-opacity=".42"/><stop offset=".4" stop-color="#8c9fea" stop-opacity=".24"/><stop offset="1" stop-color="#8c80ec" stop-opacity="0"/></radialGradient>
+  <filter id="mi2-blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<ellipse cx="64" cy="68" rx="64" ry="59" fill="url(#mi2-aura)" class="mi2-aura"/>
+<g class="mi2-shards" fill="none" stroke-width="1.5" stroke-linejoin="round" opacity=".7">
+ <path d="M12 20 L26 13 L35 41 L21 48Z" stroke="#9ae4ec"/><path d="M21 25 L28 40" stroke="#c4faff"/>
+ <path d="M94 16 L111 23 L104 54 L91 40Z" stroke="#c7afff"/><path d="M108 26 L97 43" stroke="#e7d4ff"/>
+ <path d="M10 76 L23 67 L26 92 L17 101Z" stroke="#a7ffff"/>
+ <path d="M111 74 L123 84 L112 106 L100 97Z" stroke="#ceb3ff"/>
+</g>
+<g class="mi2-echo mi2-echo-left">
+  <path d="M34 26 C19 29 17 42 17 56 L7 103 Q20 113 45 107 L50 57 C49 39 45 29 34 26Z" fill="url(#mi2-left)" stroke="#c2ffff" stroke-width="1.8" opacity=".86"/>
+  <path d="M34 34 C25 36 23 46 24 57 C26 68 42 69 45 57 C47 45 42 35 34 34Z" fill="#173850" opacity=".72" stroke="#9ce9f0" stroke-width="1.2"/>
+  <path d="M21 89 L29 66 L28 106 M44 69 L38 103" stroke="#ddffff" opacity=".68" stroke-width="1.6" fill="none"/>
+  <path d="M16 53 L8 81 M48 56 L42 87" stroke="#9befff" stroke-width="2" opacity=".8"/>
+</g>
+<g class="mi2-echo mi2-echo-right">
+  <path d="M94 26 C109 29 111 42 111 56 L121 103 Q108 113 83 107 L78 57 C79 39 83 29 94 26Z" fill="url(#mi2-right)" stroke="#f0dfff" stroke-width="1.8" opacity=".86"/>
+  <path d="M94 34 C103 36 105 46 104 57 C102 68 86 69 83 57 C81 45 86 35 94 34Z" fill="#2c235b" opacity=".78" stroke="#d4b5ff" stroke-width="1.2"/>
+  <path d="M107 89 L99 66 L100 106 M84 69 L90 103" stroke="#f8e9ff" opacity=".68" stroke-width="1.6" fill="none"/>
+  <path d="M112 53 L120 81 M80 56 L86 87" stroke="#c6a1ff" stroke-width="2" opacity=".8"/>
+</g>
+<g class="mi2-center">
+  <path d="M64 14 C49 14 44 27 41 43 L34 69 L25 114 Q64 128 103 114 L94 69 L87 43 C84 27 79 14 64 14Z" fill="#293354" stroke="#b3b9da" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M64 16 C51 17 46 31 47 50 Q64 35 81 50 C82 31 77 17 64 16Z" fill="url(#mi2-main)"/>
+  <path d="M48 49 Q64 34 80 49 L77 65 Q64 77 51 65Z" fill="#101a33" stroke="#a5bddf" stroke-width="1.1"/>
+  <path d="M56 55 L62 57 M66 57 L72 55" stroke="#a4f6ff" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+  <path d="M45 66 Q52 75 64 78 Q76 75 83 66 L93 107 Q64 120 35 107Z" fill="url(#mi2-main)" stroke="#879fc6" stroke-width="1.5"/>
+  <path d="M64 79 L64 116 M48 84 L40 108 M80 84 L88 108" stroke="#c6d4ef" opacity=".6" stroke-width="1.7"/>
+  <path d="M49 35 Q51 20 63 19" stroke="#e6faff" stroke-width="2.2" opacity=".6" fill="none" stroke-linecap="round"/>
+  <path d="M35 107 Q64 120 93 107" fill="none" stroke="#8fdcff" opacity=".45" stroke-width="2"/>
+</g>
+<g class="mi2-glints" fill="url(#mi2-glow)">
+  <path d="M27 10 L29 16 L35 18 L29 20 L27 26 L25 20 L19 18 L25 16Z"/>
+  <path d="M103 62 L105 68 L111 70 L105 72 L103 78 L101 72 L95 70 L101 68Z"/>
+  <path d="M15 111 L17 115 L21 117 L17 119 L15 123 L13 119 L9 117 L13 115Z"/>
+</g>
+</svg>

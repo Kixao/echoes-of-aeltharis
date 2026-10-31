@@ -1,0 +1,26 @@
+/* v0.0.46 — original relic entry card and Mourning Lady scene integration. */
+#app .eoa-mainstreet-prep #openRelics.relic-entry-button{
+ display:inline-flex!important;align-items:center!important;justify-content:flex-start!important;
+ flex:0 0 auto!important;width:auto!important;min-width:340px!important;max-width:420px!important;
+ min-height:69px!important;padding:10px 15px!important;gap:13px!important;
+ border:1px solid #998165!important;border-radius:2px!important;
+ background:linear-gradient(115deg,#362b42,#222934 85%)!important;
+ box-shadow:inset 0 1px #ffffff18,0 5px 14px #0006!important;text-align:left!important;
+ color:#ebd9bb!important;
+}
+#app .eoa-mainstreet-prep #openRelics .relic-icon{width:48px!important;height:48px!important;min-width:48px!important;max-width:48px!important;object-fit:contain!important;filter:drop-shadow(0 0 8px #b57af4aa)!important}
+#app .eoa-mainstreet-prep #openRelics span{display:block!important;text-align:left!important;min-width:0!important}
+#app .eoa-mainstreet-prep #openRelics strong{display:block!important;color:#ffdea2!important;font-size:14px!important;line-height:1.3!important;white-space:normal!important}
+#app .eoa-mainstreet-prep #openRelics small{display:block!important;color:#d2c3d5!important;font-size:11px!important;line-height:1.4!important;white-space:normal!important;margin-top:4px!important}
+#app .eoa-mainstreet-prep #openRelics:hover{border-color:#ebc18d!important;filter:brightness(1.09)}
+@media(max-width:560px){#app .eoa-mainstreet-prep #openRelics.relic-entry-button{min-width:0!important;width:100%!important;max-width:none!important}}
+/* Scene is one overlay over both combatants; host engine still renders Mage model and target. */
+.duel:has(.mourning-lady-scene){position:relative;isolation:isolate;overflow:visible}
+.mourning-lady-scene{position:absolute;inset:-108px 0 auto;height:420px;width:100%;z-index:8;pointer-events:none;overflow:visible}
+.mourning-lady-stage{position:relative;width:100%;height:100%;pointer-events:none}
+.mourning-lady-scene .eoa-ml-v16{position:absolute!important;inset:0!important;width:100%!important;height:100%!important}
+eoa-combat-model[data-model="mourning-lady"]{opacity:0!important}
+.duel:has(.mourning-lady-scene) .enemy-portrait{z-index:6}
+.duel:has(.mourning-lady-scene) .combat-portrait{z-index:5}
+@media(max-width:650px){.mourning-lady-scene{height:330px;inset:-45px 0 auto}}
+@media(max-width:460px){.mourning-lady-scene{height:260px;inset:-24px 0 auto}}

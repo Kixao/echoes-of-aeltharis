@@ -1,0 +1,84 @@
+/* Combat commands retain a fixed footprint as the skill list and inventory grow. */
+.arena{position:relative}
+.combat-command-bar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr) minmax(0,1fr);gap:10px;max-width:680px;margin:0 auto}
+.combat-command-bar button{display:flex;align-items:center;justify-content:center;gap:7px;min-width:0;min-height:48px;padding:12px 8px}
+.combat-command-bar svg{width:20px;height:20px;flex-shrink:0}
+.combat-menu-layer{position:absolute;inset:0;z-index:45;isolation:isolate}
+.combat-menu-shade{position:absolute;inset:0;background:#030916bb;border-radius:inherit}
+.combat-menu-dialog{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:calc(100% - 28px);max-width:560px;height:460px;max-height:calc(100% - 28px);padding:15px;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:9px;background:var(--panel);box-shadow:0 18px 55px #0009}
+.combat-menu-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;flex-shrink:0}
+.combat-menu-head h3{display:flex;align-items:center;gap:9px;margin:0;font-size:20px}
+.combat-menu-head small{font:12px system-ui,sans-serif;color:var(--muted)}
+.combat-menu-dialog svg{width:18px;height:18px;flex-shrink:0}
+.combat-menu-close{display:grid;place-items:center;min-width:34px;min-height:34px;padding:5px;background:transparent;border-color:transparent}
+.combat-menu-toolbar{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:9px;flex-shrink:0}
+.combat-menu-filters,.combat-menu-views{display:flex;gap:3px;flex-wrap:wrap}
+.combat-menu-toolbar button{font-size:11px;min-height:32px;padding:5px 7px;background:transparent;border-color:transparent;display:flex;align-items:center;gap:4px}
+.combat-menu-toolbar button[aria-pressed=true]{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 14%,var(--panel));color:var(--text)}
+.combat-menu-views svg{width:14px;height:14px}
+.combat-menu-entries{overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:var(--line) var(--bg);flex:1;min-height:0;padding:2px 8px 8px 2px}
+.combat-menu-entry-grid{display:grid;gap:8px;align-content:start}
+.combat-menu-entries.grid .combat-menu-entry-grid{grid-template-columns:repeat(auto-fill,minmax(56px,1fr))}
+.combat-menu-entry{position:relative;min-width:0}
+.combat-menu-entries.grid .combat-menu-entry{display:grid;place-items:center;height:63px;min-height:63px;padding:8px}
+.combat-menu-entries.grid .combat-menu-copy{display:none}
+.combat-menu-glyph{position:relative;display:grid;place-items:center;width:33px;height:33px;color:var(--text);flex-shrink:0}
+.combat-menu-glyph>svg{width:28px;height:28px}
+.combat-menu-scroll-glyph{position:absolute;bottom:0;right:-3px;display:grid;place-items:center;background:var(--panel);border-radius:50%;width:17px;height:17px}
+.combat-menu-scroll-glyph svg{width:13px;height:13px}
+.combat-menu-entry[disabled]{opacity:.4}
+.combat-menu-entries.grid .combat-menu-cost{position:absolute;right:4px;bottom:2px;font-size:10px;color:var(--text);text-shadow:0 1px 3px #000}
+.combat-menu-entries.list .combat-menu-entry-grid{grid-template-columns:1fr}
+.combat-menu-entries.list .combat-menu-entry{display:flex;align-items:center;gap:10px;text-align:left;min-height:76px;padding:10px}
+.combat-menu-copy{min-width:0;flex:1}
+.combat-menu-copy b{display:block;font-size:12px}
+.combat-menu-copy small{display:block;font-size:11px;margin-top:3px;color:var(--muted)}
+.combat-menu-copy .combat-menu-kind{color:var(--text)}
+.combat-menu-entries.list .combat-menu-cost{font-size:11px;white-space:nowrap}
+.combat-menu-entry[aria-pressed=true]{border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.combat-menu-selection{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:70px;padding-top:10px;margin-top:8px;border-top:1px solid var(--line);flex-shrink:0}
+.combat-menu-selection>div{flex:1;min-width:0}
+.combat-menu-selection b{font-size:12px}
+.combat-menu-selection small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+.combat-menu-selection button{white-space:nowrap;font-size:12px}
+.combat-menu-empty{font-size:12px;color:var(--muted);padding:10px;grid-column:1/-1}
+.combat-menu-hint{padding-top:10px;color:var(--muted);font-size:11px;border-top:1px solid var(--line);flex-shrink:0}
+@media(max-width:600px){.combat-menu-dialog{width:calc(100% - 20px);padding:11px}.combat-menu-toolbar{gap:5px}.combat-menu-views{margin-left:auto}.combat-command-bar{gap:5px}.combat-command-bar button{font-size:12px;gap:4px}.combat-command-bar svg{width:17px;height:17px}.combat-menu-entries.grid .combat-menu-entry-grid{grid-template-columns:repeat(auto-fill,minmax(48px,1fr))}.combat-menu-selection{gap:7px}}
+.combat-actions-shell{display:block}
+.combat-actions-shell .combat-command-bar .primary{min-width:0;padding:12px 8px}
+/* Scope away the page header and generic .grid layout inside the dialog. */
+.combat-menu-head{padding:0;border:0;max-width:none;width:100%;background:transparent}
+.combat-menu-entries.grid,.combat-menu-entries.list{display:block}
+/* Favorite actions share one layout in the arena and in both menus. */
+.combat-command-bar{grid-template-columns:repeat(4,minmax(0,1fr));max-width:680px}
+.combat-command-bar .combat-flee{border-color:#a96e62;color:#f0b8a8;background:#492b2b;min-height:48px}
+.quickslots{max-width:680px;margin:0 auto 12px}
+.quickslots-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--text)}
+.quickslots-heading small{font-size:11px;letter-spacing:0;text-transform:none;color:var(--muted)}
+.quickslot-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.quickslot-wrap{position:relative;min-width:0;border-radius:6px}
+.quickslot-wrap.assigning,.quickslot-drop-hover{outline:2px solid var(--gold);outline-offset:2px;background:color-mix(in srgb,var(--gold) 20%,var(--panel))}
+.quickslot{position:relative;display:grid;place-items:center;width:100%;min-height:66px;padding:7px 16px 15px;background:color-mix(in srgb,var(--panel) 80%,var(--bg));border:1px solid var(--line)}
+.quickslot.support{border-color:#668b86}
+.quickslot-number{position:absolute;left:7px;top:4px;font-size:10px;color:var(--muted)}
+.quickslot-plus{font-size:22px;color:var(--muted)}
+.quickslot-cost{position:absolute;bottom:3px;right:6px;font-size:10px;color:var(--text)}
+.quickslot .combat-menu-glyph>svg{width:25px;height:25px}
+.quickslot-feedback:empty{display:none}
+.quickslot-feedback{display:block;margin-top:5px;font-size:11px;color:var(--gold)}
+.quickslot-remove{position:absolute;right:1px;top:0;min-width:25px;min-height:25px;padding:0;border:0;background:transparent;color:var(--muted);font-size:17px}
+.combat-menu-dialog{height:540px}
+.combat-menu-dialog .quickslots{width:100%;flex-shrink:0;margin-bottom:12px}
+.combat-menu-entry[aria-disabled=true]{opacity:.45}
+.combat-menu-entry[draggable=true],.quickslot[draggable=true]{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.quickslot-drag-ghost{position:fixed;z-index:9999;pointer-events:none;transform:translate(-50%,-80%);padding:10px;border:1px solid #ceb57a;border-radius:8px;background:#152333;color:#eee5d4;box-shadow:0 5px 20px #0008}
+.quickslot-drag-ghost svg{width:28px;height:28px}
+@media(max-width:600px){.combat-command-bar{gap:5px}.combat-command-bar button{flex-direction:column;font-size:11px;padding:8px 3px;min-height:62px}.combat-actions-shell .combat-command-bar .primary{padding:8px 3px}.quickslots-heading{flex-wrap:wrap;gap:3px}.quickslot-grid{gap:6px}.quickslot-remove{min-width:30px;min-height:30px}.combat-menu-dialog{height:570px}.combat-menu-selection{min-height:65px}.quickslot{min-height:62px}}
+
+/* Action-state labels must never resize the battle panel. */
+.combat-actions-shell .combat-command-bar>button{box-sizing:border-box;height:48px;min-height:48px;max-height:48px;min-width:0;overflow:hidden;line-height:1.15;padding:6px 8px}
+@media(max-width:600px){.combat-actions-shell .combat-command-bar>button{height:62px;min-height:62px;max-height:62px;padding:6px 3px}}
+
+/* User-supplied static SVG spell glyphs, shared between skill grid and quickslots. */
+.combat-menu-glyph>.spell-ability-icon{display:block;width:32px;height:32px;object-fit:contain;filter:drop-shadow(0 1px 2px #0007)}
+.quickslot .combat-menu-glyph>.spell-ability-icon{width:28px;height:28px}

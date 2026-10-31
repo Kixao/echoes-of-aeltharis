@@ -1,0 +1,44 @@
+/* One shared contact time for every ranged visual. Impact timelines start at contact. */
+.ranged-effect{--flight-time:.48s}
+.ranged-projectile{animation:ranged-flight-contact var(--flight-time) linear both;animation-delay:var(--elapsed)}
+@keyframes ranged-flight-contact{from{opacity:1;transform:translate(-50%,-50%)}99.99%{opacity:1;transform:translate(var(--shot-dx),var(--shot-dy)) translate(-50%,-50%)}
+to{opacity:0;transform:translate(var(--shot-dx),var(--shot-dy)) translate(-50%,-50%)}}
+.ranged-impact,.ranged-arrow .ranged-impact,.ranged-thunder .ranged-impact{opacity:0;animation:contact-visible .45s forwards;animation-delay:calc(var(--elapsed) + var(--flight-time))}
+@keyframes contact-visible{from{opacity:1}70%{opacity:1}
+to{opacity:0}}
+.ranged-impact .ranged-flash{animation-name:contact-flash;animation-duration:.45s}
+.ranged-impact .ranged-ring{animation-name:contact-ring;animation-duration:.45s}
+.ranged-impact i{animation-name:contact-fragment;animation-duration:.45s}
+.ranged-impact *, .ranged-arrow .ranged-impact *, .ranged-thunder .ranged-impact *{animation-delay:calc(var(--elapsed) + var(--flight-time))}
+@keyframes contact-flash{from{opacity:1;transform:scale(.3)}35%{opacity:.85;transform:scale(1)}
+to{opacity:0;transform:scale(1.45)}}
+@keyframes contact-ring{from{opacity:1;transform:scale(.5)}
+to{opacity:0;transform:scale(7)}}
+@keyframes contact-fragment{from{opacity:1;transform:translate(0,0) scale(1)}
+to{opacity:0;transform:translate(calc(cos(calc(var(--i)*47deg))*95px),calc(sin(calc(var(--i)*47deg))*75px)) scale(.2)}}
+.enemy-portrait.enemy-defeat{animation:enemy-fall .6s ease-in forwards;opacity:1}
+@keyframes enemy-fall{0%{opacity:1;transform:translateY(0)}35%{opacity:.7;filter:brightness(1.5)}100%{opacity:0;transform:translateY(22px) scale(.92)}}
+.enemy-portrait{z-index:7}
+.missile-outcome{position:absolute;z-index:9;min-width:50px;padding:4px 7px;border:1px solid;border-radius:4px;background:#111214ed;text-align:center;font:700 9px/1.1 system-ui,sans-serif;letter-spacing:.7px;white-space:nowrap;box-shadow:0 2px 8px #0009;pointer-events:none;animation:missile-outcome-pop 1.1s ease-out both}
+.missile-outcome.hit{color:#fff0a6;border-color:#e6c75d;box-shadow:0 0 12px #e6c75d55,0 2px 8px #0009}
+.missile-outcome.miss{color:#ded2dc;border-color:#967e97}
+@keyframes missile-outcome-pop{0%{opacity:0;transform:translate(-50%,8px) scale(.72)}18%{opacity:1;transform:translate(-50%,-2px) scale(1.08)}76%{opacity:1;transform:translate(-50%,-5px) scale(1)}100%{opacity:0;transform:translate(-50%,-12px) scale(.98)}}
+.enemy-attack-overlay{position:absolute;inset:0;z-index:8;pointer-events:none}
+
+/* Shared lasting-effect badges, under each combatant's resource bars. */
+.battle-status-row{position:relative;display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:6px;min-height:42px;margin-top:14px}
+.battle-status{display:inline-flex;align-items:center;gap:5px;padding:7px 8px;border-radius:5px;border:1px solid #5c7f69;background:#223c33;color:#d1e6bd;min-height:36px;font-size:11px;cursor:help}
+.battle-status.debuff{background:#3d2d2a;border-color:#8c6a54;color:#edcfad}
+.battle-status svg{height:18px;width:18px;flex-shrink:0}
+.boss-animation-overlay{position:absolute;inset:0;z-index:7;pointer-events:none}
+.boss-warning{max-width:440px;margin:10px auto}
+@media(max-width:500px){.battle-status{padding:6px;gap:4px}
+.battle-status span{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.enemy-portrait.enemy-defeat{animation-duration:.1s}}
+.ability-status-icon{display:inline-flex;vertical-align:middle;margin-right:6px}
+.ability-status-icon svg{width:17px;height:17px}
+.boss-warning summary svg{width:15px;height:15px;vertical-align:middle;margin-right:5px}
+
+.missile-outcome{font-size:11px}.missile-outcome.critical{color:#ffe4a5;border-color:#e7bd68;box-shadow:0 0 14px #e7bd6855}
+
+.ability-status-icon .spell-ability-icon{display:inline-block;vertical-align:middle;width:20px;height:20px;object-fit:contain;margin-right:3px}

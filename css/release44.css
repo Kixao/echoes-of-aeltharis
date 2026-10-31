@@ -1,0 +1,18 @@
+/* v0.0.44 — restore the pre-v0.0.43 Plan Expedition button footprint.
+   The other Greyhaven page layouts are unchanged; the shop-modal proposal
+   remains a separate workshop, not an active navigation change. */
+#app .eoa-mainstreet-prep .expedition-actions{
+  justify-content:flex-start;
+  align-items:center;
+}
+#app .eoa-mainstreet-prep .expedition-actions button{
+  flex:0 0 auto;
+  width:auto;
+  min-width:0;
+  min-height:0;
+  padding:12px 17px;
+}
+@media(max-width:520px){
+  #app .eoa-mainstreet-prep .expedition-actions{width:100%;align-items:stretch;flex-direction:column}
+  #app .eoa-mainstreet-prep .expedition-actions button{width:100%}
+}

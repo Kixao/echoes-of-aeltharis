@@ -1,0 +1,15 @@
+/* Echoes of Aeltharis · Aetherbound Reliquary inventory icon.
+   Apply to inline SVG with class="eoa-relic-icon".
+   For <img> use the self-animated relic-icon-animated.svg instead. */
+.eoa-relic-icon {display:block;width:var(--relic-icon-size, 64px);height:var(--relic-icon-size, 64px);overflow:visible;}
+.eoa-relic-icon .relic-icon__aura{transform-origin:64px 63px;animation:eoa-icon-glow 3s ease-in-out infinite;}
+.eoa-relic-icon .relic-icon__swirl{transform-origin:64px 63px;animation:eoa-icon-spin 12s linear infinite;}
+.eoa-relic-icon .relic-icon__stream{animation:eoa-icon-flow 3.5s linear infinite;}
+.eoa-relic-icon .relic-icon__heart{transform-origin:64px 63px;animation:eoa-icon-glow 2.4s ease-in-out infinite;}
+.eoa-relic-icon .relic-icon__motes{transform-origin:64px 63px;animation:eoa-icon-spin 9s linear infinite reverse;}
+.eoa-relic-icon .relic-icon__motes circle,.eoa-relic-icon .relic-icon__glints{animation:eoa-icon-twinkle 2.2s ease-in-out infinite alternate;}
+@keyframes eoa-icon-glow{0%,100%{opacity:.64;transform:scale(.96)}50%{opacity:1;transform:scale(1.07)}}
+@keyframes eoa-icon-spin{to{transform:rotate(360deg)}}
+@keyframes eoa-icon-flow{to{stroke-dashoffset:-152}}
+@keyframes eoa-icon-twinkle{0%{opacity:.45}100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.eoa-relic-icon *{animation:none!important}}

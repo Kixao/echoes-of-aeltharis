@@ -1,0 +1,23 @@
+<svg data-hero-art="Mage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" role="img" aria-label="Faceless blue-robed mage gripping a crystal staff">
+<defs><linearGradient id="ewhero_mage_robe" x2="1" y2="1"><stop stop-color="#5592c5"/><stop offset=".5" stop-color="#315f94"/><stop offset="1" stop-color="#192e57"/></linearGradient><radialGradient id="ewhero_mage_aura"><stop stop-color="#69b8ed" stop-opacity=".2"/><stop offset="1" stop-color="#69b8ed" stop-opacity="0"/></radialGradient><filter id="ewhero_mage_glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+<style>.ewhero_mage_breath{animation:ewhero_mage_breathe 4.5s ease-in-out infinite;transform-origin:110px 259px}.ewhero_mage_crystal{animation:ewhero_mage_float 3.7s ease-in-out infinite}.ewhero_mage_light{animation:ewhero_mage_pulse 3s ease-in-out infinite}@keyframes ewhero_mage_breathe{50%{transform:translateY(-2px)}}@keyframes ewhero_mage_float{50%{transform:translateY(-4px)}}@keyframes ewhero_mage_pulse{50%{opacity:.45}}@media(prefers-reduced-motion:reduce){[data-hero-art="Mage"] *{animation:none!important}}</style>
+<ellipse cx="118" cy="153" rx="103" ry="135" fill="url(#ewhero_mage_aura)"/><ellipse cx="120" cy="280" rx="69" ry="7" fill="#08151e" opacity=".6"/>
+<g class="ewhero_mage_breath" stroke-linejoin="round"><path d="M86 242L79 279 102 279 111 246M118 247L126 279 149 279 141 243" fill="#182635" stroke="#7794a6" stroke-width="2"/>
+<path d="M87 97L67 119 53 164 65 185 73 206 50 267 82 280 108 266 135 279 167 264 145 199 155 164 143 115 127 98Z" fill="url(#ewhero_mage_robe)" stroke="#142b46" stroke-width="3"/>
+<path d="M76 130L62 165 76 177 90 151Z M136 127L148 166 137 179 123 153Z" fill="#5687b0"/>
+<path d="M88 137L84 198 65 265 90 260 111 182 132 263 154 260 132 192 129 137Z" fill="#274a77"/>
+<path d="M109 156L100 191 92 260 110 270 126 260 119 190Z" fill="#6b98b7"/><path d="M109 177V254M99 213L109 224 119 213" fill="none" stroke="#c9ba89" stroke-width="2"/>
+<path d="M87 100L65 112 80 142 105 128 132 144 148 115 127 100Z" fill="#456e9c" stroke="#9cc7dc" stroke-width="2"/>
+<path d="M76 112L84 129 104 119 128 132 139 116 111 105Z" fill="#7aa9cb"/>
+<path d="M76 93L93 55 110 36 126 57 142 98 127 114 111 106 94 116Z" fill="#6494bd" stroke="#a4cde0" stroke-width="2"/>
+<path d="M81 95L110 44 108 75 94 103Z" fill="#9ac8e2"/><path d="M110 45L137 96 119 91 108 75Z" fill="#406a9a"/>
+<path d="M94 91L109 70 126 94 120 116 102 120 94 108Z" fill="#102535"/>
+<path d="M96 119L110 130 125 117 120 140 109 150 98 138Z" fill="#1b3b60" stroke="#baac7e" stroke-width="1.5"/><path d="M109 129L115 137 109 146 104 137Z" fill="#92d4ee"/>
+<path d="M78 152L68 169 82 184 93 175 88 165Z" fill="#345579" stroke="#7ba0b2" stroke-width="2"/><path d="M139 155L149 172 175 158 181 168 149 189 132 179Z" fill="#2e527b" stroke="#789eb7" stroke-width="2"/>
+
+<g transform="translate(-6 0)"><path d="M176 278L185 82" stroke="#b6a57a" stroke-width="6"/><path d="M180 273L188 92" stroke="#5a6c70" stroke-width="2"/>
+<path d="M174 91L167 78 176 69M187 89L201 77 194 67" fill="none" stroke="#c3b381" stroke-width="4"/>
+<g class="ewhero_mage_crystal"><path d="M184 33L201 57 185 81 170 58Z" fill="#6ccde5" stroke="#d2eff1" stroke-width="2"/><path d="M184 34L183 58 171 58Z" fill="#c8f2f2"/><path d="M183 58L200 57 185 79Z" fill="#3789c5"/><ellipse cx="185" cy="59" rx="23" ry="6" fill="none" stroke="#90d3df" opacity=".55"/><path class="ewhero_mage_light" d="M184 33L201 57 185 81 170 58Z" fill="#a2e7ef" opacity=".35" filter="url(#ewhero_mage_glow)"/></g>
+</g><path d="M165 160L174 153 186 157 186 169 177 176 168 171Z" fill="#b1aca0" stroke="#3a535c" stroke-width="2"/><path d="M170 160L179 162M170 166L179 168" fill="none" stroke="#6a7b7c" stroke-width="1.5"/>
+<path d="M72 234L79 240 76 249M142 228L136 235 141 241" fill="none" stroke="#bdb88c" stroke-width="2"/></g>
+<g fill="#b9dfd8" opacity=".65"><circle cx="56" cy="98" r="1.5"/><circle cx="155" cy="63" r="1.5"/><circle cx="164" cy="225" r="1"/></g></svg>

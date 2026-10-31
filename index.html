@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111214"><title>Echoes of Aeltharis</title><link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/legacy-effects.css">
+<link rel="stylesheet" href="css/environments.css">
+<link rel="stylesheet" href="css/combat.css">
+<link rel="stylesheet" href="css/characters.css">
+<link rel="stylesheet" href="css/combat-menus.css">
+<link rel="stylesheet" href="css/outcomes.css"><link rel="stylesheet" href="css/travel.css"><link rel="stylesheet" href="css/world-map.css"><link rel="stylesheet" href="css/identity.css"><link rel="stylesheet" href="css/forged-ui.css"><link rel="stylesheet" href="css/dungeon.css"><link rel="stylesheet" href="css/sepulcher-theme.css"><link rel="stylesheet" href="css/equipment.css"><link rel="stylesheet" href="css/inventory.css"><link rel="stylesheet" href="css/combat-models.css"><link rel="stylesheet" href="assets/relics/relic-orb.css"><link rel="stylesheet" href="css/relic-workshop.css"><link rel="stylesheet" href="css/dungeon-supplies.css"><link rel="stylesheet" href="css/release37.css"><link rel="stylesheet" href="css/release38.css">
+  <link rel="stylesheet" href="css/release39.css"><link rel="stylesheet" href="css/release40.css"><link rel="stylesheet" href="css/release41.css"><link rel="stylesheet" href="css/release42.css"><link rel="stylesheet" href="css/release43.css"><link rel="stylesheet" href="css/release44.css"><link rel="stylesheet" href="css/release45.css"><link rel="stylesheet" href="css/release46.css"></head><body><header><a class="brand" href="#">✧ <span>ECHOES OF AELTHARIS<small>THE TOMBS OF AELTHARIS</small></span></a><div class="topnote">The old stones remember.</div><div class="header-actions"><button type="button" id="settingsToggle" class="settings-toggle" onclick="openSettings()" hidden>⚙ Settings</button><span id="bankedGold" class="header-gold" hidden></span><span class="save" id="save">● Auto-saved locally</span></div></header><div id="app"></div><div id="toast" role="status"></div><div id="settingsModal" class="settings-backdrop" hidden><section class="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settingsTitle"><header class="settings-heading"><div><div class="eyebrow">Player options</div><h2 id="settingsTitle">Settings</h2></div><button type="button" onclick="closeSettings()" aria-label="Close settings">✕</button></header><section class="settings-section"><div class="eyebrow">Character management</div><p>Manage your local character save and exported backup.</p><div class="settings-actions"><button type="button" onclick="exportSave()">⇩ Export character · JSON</button><button type="button" onclick="returnToTitleFromSettings()">⌂ Return to title screen</button><button type="button" class="delete-character" onclick="deleteFromSettings()">Delete character</button><button type="button" onclick="closeSettings();openAdmin()">⚙ Admin menu</button></div></section><p class="tiny settings-future">More settings will be added here.</p></section></div><div id="adminModal" class="admin-backdrop" hidden><section class="admin-dialog" role="dialog" aria-modal="true" aria-labelledby="adminTitle"><div class="row"><div><div class="eyebrow">Testing tools</div><h2 id="adminTitle">Admin Menu</h2></div><button type="button" onclick="closeAdmin()" aria-label="Close admin menu">✕</button></div><p class="tiny">These controls modify your current character and save locally.</p><div class="admin-level"><span id="adminLevelText">Level 1 / 5</span><button type="button" class="primary" id="adminLevelButton" onclick="adminLevelUp()">Level up +1</button></div><label class="admin-label" for="adminGoldAmount">Add gold</label><div class="admin-gold"><input type="number" id="adminGoldAmount" min="1" max="1000000000000" step="1" value="1000" inputmode="numeric"><button type="button" class="primary" onclick="adminAddGold()">Add gold</button></div><p class="tiny" id="adminGoldBalance"></p><div class="admin-loot"><button type="button" class="primary" id="adminRandomLoot" onclick="adminRandomLoot()">Generate random equipment drop</button><p class="tiny" id="adminLootResult" role="status">Adds one random uncommon or rare item to your pack.</p></div><div class="admin-turn"><button type="button" id="adminSkipTurn" class="primary" onclick="adminSkipPlayerTurn()">Skip player turn → Enemy attack</button></div></section></div><script defer src="js/state.js"></script>
+<script defer src="js/data/classes.js"></script>
+<script defer src="js/data/dungeons.js"></script>
+<script defer src="js/data/world-map.js"></script>
+<script defer src="js/data/boss-specials.js"></script>
+<script defer src="js/items.js"></script>
+<script defer src="assets/artwork/art.js"></script>
+<script defer src="assets/artwork/traveller.js"></script>
+<script defer src="js/artwork.js"></script>
+<script defer src="js/status-effects.js"></script>
+<script defer src="js/character.js"></script>
+<script defer src="js/abilities.js"></script>
+<script defer src="js/journey.js"></script>
+<script defer src="js/town.js"></script>
+<script defer src="js/expedition.js"></script>
+<script defer src="js/saves.js"></script>
+<script defer src="js/combat.js"></script>
+<script defer src="js/effects.js"></script>
+<script defer src="js/settings.js"></script>
+<script defer src="js/admin.js"></script>
+<script defer src="js/ui/core.js"></script>
+<script defer src="js/ui/character.js"></script>
+<script defer src="js/ui/world-map.js"></script>
+<script defer src="js/ui/journey.js"></script>
+<script defer src="js/ui/town.js"></script>
+<script defer src="js/ui/combat.js"></script>
+<script defer src="js/animations/mage-spells.js"></script>
+<script defer src="js/animations/player-attacks.js"></script>
+<script defer src="js/animations/enemy-attacks.js"></script>
+<script defer src="js/animations/boss-specials.js"></script>
+<script defer src="js/ui/quickslots.js"></script>
+<script defer src="js/ui/combat-menu.js"></script>
+<script defer src="js/ui/defeat.js"></script>
+<script defer src="js/animations/travel.js"></script>
+<script defer src="js/data/events.js"></script><script defer src="js/data/dungeon-template.js"></script><script defer src="js/dungeon.js"></script><script defer src="js/ui/dungeon-map.js"></script><script defer src="js/ui/equipment.js"></script><script defer src="js/ui/inventory.js"></script><script defer src="js/animations/combat-models.js"></script><script defer src="js/animations/models/mage.js"></script><script defer src="js/animations/models/skeleton.js"></script><script defer src="js/animations/models/ghost.js"></script><script defer src="js/animations/models/wraith.js"></script><script defer src="js/animations/models/sentinel.js"></script>
+<script defer src="js/animations/mourning-lady-v16.js"></script><script defer src="js/animations/mourning-lady-integration.js"></script><script defer src="js/data/tier1-balance.js"></script><script defer src="js/ui/arcane-studies.js"></script><script defer src="js/ui/blacksmith.js"></script><script defer src="js/ui/magical-mysteries.js"></script><script defer src="js/ui/shop-modal.js"></script><script defer src="js/tier1.js"></script><script defer src="js/ui/relic-workshop.js"></script><script defer src="js/main.js"></script></body></html>

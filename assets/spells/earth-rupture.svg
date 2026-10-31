@@ -1,0 +1,17 @@
+<svg width="175" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="450 250 175 70"><defs><linearGradient id="earth-detail-wall" x2="0" y2="1"><stop stop-color="#1d3540" /><stop offset="1" stop-color="#101b24" /></linearGradient>
+<linearGradient id="earth-detail-floor" x2="0" y2="1"><stop stop-color="#182e38" /><stop offset="1" stop-color="#344248" /></linearGradient>
+<linearGradient id="earth-detail-stone" x2=".7" y2="1"><stop stop-color="#b5b49d" /><stop offset=".35" stop-color="#858c80" /><stop offset="1" stop-color="#3c4b48" /></linearGradient>
+<radialGradient id="earth-detail-light"><stop stop-color="#dcbd75" stop-opacity=".17" /><stop offset="1" stop-color="#dcbd75" stop-opacity="0" /></radialGradient>
+<radialGradient id="earth-detail-flash"><stop stop-color="#fff7cd" /><stop offset=".22" stop-color="#e3c68c" stop-opacity=".9" /><stop offset="1" stop-color="#d5b16b" stop-opacity="0" /></radialGradient>
+<filter id="earth-detail-glow"><feGaussianBlur stdDeviation="3" /></filter>
+<clipPath id="earth-detail-ground-clip"><rect x="390" y="72" width="250" height="217" /></clipPath>
+</defs><g>
+<path d="m465 282 28-6-9-12 30 6 11-17 12 15 28-12-2 17 32 6-15 9 18 10-34-4-17 9-20-7-28 9-14-14z" fill="#0a161b" />
+<path d="m471 281 24-8 17 6-7 12-24-3z" fill="#63726a" stroke="#263c3d" stroke-width="2" />
+<path d="m471 281 24-8 17 6-22 3z" fill="#a1a18a" />
+<path d="m558 276 18-9 16 13-9 12-23-5z" fill="#69796d" stroke="#263c3d" stroke-width="2" />
+<path d="m558 276 18-9 16 13-15-3z" fill="#b2b09a" />
+<path d="m505 294 11-7 21 4-8 9z" fill="#8a9480" />
+<path d="m492 298-20 9-14-3m120-11 23 8 15-4m-81 1 4 13-8 6" stroke="#0b191e" stroke-width="2" fill="none" />
+</g>
+</svg>

@@ -1,0 +1,78 @@
+/* v0.0.37 — unified rarity colors, potion controls, combat turn indicators. */
+:root{--rarity-basic:#a4adb3;--rarity-common:#e2daca;--rarity-uncommon:#99daa1;--rarity-rare:#bb91fa}
+.basic,.item.basic .item-name,.item.basic .rarity,.slot .basic-text,.gear-compare strong.basic{color:var(--rarity-basic)!important}
+.uncommon,.item.uncommon .item-name,.item.uncommon .rarity,.slot .uncommon-text,.gear-compare strong.uncommon{color:var(--rarity-uncommon)!important}
+.rare,.item.rare .item-name,.item.rare .rarity,.slot .rare-text,.gear-compare strong.rare{color:var(--rarity-rare)!important}
+/* Worn slot and bag outlines follow rarity, without obscuring the selected state. */
+#gearFloatingLayer .item.basic,#eoa-quartermaster-game .item.basic{border-color:#717b83;background:radial-gradient(ellipse at 50% 8%,#838a9330,#17232d 80%)}
+#gearFloatingLayer .item.uncommon,#eoa-quartermaster-game .item.uncommon{border-color:#79bd8d;background:radial-gradient(ellipse at 50% 8%,#5b9d683b,#17232d 80%)}
+#gearFloatingLayer .item.rare,#eoa-quartermaster-game .item.rare{border-color:#a678ed;background:radial-gradient(ellipse at 50% 8%,#8654d149,#17232d 80%)}
+#gearFloatingLayer .item.basic svg{color:#aeb6bc}
+#gearFloatingLayer .item.rare svg{color:#c0a2ed}
+#gearFloatingLayer .item.uncommon svg{color:#a9e0b0}
+#gearFloatingLayer .slot.basic,#eoa-quartermaster-game .slot.basic,.departure-gear-slot.basic{border-color:#66747c;color:var(--rarity-basic)}
+#gearFloatingLayer .slot.uncommon,#eoa-quartermaster-game .slot.uncommon,.departure-gear-slot.uncommon{border-color:#75aa85;color:var(--rarity-uncommon)}
+#gearFloatingLayer .slot.rare,#eoa-quartermaster-game .slot.rare,.departure-gear-slot.rare{border-color:#a579e6;color:var(--rarity-rare)}
+.departure-gear-slot.basic strong{color:var(--rarity-basic)}.departure-gear-slot.uncommon strong{color:var(--rarity-uncommon)}.departure-gear-slot.rare strong{color:var(--rarity-rare)}
+.item-card .uncommon,.item-card .rare{color:inherit!important}
+/* Dramatic rarity-specific reliquary reveal, with matching name and label. */
+.relic-reveal-card{border-width:2px;background:radial-gradient(ellipse at 50% 15%,#4e5461ef,#17232ef7 86%);box-shadow:0 0 0 3px #0b1218bb,0 18px 45px #000d,0 0 35px #bdb1ac66}
+.relic-reveal-card.common{border-color:#bfb6a5;box-shadow:0 0 0 3px #0b1218bb,0 18px 45px #000d,0 0 34px #d8c9ab82}
+.relic-reveal-card.uncommon{border-color:#7fdf97;background:radial-gradient(ellipse at 50% 8%,#2b5844f5,#15282af7 82%);box-shadow:0 0 0 3px #397b5390,0 18px 45px #000d,0 0 43px #70d48f9c}
+.relic-reveal-card.rare{border-color:#ba91ff;background:radial-gradient(ellipse at 50% 8%,#593f7df5,#211c38f7 82%);box-shadow:0 0 0 3px #754bb68a,0 18px 45px #000d,0 0 50px #aa74ffc9,0 0 15px #d3a8ffb2}
+.relic-reveal-card.common strong{color:var(--rarity-common)}.relic-reveal-card.uncommon strong{color:var(--rarity-uncommon)}.relic-reveal-card.rare strong{color:var(--rarity-rare)}
+.relic-reveal-card.uncommon .relic-reveal-eyebrow{color:#b4f4b5}.relic-reveal-card.rare .relic-reveal-eyebrow{color:#d8b7ff}
+.relic-reveal-card.uncommon svg{color:var(--rarity-uncommon)}.relic-reveal-card.rare svg{color:var(--rarity-rare)}
+/* Small unboxed potion icons, centered with a shared visual footprint. */
+#sepulcher-enemy-symbol-restored .dungeon-field-supplies{padding:7px 2px 10px;margin:8px 0 12px;background:none;border:0;border-radius:0;box-shadow:none}
+#sepulcher-enemy-symbol-restored .dungeon-potion-buttons{display:flex;justify-content:center;align-items:center;gap:16px}
+#sepulcher-enemy-symbol-restored .dungeon-potion-button{appearance:none;display:grid;place-items:center;position:relative;width:78px;height:83px;min-height:83px;max-width:78px;flex:0 0 78px;margin:0;padding:0;background:transparent;border:0;border-radius:9px;box-shadow:none;transition:filter .12s,transform .12s}
+#sepulcher-enemy-symbol-restored .dungeon-potion-button:hover:not(:disabled){border:0;background:transparent;filter:brightness(1.18);transform:translateY(-2px)}
+#sepulcher-enemy-symbol-restored .dungeon-potion-button:focus-visible{outline:2px solid #f1cf88;outline-offset:2px}
+#sepulcher-enemy-symbol-restored .dungeon-potion-button .eoa-potion-svg{display:block;box-sizing:border-box;width:72px;height:76px;min-width:72px;min-height:76px;max-width:72px;max-height:76px;object-fit:contain;flex:none;filter:drop-shadow(0 3px 5px #000b)}
+#sepulcher-enemy-symbol-restored .dungeon-potion-button .potion-count{top:0;right:0;min-width:22px;height:22px;padding:2px 5px;font-size:12px;line-height:15px}
+#sepulcher-enemy-symbol-restored .dungeon-potion-button:disabled{background:none;border:0;filter:brightness(.66);opacity:.66}
+#sepulcher-enemy-symbol-restored .dungeon-potion-button.empty{background:none;border:0;filter:grayscale(1) brightness(.72);opacity:.47}
+#sepulcher-enemy-symbol-restored .dungeon-potion-allowance{display:block;margin:0 auto 6px;color:#b5c6c8;font-size:10px;text-align:center}
+#sepulcher-enemy-symbol-restored .dungeon-status-section{margin-top:7px;padding-top:8px}
+/* Inspector relic counter is displayed only after the first actual drop. */
+#sepulcher-enemy-symbol-restored .dungeon-status-relic-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:8px}
+#sepulcher-enemy-symbol-restored .dungeon-status-relic-row .status{margin:0;min-width:0;flex:1}
+#sepulcher-enemy-symbol-restored .dungeon-relics-held{display:inline-flex;align-items:center;gap:3px;min-width:60px;min-height:33px;padding:3px 8px;background:linear-gradient(135deg,#35314b,#1f293a);border:1px solid #9980ce;border-radius:6px;color:#edddff;box-shadow:inset 0 1px 0 #ffffff13,0 1px 5px #0008;font:700 14px/1 system-ui,sans-serif}
+#sepulcher-enemy-symbol-restored .dungeon-relics-held[hidden]{display:none}
+#sepulcher-enemy-symbol-restored .dungeon-relics-held .relic-icon{width:29px;height:29px;object-fit:contain}
+#sepulcher-enemy-symbol-restored .dungeon-relics-held strong{color:#e4d2ff;font-variant-numeric:tabular-nums}
+/* Fixed-size status boxes replace the former encounter / relic banner. */
+.arena .encounter-header.combat-round-header{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:6px;min-height:32px}
+.arena .combat-round-indicator{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:138px;min-height:30px;box-sizing:border-box;padding:5px 11px;border:1px solid #608f76;border-radius:5px;background:#203b33;color:#b2e8b7;font:700 11px/1.2 system-ui,sans-serif;letter-spacing:.35px;text-transform:uppercase}
+.arena .combat-round-indicator.support{border-color:#6384af;background:#26394f;color:#c0dafb}
+.arena .combat-round-indicator.used{border-color:#6d717b;background:#2b3038;color:#929ca7}
+.arena .combat-round-dot{width:7px;height:7px;background:currentColor;border-radius:50%;box-shadow:0 0 7px currentColor}
+.arena .combat-round-indicator.used .combat-round-dot{box-shadow:none;opacity:.65}
+/* New potion artwork everywhere: departure belt, satchel, skill backpack. */
+.eoa-potion-svg{display:block;object-fit:contain}
+.departure-belt .eoa-potion-svg{width:52px;height:58px;max-width:100%;object-fit:contain}
+#eoa-inventory-game .satchel-icon.healthPotion,#eoa-inventory-game .satchel-icon.manaPotion{background:transparent;border:0;color:inherit}
+#eoa-inventory-game .satchel-icon .eoa-potion-svg{width:43px;height:43px;max-width:none}
+.combat-menu-glyph>.eoa-potion-svg{display:block;width:36px;height:36px;max-width:none}
+.quickslot .combat-menu-glyph>.eoa-potion-svg{width:34px;height:34px}
+/* Slightly more prominent spell art without growing combat rows. */
+.combat-menu-glyph>.spell-ability-icon{width:37px;height:37px}
+.quickslot .combat-menu-glyph>.spell-ability-icon{width:33px;height:33px}
+.combat-menu-glyph{width:40px;height:40px}
+@media(max-width:540px){#sepulcher-enemy-symbol-restored .dungeon-potion-buttons{gap:12px}#sepulcher-enemy-symbol-restored .dungeon-potion-button{width:74px;max-width:74px;flex-basis:74px}#sepulcher-enemy-symbol-restored .dungeon-potion-button .eoa-potion-svg{width:69px;height:73px;min-width:69px;min-height:73px;max-width:69px;max-height:73px}.arena .combat-round-indicator{min-width:118px;padding:5px 8px;font-size:10px}}
+
+/* Rarity applies to item previews and equipped-card names, including floating comparisons. */
+#gearFloatingLayer h3.basic,#gearFloatingLayer h4.basic,#gearFloatingLayer .slot strong.basic{color:var(--rarity-basic)!important}
+#gearFloatingLayer h3.uncommon,#gearFloatingLayer h4.uncommon,#gearFloatingLayer .slot strong.uncommon{color:var(--rarity-uncommon)!important}
+#gearFloatingLayer h3.rare,#gearFloatingLayer h4.rare,#gearFloatingLayer .slot strong.rare{color:var(--rarity-rare)!important}
+#eoa-quartermaster-game .slot.basic,#eoa-quartermaster-game .slot.uncommon,#eoa-quartermaster-game .slot.rare{box-shadow:inset 0 0 0 1px currentColor}
+
+#eoa-quartermaster-game .rarity-key,#gearFloatingLayer .rarity-key{display:flex;flex-wrap:wrap;align-items:center;gap:7px 14px}
+#eoa-quartermaster-game .rarity-key .basic,#gearFloatingLayer .rarity-key .basic{color:var(--rarity-basic)!important}
+#eoa-quartermaster-game .rarity-key .common,#gearFloatingLayer .rarity-key .common{color:var(--rarity-common)!important}
+#eoa-quartermaster-game .rarity-key .uncommon,#gearFloatingLayer .rarity-key .uncommon{color:var(--rarity-uncommon)!important}
+#eoa-quartermaster-game .rarity-key .rare,#gearFloatingLayer .rarity-key .rare{color:var(--rarity-rare)!important}
+#eoa-quartermaster-game .rarity-key span::before,#gearFloatingLayer .rarity-key span::before{content:'◇';color:inherit;margin-right:4px}
+#eoa-quartermaster-game .rarity-key .uncommon::before,#gearFloatingLayer .rarity-key .uncommon::before{content:'◆'}
+#eoa-quartermaster-game .rarity-key .rare::before,#gearFloatingLayer .rarity-key .rare::before{content:'✦'}

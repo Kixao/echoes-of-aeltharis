@@ -1,0 +1,120 @@
+/* v0.0.40 — approved character creator, Arcane Studies and Greyhaven Blacksmith workshops. */
+/* Character creator */
+.eoa-creator{max-width:1100px;margin:0 auto;padding:22px 16px 40px}
+.eoa-creator .creation{max-width:none;margin:0;padding:0}
+.eoa-creator .creator-eyebrow{font:700 11px/1.3 system-ui;letter-spacing:2.2px;text-transform:uppercase;text-align:center;color:#e2bf75;margin:5px 0 20px}
+.eoa-creator .creator-section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:13px}
+.eoa-creator .creator-section-head h2{margin:4px 0 0;color:#eedfc4;font:normal 23px/1.2 Georgia,serif}
+.eoa-creator .creator-section-head small{color:#acb6b6;font-size:11px}
+.eoa-creator .classes.class-select{gap:12px}
+.eoa-creator .classcard{min-width:0;display:block}
+.eoa-creator .classcard .copy{padding:11px 15px}
+.eoa-creator .classcard .copy p{display:block;margin:5px 0;font-size:11px;line-height:1.5}
+.eoa-creator .classcard .portrait{height:145px;display:flex;justify-content:center;align-items:center}
+.eoa-creator .classcard .portrait svg{height:140px;width:115px}
+.eoa-creator .classcard .copy h2{font-size:20px;margin:7px 0 2px}
+.eoa-creator .classcard .copy small{font-size:10px;color:#a9b4b2}
+.eoa-creator .creator-abilities{margin-top:24px}
+.eoa-creator .starter-ability-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.eoa-creator .starter-ability{min-width:0;min-height:260px;text-align:left;display:flex;flex-direction:column;gap:8px;padding:16px;border:1px solid #59686d;border-radius:7px;background:linear-gradient(150deg,#2b373d,#1a252d);color:#dedfd9;cursor:pointer;transition:border-color .16s,box-shadow .16s}
+.eoa-creator .starter-ability:hover{border-color:#ad9a74}
+.eoa-creator .starter-ability.selected{border-color:#e3ba6b;box-shadow:inset 0 0 0 1px #cda55b77,0 0 18px #d9a85828;background:linear-gradient(155deg,#3d3e37,#243039)}
+.eoa-creator .starter-ability-top{display:flex;justify-content:space-between;align-items:start}
+.eoa-creator .starter-ability-top img{display:block;width:69px;height:69px;object-fit:contain}
+.eoa-creator .starter-indicator{height:22px;width:22px;border-radius:50%;display:grid;place-items:center;border:1px solid #707b7a;color:#1d2529;font-size:13px}
+.eoa-creator .starter-ability.selected .starter-indicator{background:#e2bb73;border-color:#e2bb73}
+.eoa-creator .starter-ability>strong{color:#efdfbf;font:normal 21px Georgia,serif}
+.eoa-creator .starter-meta{display:flex;gap:6px;flex-wrap:wrap}
+.eoa-creator .starter-meta span{border:1px solid #647377;border-radius:4px;padding:4px 7px;background:#25313a;color:#cbd4d3;font-size:10px}
+.eoa-creator .starter-meta span.support{background:#322d46;color:#cfc0e9;border-color:#786990}
+.eoa-creator .starter-ability p{font-size:12px;line-height:1.55;color:#bec8c6;margin:1px 0 10px;flex:1}
+.eoa-creator .starter-card-foot{border-top:1px solid #4e6064;padding-top:11px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:10px}
+.eoa-creator .starter-card-foot small{color:#aab7b8}.eoa-creator .starter-pick{color:#e1be81}
+.eoa-creator .creator-study-note{text-align:center;border:1px solid #66634f;background:#d1ab6120;color:#e7d8ba;padding:12px 15px;border-radius:6px;margin:13px 0;font-size:12px}
+.eoa-creator .create-footer{padding-top:10px}
+.eoa-creator .create-footer button{min-width:140px}
+.creator-name-backdrop[hidden],.smith-checkout-overlay[hidden]{display:none!important}
+.creator-name-backdrop{position:fixed;inset:0;z-index:9999;background:#070d13dc;display:flex;align-items:center;justify-content:center;padding:12px;backdrop-filter:blur(4px)}
+.creator-name-dialog{position:relative;width:min(100%,470px);background:linear-gradient(150deg,#2d3a42,#151f28);border:1px solid #a68b5e;border-radius:9px;padding:27px;box-shadow:0 24px 70px #000b}
+.creator-name-dialog h2{font:normal 29px Georgia,serif;color:#f1e6d0;margin:9px 0}.creator-name-dialog p{color:#bdc5c4;font-size:13px}
+.creator-name-close{position:absolute;right:13px;top:12px;background:transparent;border:0;color:#eee;font-size:23px;cursor:pointer}
+.creator-name-choice{display:flex;align-items:center;gap:13px;background:#1b2730;padding:10px 14px;border:1px solid #53626c;border-radius:6px;margin:16px 0}
+.creator-name-choice img{width:56px;height:56px}.creator-name-choice small{display:block;color:#aebcbe;font-size:11px}.creator-name-choice strong{display:block;color:#e7d6b0;font:normal 20px Georgia,serif;margin-top:4px}
+.creator-name-dialog label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#d4b77e;margin:12px 0 7px}
+.creator-name-dialog input{width:100%;background:#172027;border:1px solid #72818a;color:#f3e7d7;border-radius:5px;padding:12px;font-size:16px}
+.creator-name-dialog #creatorNameError{display:block;min-height:18px;color:#f2a7a1;font-size:11px;margin-top:6px}
+.creator-name-actions{display:flex;justify-content:space-between;gap:10px;margin-top:12px}.creator-name-actions button{min-width:135px}
+/* Studies */
+.eoa-studies{max-width:1100px;margin:auto;color:#e9e2d5}
+.eoa-studies-head{display:flex;justify-content:space-between;gap:14px;align-items:start;background:linear-gradient(120deg,#2f3c43,#1c2830);border:1px solid #67767a;border-radius:7px;padding:20px 23px}
+.eoa-studies-head h2{font:normal 28px Georgia,serif;margin:9px 0;color:#f3e3c5}.eoa-studies-head p{max-width:640px;font-size:12px;color:#b4c0c1;line-height:1.55}
+.eoa-studies-gold{white-space:nowrap;color:#edcf8f;border:1px solid #776b51;padding:9px 13px;border-radius:4px;background:#182126}
+.eoa-studies-section{margin-top:25px}.eoa-studies-section-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:12px}
+.eoa-studies-section-head h3{font:normal 23px Georgia,serif;color:#ecddc2;margin:0}.eoa-studies-section-head small{color:#b0bcbd}
+.eoa-studies-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.eoa-study-card{border:1px solid #657276;border-radius:6px;background:linear-gradient(150deg,#283840,#18252d);padding:15px;display:flex;flex-direction:column;min-height:213px}
+.eoa-study-card.learned{border-color:#627b69;background:linear-gradient(150deg,#2c3938,#19292c)}
+.eoa-study-title{display:flex;align-items:center;gap:13px}.eoa-study-title img{width:60px;height:60px;object-fit:contain;flex:none}.eoa-study-title h3{font:normal 20px Georgia,serif;margin:0;color:#f0dfc2}.eoa-study-title small{color:#a4b5b9;font-size:11px}
+.eoa-study-card p{flex:1;font-size:12px;line-height:1.5;color:#bbc6c5}
+.eoa-study-card button{width:100%;min-height:38px}.eoa-study-card button:disabled{border:1px solid #546b60;background:#2d4039;color:#afcdb8;opacity:1;cursor:default}
+.eoa-study-card:not(.learned) button:disabled{background:#303738;border-color:#4a5959;color:#9ba7a8}
+.eoa-studies-complete{padding:19px;border:1px solid #6c775f;border-radius:6px;background:#24352c;color:#b9dfc0}
+.eoa-studies-note{font-size:12px;color:#aab9b8;margin-top:25px}
+/* Blacksmith */
+.eoa-smith-page{position:relative;color:#e9e1d5;border:1px solid #68716f;border-radius:9px;overflow:hidden;background:#152028;isolation:isolate}
+.eoa-smith-page::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#10161a22,#10161aaa 33%,#10161ae3 90%),url('../assets/artwork/greyhaven-blacksmith.webp') center top/cover no-repeat;opacity:1}
+.smith-hero{position:relative;min-height:300px;display:flex;align-items:flex-end;background:linear-gradient(90deg,#090e14b8,transparent 84%)}
+.smith-hero-copy{padding:23px 27px;background:linear-gradient(90deg,#111c23dd,#111c2300 95%)}
+.smith-hero h2{font:normal 36px Georgia,serif;margin:8px 0;color:#f2e3c8}.smith-hero p{margin:0;font-size:14px;color:#d4ddd7}
+.smith-hero blockquote{font:italic 14px Georgia,serif;color:#e6c693;margin:12px 0 0;border-left:2px solid #d3a866;padding-left:11px}
+.smith-shop-shell{margin:0 18px 20px;border:1px solid #696d69;border-radius:8px;background:#192228ed;box-shadow:0 16px 45px #0009;backdrop-filter:blur(7px)}
+.smith-shop-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px;border-bottom:1px solid #4c565a;background:#243037aa}
+.smith-tab-buttons{display:flex;gap:8px}.smith-tab-buttons button{border:1px solid #5a6569;border-radius:5px;background:#253239;color:#d6dfdc;padding:10px 15px;cursor:pointer}
+.smith-tab-buttons button[aria-selected=true]{border-color:#d3ac67;background:#494031;color:#f6ddac}
+.smith-player-gold{color:#f1d7a0;padding:9px 12px;border:1px solid #756848;border-radius:5px;white-space:nowrap;background:#182127}
+#smithMainContent{padding:18px}.smith-panel-heading{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:16px}
+.smith-panel-heading h2{font:normal 24px Georgia,serif;color:#e9d9b9;margin:6px 0 0}.smith-panel-heading small{color:#b1c0be}
+.smith-sale-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(225px,31%);gap:13px;align-items:start}
+.smith-stash-panel,.smith-basket-panel{background:#1c292fec;border:1px solid #4e6165;border-radius:6px;padding:14px;min-width:0}
+.smith-filter-toolbar{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px}.smith-filter-toolbar label{display:grid;gap:5px;font-size:10px;color:#c2c9c8}
+.smith-filter-toolbar input,.smith-filter-toolbar select{width:100%;min-width:0;border:1px solid #627478;border-radius:4px;background:#131e24;color:#e4e5dc;padding:9px 7px;font-size:12px}
+.smith-categories{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}.smith-categories button{background:#24333a;border:1px solid #55666b;border-radius:5px;color:#c5d0d0;padding:6px 9px;font-size:11px;cursor:pointer}
+.smith-categories button[aria-pressed=true]{background:#4c4030;border-color:#cbac73;color:#f2ddb0}
+.smith-result-summary{font-size:11px;color:#b3c0c0;margin:13px 0}
+.smith-gear-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.smith-item-card{display:flex;flex-direction:column;align-items:stretch;text-align:left;gap:9px;min-width:0;min-height:145px;background:#243138;border:1px solid #536468;border-radius:5px;color:#e9e1d5;padding:12px;cursor:pointer}
+.smith-item-card.selected{border-color:#dfb970;background:#394039;box-shadow:inset 0 0 0 1px #dbb16f44}
+.smith-card-top{display:flex;align-items:center;gap:8px}.smith-card-top svg{height:23px;width:23px;flex:none;color:#dfbd80}.smith-card-top small{font-size:10px;flex:1;color:#aebebd}
+.smith-card-top b{color:#e7cf9b;font-size:12px}.smith-item-name{font:normal 17px/1.2 Georgia,serif}
+.smith-item-name.smith-common,.smith-basket-line .smith-common{color:#e2daca}.smith-item-name.smith-uncommon,.smith-basket-line .smith-uncommon{color:#91cb96}.smith-item-name.smith-rare,.smith-basket-line .smith-rare{color:#89b7fa}.smith-item-name.smith-epic,.smith-basket-line .smith-epic{color:#c6a0ff}
+.smith-tags{display:flex;gap:5px;flex-wrap:wrap}.smith-rarity,.smith-tier{border:1px solid #77817a;border-radius:3px;padding:4px 5px;background:#303c3c;font:9px system-ui;text-transform:uppercase;letter-spacing:.7px;color:#e2daca}
+.smith-rarity.smith-uncommon{color:#91cb96;border-color:#568a61}.smith-rarity.smith-rare{color:#89b7fa;border-color:#5881bd}.smith-rarity.smith-epic{color:#c6a0ff;border-color:#8867b4}
+.smith-card-action{border-top:1px solid #506065;padding-top:8px;margin-top:auto;color:#e2c68d;font-size:11px}
+.smith-basket-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.smith-basket-head h3{font:normal 22px Georgia,serif;color:#eddfbe;margin:0}.smith-basket-head small{color:#bed0cb}
+.smith-basket-panel>p{font-size:12px;line-height:1.45;color:#b2c0c0}
+.smith-basket-lines{display:grid;gap:7px;max-height:295px;overflow:auto;margin:16px 0}
+.smith-basket-line{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid #475559;padding-bottom:7px}
+.smith-basket-line strong{display:block;font-size:12px}.smith-basket-line small{display:block;font-size:10px;color:#a2b4b4;margin-top:4px}
+.smith-basket-line>span:last-child{display:flex;align-items:center;white-space:nowrap;color:#e9d4a1;font-size:11px}
+.smith-basket-line button{margin-left:7px;border:1px solid #57696b;color:#e0dfd3;background:#243238;border-radius:4px;cursor:pointer}
+.smith-basket-total{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 0;border-top:1px solid #687169;color:#d3decf;font-size:12px}
+.smith-basket-total strong{color:#f2d99d;font-size:18px}.smith-checkout{width:100%}.smith-zero-note{display:block;margin-top:10px;color:#b1bbb8;font-size:11px}
+.smith-buy-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.smith-buy-card{display:flex;align-items:center;gap:9px;text-align:left;min-width:0;padding:10px;background:#253239;border:1px solid #536468;border-radius:5px;color:#ede4d4;cursor:pointer}
+.smith-buy-card.selected{background:#454037;border-color:#dbb673}.smith-buy-card svg{width:29px;height:29px;flex:none;color:#e9c58c}
+.smith-buy-card strong{font-size:13px;display:block}.smith-buy-card small{font-size:10px;color:#a9c6b2}
+.smith-buy-detail{margin-top:15px;padding:16px;border:1px solid #5d6a67;border-radius:6px;background:#1c292eea}
+.smith-item-ident{display:flex;align-items:center;gap:15px}.smith-item-ident>svg{width:60px;height:60px;color:#e3bd79;padding:10px;border:1px solid #6f725e;background:#323e3c;border-radius:5px}
+.smith-item-ident h3{font:normal 22px Georgia,serif;color:#e9dbc3;margin:0 0 8px}
+.smith-buy-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.smith-buy-stats>div{padding:13px;border:1px solid #4c5a5f;border-radius:5px;background:#172229}
+.smith-buy-stats small{font-size:10px;color:#d3b77e;text-transform:uppercase;letter-spacing:.8px}.smith-buy-stats p,.smith-buy-stats li{color:#c0ccca;font-size:12px}.smith-buy-stats ul{padding-left:18px;margin-bottom:0}
+.smith-buy-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #506066;padding-top:14px}.smith-buy-bottom p{font-size:12px;color:#c6cfcd;max-width:430px}
+.smith-shop-footer{display:flex;justify-content:space-between;align-items:center;gap:9px;border-top:1px solid #596464;padding:12px 16px;color:#bbc5c3;font-size:11px}
+.smith-shop-footer button{border:1px solid #69736f;background:#263339;color:#ead7ad;padding:8px;border-radius:4px;cursor:pointer}
+.smith-checkout-overlay{position:fixed;inset:0;z-index:999;background:#070d13dc;display:grid;place-items:center;padding:12px}
+.smith-checkout-dialog{background:#203039;border:1px solid #b99a62;border-radius:7px;padding:24px;max-width:410px;width:100%;box-shadow:0 22px 60px #000c}
+.smith-checkout-dialog h3{font:normal 24px Georgia,serif;color:#f2dfb7;margin:0 0 10px}
+.smith-checkout-dialog p{color:#c1ccc9;font-size:13px}.smith-checkout-dialog>strong{display:block;color:#f0d7a1;font-size:24px;margin:14px 0}
+.smith-checkout-actions{display:flex;justify-content:space-between;gap:8px}
+@media(max-width:900px){.smith-sale-layout{grid-template-columns:1fr}.smith-basket-lines{max-height:220px}}
+@media(max-width:690px){.eoa-creator .starter-ability-grid,.eoa-studies-cards{grid-template-columns:1fr}.eoa-creator .starter-ability{min-height:170px}.eoa-creator .creator-section-head,.eoa-studies-section-head{align-items:flex-start;flex-direction:column;gap:3px}.eoa-creator .classes.class-select{grid-template-columns:1fr}.eoa-creator .classcard .portrait{height:95px}.eoa-creator .classcard .portrait svg{height:95px}.eoa-studies-head{flex-wrap:wrap}.smith-buy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.eoa-creator{padding:15px 10px}.eoa-creator .classcard .copy p{display:none}.eoa-creator .starter-ability-top img{width:53px;height:53px}.creator-name-dialog{padding:20px}.creator-name-actions button{min-width:0}.smith-hero{min-height:180px}.smith-hero h2{font-size:27px}.smith-hero-copy{padding:15px}.smith-shop-shell{margin:0 7px 10px}#smithMainContent{padding:10px}.smith-gear-grid{grid-template-columns:1fr}.smith-filter-toolbar{grid-template-columns:1fr 1fr}.smith-filter-toolbar label:first-child{grid-column:1/-1}.smith-panel-heading{align-items:flex-start;flex-direction:column}.smith-buy-stats{grid-template-columns:1fr}.smith-buy-bottom{flex-direction:column;align-items:stretch}.smith-shop-header{flex-wrap:wrap}.smith-shop-footer{flex-wrap:wrap}}

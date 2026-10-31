@@ -1,0 +1,9 @@
+/* v0.1.28: embedded hero art and unified player contact effects */
+/* Spell visuals sit above portraits (7) and below combat dialogs (45+). */
+.player-animation-overlay{position:absolute;inset:0;z-index:9;pointer-events:none}
+.hero-motion{height:100%;width:100%;display:flex;align-items:flex-end;justify-content:center;transform-origin:50% 92%;will-change:transform}
+.combat-portrait>.hero-motion>svg{height:202.5px;width:162px;max-width:100%;animation:none;flex-shrink:0;overflow:visible}
+.portrait>svg{width:100px;height:125px;max-width:100%;animation:none}
+@media(max-width:500px){.combat-portrait>.hero-motion>svg{height:148.5px;width:118.8px}
+.portrait>svg{height:110px;width:88px}}
+

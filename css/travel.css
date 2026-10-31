@@ -1,0 +1,77 @@
+/* Approved destination scenery, grounded gallop and rider motion. */
+
+#emberwild-travel{padding:12px;font:14px/1.5 system-ui,sans-serif;color:#eae4d8}#emberwild-travel *{box-sizing:border-box}#emberwild-travel .window{max-width:704px;margin:auto;background:#101c2a;border:1px solid #465b70;border-radius:10px;overflow:hidden}#emberwild-travel header{padding:20px 22px 14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center}#emberwild-travel .eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#b5c3cf}#emberwild-travel h2{font:25px/1.3 Georgia,serif;margin:4px 0 0}#emberwild-travel select{background:#213347;color:#e1e7ed;border:1px solid #586d83;border-radius:5px;padding:9px;font:13px system-ui;max-width:100%}#emberwild-travel .scene{--sky:#233d44;--haze:#8d9c79;--far:#344f48;--mid:#223b32;--near:#101f1e;position:relative;height:330px;overflow:hidden;background:linear-gradient(var(--sky),var(--haze));isolation:isolate}#emberwild-travel .scene.crypt{--sky:#252d44;--haze:#8697aa;--far:#4c5968;--mid:#303e4c;--near:#17212c}#emberwild-travel .scene.mine{--sky:#283340;--haze:#9b8a72;--far:#615e57;--mid:#3c4241;--near:#212b2c}#emberwild-travel .scene.moon{--sky:#1b3046;--haze:#8aada1;--far:#365e59;--mid:#224842;--near:#102e2b}#emberwild-travel .scene.fire{--sky:#382b38;--haze:#c58a61;--far:#68504c;--mid:#422f34;--near:#211f27}#emberwild-travel .scene.coast{--sky:#1b3d53;--haze:#8cbbc4;--far:#436e80;--mid:#254957;--near:#152d39}#emberwild-travel .moonlight{position:absolute;left:72%;top:25px;width:65px;height:65px;border-radius:50%;background:#e5dfbd;box-shadow:0 0 70px 35px #e5dfbd22;opacity:.7}#emberwild-travel .land{position:absolute;inset:0;width:200%;height:100%;fill:var(--far)}#emberwild-travel .middle{fill:var(--mid)}#emberwild-travel .front{fill:var(--near)}#emberwild-travel .playing .far{animation:ewland 36s linear infinite}#emberwild-travel .playing .middle{animation:ewland 15s linear infinite}#emberwild-travel .playing .front{animation:ewland 5s linear infinite}#emberwild-travel .road{position:absolute;bottom:0;width:200%;height:54px;background:repeating-linear-gradient(170deg,transparent 0 43px,#d0bf9820 45px 47px,transparent 49px 92px),linear-gradient(#94826740,#192729)}#emberwild-travel .playing .road{animation:ewland 2s linear infinite}#emberwild-travel .rider{position:absolute;left:40%;bottom:34px;width:210px;height:180px;transform:translateX(-50%);overflow:visible;fill:#0a141b;filter:drop-shadow(0 5px 3px #08101966)}#emberwild-travel .leg{transform-box:fill-box;transform-origin:50% 0}#emberwild-travel .playing .leg.a{animation:ewleg .65s ease-in-out infinite alternate}#emberwild-travel .playing .leg.b{animation:ewleg .65s ease-in-out infinite alternate-reverse}#emberwild-travel .playing .horse-body{animation:ewbob .65s ease-in-out infinite}#emberwild-travel .playing .cloak{animation:ewcloak .65s ease-in-out infinite alternate;transform-origin:104px 81px}#emberwild-travel .mist{position:absolute;inset:35% -10% 10%;background:radial-gradient(ellipse at 30% 70%,#d9e4df25,transparent 55%);pointer-events:none}#emberwild-travel .vignette{position:absolute;inset:0;box-shadow:inset 0 0 75px 20px #07132180;pointer-events:none;background:linear-gradient(transparent 70%,#101c2a80)}#emberwild-travel .arrival{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#0b1824e8;padding:20px;opacity:0;pointer-events:none;transition:opacity .8s}#emberwild-travel .arrived .arrival{opacity:1}#emberwild-travel .arrival strong{font:30px Georgia,serif;font-weight:400;color:#efe1b6}#emberwild-travel .arrival span{margin-top:10px;color:#c0cdd6;font-size:13px}#emberwild-travel footer{padding:18px 22px 22px}#emberwild-travel .trip{display:flex;justify-content:space-between;gap:12px;color:#c4d0dc;font-size:12px;margin-bottom:10px}#emberwild-travel .track{height:4px;background:#324254;overflow:hidden;border-radius:2px}#emberwild-travel .fill{width:0;height:100%;background:#d6c18f;transition:width .15s linear}#emberwild-travel .bottom{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-top:16px}#emberwild-travel .flavor{font:italic 14px/1.5 Georgia,serif;color:#b9c6cf;margin:0;max-width:430px}#emberwild-travel button{font:13px system-ui;background:#87b9f3;color:#102536;border:1px solid #a5cbf5;padding:10px 17px;border-radius:5px;white-space:nowrap}#emberwild-travel [hidden]{display:none!important}@keyframes ewland{to{transform:translateX(-50%)}}@keyframes ewleg{from{transform:rotate(-22deg)}to{transform:rotate(24deg)}}@keyframes ewbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}@keyframes ewcloak{from{transform:skewX(-3deg)}to{transform:skewX(4deg)}}@media(max-width:480px){#emberwild-travel{padding:4px}#emberwild-travel header{padding:16px}#emberwild-travel header label{width:100%}#emberwild-travel select{width:100%;font-size:16px}#emberwild-travel .scene{height:280px}#emberwild-travel .rider{left:42%;width:175px;height:150px}#emberwild-travel .bottom{align-items:flex-start;flex-direction:column}#emberwild-travel .trip{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){#emberwild-travel .playing *{animation:none!important}#emberwild-travel .arrival,#emberwild-travel .fill{transition:none}}
+
+#emberwild-travel .land{width:300%;max-width:none;left:0;right:auto;will-change:transform}
+#emberwild-travel .playing .far{animation-duration:45s}
+#emberwild-travel .playing .middle{animation-duration:19s}
+#emberwild-travel .playing .front{animation-duration:6s}
+#emberwild-travel .road{width:300%;will-change:transform}
+#emberwild-travel .scene[data-region="0"]{--sky:#23372e;--haze:#7c8665;--far:#475b43;--mid:#293e2c;--near:#111f1a}
+#emberwild-travel .scene[data-region="1"] .moonlight{width:50px;height:50px;background:#ccd6e8;box-shadow:0 0 65px #c9d6ea55}
+#emberwild-travel .scene[data-region="2"] .moonlight{display:none}
+#emberwild-travel .scene[data-region="3"] .moonlight{background:#e0ece0;box-shadow:0 0 80px 20px #c0ead644}
+#emberwild-travel .scene[data-region="4"] .moonlight,#emberwild-travel .scene[data-region="6"] .moonlight{background:#e7a16c;box-shadow:0 0 80px 30px #ed945033;opacity:.4}
+#emberwild-travel .scene[data-region="5"] .moonlight{background:#cce5de;box-shadow:0 0 80px #b0d8dd66}
+#emberwild-travel .scene[data-region="1"] .mist{background:linear-gradient(transparent,#c5d6e42b,transparent);inset:50% 0 15%}
+#emberwild-travel .scene[data-region="4"] .road,#emberwild-travel .scene[data-region="6"] .road{background:repeating-linear-gradient(165deg,transparent 0 75px,#c97e4d33 76px 78px,transparent 80px 140px),linear-gradient(#5f45364a,#201d24)}
+@keyframes ewland{from{transform:translate3d(0,0,0)}to{transform:translate3d(-33.3333333333%,0,0)}}
+
+#emberwild-travel .rider{width:250px;height:200px;bottom:23px;left:41%}
+#emberwild-travel .cloak{transform-box:view-box}
+#emberwild-travel .playing .horse-body{animation:ew-new-bob .7s ease-in-out infinite}
+#emberwild-travel .playing .leg.a{animation-duration:.7s}
+#emberwild-travel .playing .leg.b{animation-duration:.7s}
+#emberwild-travel .playing .cloak{transform-origin:137px 70px;animation:ew-new-cloak .7s ease-in-out infinite alternate}
+@keyframes ew-new-bob{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-3px) rotate(.4deg)}}
+@keyframes ew-new-cloak{from{transform:skewY(-2deg) rotate(-1deg)}to{transform:skewY(2deg) rotate(1deg)}}
+@media(max-width:480px){#emberwild-travel .rider{width:205px;height:164px;bottom:24px;left:42%}}
+
+#emberwild-travel .land{width:1200%}
+#emberwild-travel .playing .far{animation-duration:64s}
+#emberwild-travel .playing .middle{animation-duration:24s}
+#emberwild-travel .playing .front{animation-duration:7.2s}
+#emberwild-travel .playing .road{animation-duration:.85s}
+#emberwild-travel .playing .leg.a{animation:ew-quick-leg .42s linear infinite}
+#emberwild-travel .playing .leg.b{animation:ew-quick-leg .42s linear infinite;animation-delay:-.21s}
+#emberwild-travel .playing .horse-body{animation:ew-fast-gallop .42s ease-in-out infinite;transform-origin:150px 135px}
+#emberwild-travel .playing .cloak{animation:ew-fast-cloak .42s ease-in-out infinite alternate;transform-origin:137px 70px}
+@keyframes ew-quick-leg{0%{transform:rotate(-28deg)}30%{transform:rotate(32deg)}55%{transform:rotate(19deg) scaleY(.86)}80%{transform:rotate(-22deg) scaleY(.93)}100%{transform:rotate(-28deg)}}
+@keyframes ew-fast-gallop{0%,100%{transform:translateY(1px) rotate(-1deg)}35%{transform:translateY(-6px) rotate(1deg)}65%{transform:translateY(-2px) rotate(.5deg)}}
+@keyframes ew-fast-cloak{from{transform:skewY(-3deg) rotate(-2deg)}to{transform:skewY(4deg) rotate(2deg)}}
+
+#emberwild-travel .playing .horse-body,#emberwild-travel .playing .leg{animation:none!important}
+#emberwild-travel .horse-body,#emberwild-travel .rider-seat{transform-box:view-box;transform-origin:0 0}
+#emberwild-travel .playing .cloak{animation:ew-weighted-cloak .34s ease-in-out infinite;transform-origin:137px 70px}
+@keyframes ew-weighted-cloak{0%,100%{transform:rotate(-1deg) skewY(-1deg)}32%{transform:rotate(1.5deg) skewY(2deg)}76%{transform:rotate(-2deg) skewY(-2deg)}}
+
+#emberwild-travel .rider{width:275px;height:220px;bottom:22px}
+#emberwild-travel .playing .cloak{animation:ew-driven-cloak .34s ease-in-out infinite;transform-origin:137px 70px}
+@keyframes ew-driven-cloak{0%,100%{transform:rotate(-2deg)}22%{transform:rotate(1deg)}55%{transform:rotate(-4deg)}82%{transform:rotate(-3deg)}}
+@media(max-width:480px){#emberwild-travel .rider{width:225px;height:180px;bottom:22px}}
+
+#emberwild-travel .playing .horse-leg{filter:blur(.45px)}
+#emberwild-travel .playing .front{filter:blur(.4px)}
+#emberwild-travel .playing .road{filter:blur(.3px)}
+@media(prefers-reduced-motion:reduce){#emberwild-travel .horse-leg,#emberwild-travel .front,#emberwild-travel .road{filter:none!important}}
+
+#emberwild-travel .playing .road{animation-duration:1.8s}
+#emberwild-travel .playing .cloak{animation:ew-reference-cloak .48s ease-in-out infinite;transform-origin:137px 70px}
+#emberwild-travel .playing .horse-leg{filter:blur(.2px)}
+@keyframes ew-reference-cloak{0%,100%{transform:rotate(-1deg)}30%{transform:rotate(-2.5deg)}65%{transform:rotate(.7deg)}85%{transform:rotate(-2deg)}}
+
+#emberwild-travel .playing .rider-seat .cloak{animation:none!important}
+#emberwild-travel .rider{width:290px;height:232px;bottom:22px}
+#emberwild-travel .reference-horse{filter:blur(.12px)}
+@media(max-width:480px){#emberwild-travel .rider{width:235px;height:188px;bottom:22px}}
+
+#emberwild-travel .rider{width:270px;height:216px;bottom:23px}
+@media(max-width:480px){#emberwild-travel .rider{width:219px;height:175.2px;bottom:23px}}
+
+#emberwild-travel .playing .far{animation-duration:55.65s}
+#emberwild-travel .playing .middle{animation-duration:20.87s}
+#emberwild-travel .playing .front{animation-duration:6.26s}
+#emberwild-travel .playing .road{animation-duration:1.565s}
+#emberwild-travel .rider{filter:none}
+
+#emberwild-travel{padding:0;margin-bottom:22px}#emberwild-travel .window{max-width:none}#emberwild-travel .travel-header{padding:20px 22px 14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center;border:0;background:transparent;width:auto;margin:0}#emberwild-travel footer{padding:16px 22px}#emberwild-travel .trip{flex-wrap:wrap}#emberwild-travel .scene{border-radius:0}

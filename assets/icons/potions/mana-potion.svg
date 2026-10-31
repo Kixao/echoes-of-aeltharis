@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Mana potion, glowing blue elixir in a tall faceted crystal flask">
+<defs>
+  <radialGradient id="mp-aura"><stop stop-color="#62cfff" stop-opacity=".7"/><stop offset=".46" stop-color="#427cf0" stop-opacity=".31"/><stop offset="1" stop-color="#4a4ac7" stop-opacity="0"/></radialGradient>
+  <linearGradient id="mp-glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0faff" stop-opacity=".72"/><stop offset=".28" stop-color="#719cbb" stop-opacity=".28"/><stop offset=".7" stop-color="#34547b" stop-opacity=".19"/><stop offset="1" stop-color="#c0f6ff" stop-opacity=".7"/></linearGradient>
+  <linearGradient id="mp-blue" x1=".12" y1="0" x2=".9" y2="1"><stop stop-color="#abfaff"/><stop offset=".2" stop-color="#47cafd"/><stop offset=".5" stop-color="#2265e0"/><stop offset=".83" stop-color="#243d9c"/><stop offset="1" stop-color="#171a5a"/></linearGradient>
+  <radialGradient id="mp-core"><stop stop-color="#fff" stop-opacity=".94"/><stop offset=".15" stop-color="#9bfaff" stop-opacity=".86"/><stop offset=".5" stop-color="#58a9ff" stop-opacity=".34"/><stop offset="1" stop-color="#7b7cff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="mp-silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#536987"/><stop offset=".22" stop-color="#e0f6ff"/><stop offset=".49" stop-color="#87a9c5"/><stop offset=".73" stop-color="#394b6a"/><stop offset="1" stop-color="#c4e9fa"/></linearGradient>
+  <linearGradient id="mp-gem" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ebffff"/><stop offset=".27" stop-color="#81f7ff"/><stop offset=".68" stop-color="#5594f4"/><stop offset="1" stop-color="#6148c9"/></linearGradient>
+  <filter id="mp-blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/></filter>
+  <clipPath id="mp-inside"><path d="M55 39 H73 L77 45 L93 62 L90 87 L65 118 L38 87 L35 62 L51 45Z"/></clipPath>
+</defs>
+<!-- Ethereal halo, transparent outside -->
+<ellipse cx="64" cy="74" rx="62" ry="58" fill="url(#mp-aura)"/>
+<ellipse cx="64" cy="119" rx="24" ry="5" fill="#070d30" opacity=".54" filter="url(#mp-blur)"/>
+<!-- Tall faceted elixir flask -->
+<path d="M55 39 H73 L77 45 L93 62 L90 87 L65 118 L38 87 L35 62 L51 45Z" fill="#1b2b52" stroke="#b7dbea" stroke-width="3.5" stroke-linejoin="round"/>
+<g clip-path="url(#mp-inside)">
+  <path d="M30 68 Q48 63 64 69 Q82 75 99 67 L100 127 L30 127Z" fill="url(#mp-blue)"/>
+  <path d="M35 69 Q52 64 66 70 Q83 75 95 70" fill="none" stroke="#b6fcff" stroke-width="2.4" opacity=".83"/>
+  <ellipse cx="64" cy="83" rx="29" ry="35" fill="url(#mp-core)" opacity=".73"/>
+  <!-- Two opposing currents, enchanted but static -->
+  <path d="M46 97 C42 84 57 82 68 86 S88 88 82 75 S62 62 56 76" fill="none" stroke="#b7fbff" stroke-width="4.2" stroke-linecap="round" opacity=".9"/>
+  <path d="M78 99 C86 86 74 84 60 87 S43 77 51 69" fill="none" stroke="#6b9fff" stroke-width="2.7" stroke-linecap="round" opacity=".88"/>
+  <path d="M50 86 Q65 78 77 91" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+  <circle cx="55" cy="80" r="2.7" fill="#f0ffff"/>
+  <circle cx="78" cy="96" r="2.1" fill="#b6fbff"/>
+  <circle cx="63" cy="104" r="1.6" fill="#eafaff"/>
+  <circle cx="77" cy="68" r="1.5" fill="#b4efff"/>
+  <path d="M45 62 L51 97 L64 116" fill="none" stroke="#d3f7ff" stroke-width="4.5" opacity=".24"/>
+</g>
+<path d="M55 39 H73 L77 45 L93 62 L90 87 L65 118 L38 87 L35 62 L51 45Z" fill="url(#mp-glass)" stroke="#e0f7ff" stroke-width="1.3" opacity=".77" stroke-linejoin="round"/>
+<!-- Angular facet planes -->
+<path d="M35 62 L51 45 L59 67 L50 93 L65 118" fill="none" stroke="#d5faff" stroke-width="2" opacity=".52"/>
+<path d="M93 62 L77 45 L69 67 L79 93 L65 118" fill="none" stroke="#7899cd" stroke-width="2" opacity=".55"/>
+<path d="M59 67 L69 67 L79 93 L65 118 L50 93Z" fill="none" stroke="#c4e4ff" stroke-width="1.1" opacity=".3"/>
+<!-- Silver neck, ornate bottle clasp -->
+<path d="M55 26 H73 L74 44 Q64 48 54 44Z" fill="#243954" stroke="url(#mp-silver)" stroke-width="3"/>
+<path d="M52 39 Q64 42 76 39" fill="none" stroke="#ecfbff" stroke-width="2.2"/>
+<path d="M51 44 L45 52 M77 44 L83 52" stroke="url(#mp-silver)" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M51 24 H77 V30 H51Z" fill="url(#mp-silver)" stroke="#eafaff" stroke-width="1.2"/>
+<path d="M58 17 L64 5 L70 17 L66 24 H62Z" fill="url(#mp-gem)" stroke="#e0fcff" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M64 7 V20" stroke="#fff" stroke-opacity=".68" stroke-width="1.2"/>
+<!-- front star sigil -->
+<path d="M64 74 L67 81 L74 84 L67 87 L64 94 L61 87 L54 84 L61 81Z" fill="#e9ffff" opacity=".91"/>
+<!-- Peripheral magical sparkles -->
+<path d="M24 37 L26 42 L31 44 L26 46 L24 51 L22 46 L17 44 L22 42Z" fill="#a5f6ff" opacity=".95"/>
+<path d="M105 46 L107 51 L112 53 L107 55 L105 60 L103 55 L98 53 L103 51Z" fill="#bec4ff" opacity=".94"/>
+<circle cx="108" cy="84" r="2" fill="#8de7ff"/><circle cx="19" cy="82" r="1.5" fill="#c6ebff"/>
+</svg>

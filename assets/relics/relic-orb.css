@@ -1,0 +1,39 @@
+
+.eoa-v7{position:relative;width:min(100%,780px);overflow:hidden;border:1px solid #565075;border-radius:18px;background:radial-gradient(ellipse at 50% 46%,#27345e 0%,#171d3a 45%,#0a1024 78%,#080c1a 100%);color:#f8edff;font-family:system-ui,sans-serif;box-shadow:0 20px 60px #0008;isolation:isolate}
+.eoa-v7:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#070b19b5,transparent 30%,transparent 70%,#070b19b5);pointer-events:none}
+.eoa-v7 .header{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 19px 0}.eoa-v7 .eyebrow{font-size:9px;letter-spacing:2px;color:#aab9e0}.eoa-v7 .heading{font:normal 24px Georgia,serif;margin:5px 0 0;color:#ffefff}.eoa-v7 .status{border:1px solid #696c9b;background:#273055;border-radius:22px;padding:7px 11px;font-size:10px;letter-spacing:1px;color:#d5caff;white-space:nowrap}
+.eoa-v7 svg{display:block;width:100%;height:auto;max-height:510px}.eoa-v7 .controls{position:relative;z-index:3;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:0 12px 17px}.eoa-v7 button{font:600 13px system-ui,sans-serif;cursor:pointer;color:#fff;border:1px solid #c1a0ff;border-radius:9px;padding:11px 19px;background:linear-gradient(130deg,#a46ff0,#6548a7);box-shadow:0 5px 25px #b28bfa33}.eoa-v7 button:last-child{background:#1b2546;border-color:#495376;color:#d8e2fb;box-shadow:none}.eoa-v7 button:disabled{opacity:.5;cursor:default}.eoa-v7 button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.eoa-v7 .float{transform-origin:360px 229px;animation:eoa-v7-hover 4s ease-in-out infinite}.eoa-v7 .twinkle{animation:eoa-v7-blink 2.6s ease-in-out infinite}.eoa-v7 .twinkle:nth-child(even){animation-delay:-1.4s}.eoa-v7 .arcane{transform-origin:360px 232px;transition:transform 1.25s ease,opacity 1.2s ease,filter 1.2s ease}.eoa-v7 .aura{transform-origin:360px 232px;animation:eoa-v7-breathe 3s ease-in-out infinite}.eoa-v7 .vortex{transform-origin:360px 232px;animation:eoa-v7-turn 7s linear infinite}.eoa-v7 .vortex.reverse{animation-duration:10s;animation-direction:reverse}.eoa-v7 .stream{animation:eoa-v7-stream 3s linear infinite}.eoa-v7 .stream:nth-child(2){animation-duration:4s;animation-delay:-1.5s}.eoa-v7 .stream:nth-child(3){animation-duration:2.5s;animation-delay:-.5s}.eoa-v7 .pristine{opacity:1}.eoa-v7 .pieces{opacity:0;pointer-events:none}.eoa-v7 .piece-left,.eoa-v7 .piece-right{transform-origin:360px 232px;transition:transform 1.25s cubic-bezier(.18,.73,.2,1),opacity 1.25s}.eoa-v7 .fractures{opacity:0;stroke-dasharray:600;stroke-dashoffset:600}.eoa-v7 .fractures path{filter:drop-shadow(0 0 4px #c6daff)}.eoa-v7 .charge-circle{opacity:0;transform-origin:360px 232px}
+.eoa-v7.is-charge .float,.eoa-v7.is-fracture .float{animation:eoa-v7-rattle .09s linear infinite}.eoa-v7.is-charge .charge-circle,.eoa-v7.is-fracture .charge-circle{opacity:.75;animation:eoa-v7-charge .42s ease-in-out infinite alternate}.eoa-v7.is-charge .vortex,.eoa-v7.is-fracture .vortex{animation-duration:1.25s}.eoa-v7.is-charge .aura,.eoa-v7.is-fracture .aura{animation-duration:.45s}
+.eoa-v7.is-open .pristine{opacity:0}.eoa-v7.is-open .pieces{opacity:1}.eoa-v7.is-fracture .fractures{opacity:1;animation:eoa-v7-crack .62s ease-out both}.eoa-v7.is-open .fractures{opacity:0;transition:opacity .15s}
+.eoa-v7.is-open .float{animation:none}.eoa-v7.is-open .piece-left{transform:translate(-150px,-36px) rotate(-19deg);opacity:.87}.eoa-v7.is-open .piece-right{transform:translate(150px,-36px) rotate(19deg);opacity:.87}.eoa-v7.is-open .arcane{opacity:0;transform:scale(1.75) rotate(85deg);filter:blur(12px)}
+.eoa-v7 .flash,.eoa-v7 .rays,.eoa-v7 .shockwave,.eoa-v7 .sparks,.eoa-v7 .pillar{opacity:0;pointer-events:none}.eoa-v7 .flash{transform-origin:360px 232px}.eoa-v7.is-open .flash{animation:eoa-v7-flash 1.04s ease-out both}.eoa-v7 .rays{transform-origin:360px 232px}.eoa-v7.is-open .rays{animation:eoa-v7-rays 1.02s ease-out both}.eoa-v7 .shockwave{transform-origin:360px 232px}.eoa-v7.is-open .shockwave.one{animation:eoa-v7-shock 1.5s ease-out .12s both}.eoa-v7.is-open .shockwave.two{animation:eoa-v7-shock 1.7s ease-out .3s both}.eoa-v7 .sparks{transform-origin:360px 232px}.eoa-v7.is-open .sparks{animation:eoa-v7-spark .95s cubic-bezier(.13,.72,.24,.99) .05s both}.eoa-v7 .pillar{transform-origin:360px 407px}.eoa-v7.is-open .pillar{animation:eoa-v7-pillar 1.65s ease-out both}
+
+/* Individual motes circle inside the orb, independently of the slow swirled magic. */
+.eoa-v7 .ember-track{transform-origin:360px 232px;animation:eoa-v7-turn var(--speed,6s) linear infinite}
+.eoa-v7 .ember-track.reverse{animation-direction:reverse}
+.eoa-v7 .ember-core{filter:drop-shadow(0 0 3px #d1efff);animation:eoa-v7-mote var(--pulse,1.75s) ease-in-out infinite alternate}
+.eoa-v7 .ember-core:nth-child(3n){animation-delay:-.85s}
+.eoa-v7 .ember-trail{stroke-linecap:round;animation:eoa-v7-mote 1.9s ease-in-out infinite alternate}
+.eoa-v7.is-charge .ember-track,.eoa-v7.is-fracture .ember-track{animation-duration:.9s}
+
+/* V7: softly illuminated inner magic, ambient spill on the metallic frame and pedestal. */
+.eoa-v7 .ambient-bloom{transform-origin:360px 232px;transition:opacity 1.3s ease,transform 1.3s ease}
+.eoa-v7 .bloom-aura{transform-origin:360px 232px;animation:eoa-v7-illuminate 3.2s ease-in-out infinite}
+.eoa-v7 .bloom-edge{animation:eoa-v7-glint 3s ease-in-out infinite alternate}
+.eoa-v7 .inner-bloom{transform-origin:360px 232px;animation:eoa-v7-illuminate 2.45s ease-in-out infinite}
+.eoa-v7 .aether-nucleus{transform-origin:360px 232px;animation:eoa-v7-nucleus 2.8s ease-in-out infinite}
+.eoa-v7.is-charge .ambient-bloom,.eoa-v7.is-fracture .ambient-bloom{filter:brightness(1.6)}
+.eoa-v7.is-open .ambient-bloom{opacity:0;transform:scale(1.8)}
+/* V7: one complete uncut SVG source is visible until opening;
+   two V3-style jagged fragment masks replace it only when the shells part. */
+@keyframes eoa-v7-illuminate{0%,100%{opacity:.68;transform:scale(.95)}50%{opacity:1;transform:scale(1.07)}}
+@keyframes eoa-v7-glint{from{opacity:.3}to{opacity:.62}}
+@keyframes eoa-v7-nucleus{0%,100%{opacity:.56;transform:scale(.84)}50%{opacity:.88;transform:scale(1.11)}}
+@keyframes eoa-v7-mote{0%{opacity:.3}100%{opacity:1}}
+@keyframes eoa-v7-hover{0%,100%{transform:translateY(4px)}50%{transform:translateY(-8px)}}@keyframes eoa-v7-rattle{0%,100%{transform:translate(0,0)}25%{transform:translate(3px,1px)}50%{transform:translate(-2px,-2px)}75%{transform:translate(2px,1px)}}@keyframes eoa-v7-turn{to{transform:rotate(360deg)}}@keyframes eoa-v7-breathe{0%,100%{opacity:.52;transform:scale(.9)}50%{opacity:1;transform:scale(1.15)}}@keyframes eoa-v7-stream{to{stroke-dashoffset:-210}}@keyframes eoa-v7-blink{0%,100%{opacity:.24}50%{opacity:1}}@keyframes eoa-v7-charge{from{transform:scale(.88);opacity:.25}to{transform:scale(1.1);opacity:.9}}@keyframes eoa-v7-crack{to{stroke-dashoffset:0}}@keyframes eoa-v7-flash{0%{opacity:0;transform:scale(.05)}16%{opacity:1;transform:scale(1.45)}38%{opacity:.9;transform:scale(1.8)}100%{opacity:0;transform:scale(3.3)}}@keyframes eoa-v7-rays{0%{opacity:0;transform:scale(.3) rotate(0deg)}25%{opacity:1}100%{opacity:0;transform:scale(2.2) rotate(18deg)}}@keyframes eoa-v7-shock{0%{opacity:.9;transform:scale(.2);stroke-width:10px}100%{opacity:0;transform:scale(3.1);stroke-width:1px}}@keyframes eoa-v7-spark{0%{opacity:0;transform:scale(.2) rotate(0)}22%{opacity:1}85%{opacity:.7}100%{opacity:0;transform:scale(2.55) rotate(40deg)}}@keyframes eoa-v7-pillar{0%{opacity:0;transform:scaleX(.1)}21%{opacity:1;transform:scaleX(1.12)}100%{opacity:0;transform:scaleX(1.5)}}
+@media(prefers-reduced-motion:reduce){.eoa-v7 *{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Both crystals stay whole until opening. The stroke itself passes across them. */
+.eoa-v7 .fractures{pointer-events:none}
+.eoa-v7.is-fracture .fractures{filter:drop-shadow(0 0 5px #bff1ff)}

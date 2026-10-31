@@ -1,0 +1,67 @@
+/* v0.0.38 — semantic rarity labels, Tier 1 inspection, relic position, readiness gutters. */
+:root{
+ --rarity-common:#e2daca;
+ --rarity-uncommon:#99daa1;
+ --rarity-rare:#76aff7;
+ --rarity-epic:#bb91fa;
+}
+/* Common keeps the former Common off-white; Uncommon green, Rare blue, Epic purple. */
+.common,.uncommon,.rare,.epic{color:inherit}
+.common,.item.common .item-name,.item.common .rarity,.gear-compare strong.common,
+#gearFloatingLayer h3.common,#gearFloatingLayer h4.common,#gearFloatingLayer .slot strong.common{color:var(--rarity-common)!important}
+.uncommon,.item.uncommon .item-name,.item.uncommon .rarity,.gear-compare strong.uncommon,
+#gearFloatingLayer h3.uncommon,#gearFloatingLayer h4.uncommon,#gearFloatingLayer .slot strong.uncommon{color:var(--rarity-uncommon)!important}
+.rare,.item.rare .item-name,.item.rare .rarity,.gear-compare strong.rare,
+#gearFloatingLayer h3.rare,#gearFloatingLayer h4.rare,#gearFloatingLayer .slot strong.rare{color:var(--rarity-rare)!important}
+.epic,.item.epic .item-name,.item.epic .rarity,.gear-compare strong.epic,
+#gearFloatingLayer h3.epic,#gearFloatingLayer h4.epic,#gearFloatingLayer .slot strong.epic{color:var(--rarity-epic)!important}
+#gearFloatingLayer .item.common,#eoa-quartermaster-game .item.common{border-color:#aaa293;background:radial-gradient(ellipse at 50% 10%,#b5a79026,#17232d 80%)}
+#gearFloatingLayer .item.uncommon,#eoa-quartermaster-game .item.uncommon{border-color:#75aa85;background:radial-gradient(ellipse at 50% 10%,#49856130,#17232d 80%)}
+#gearFloatingLayer .item.rare,#eoa-quartermaster-game .item.rare{border-color:#6599d0;background:radial-gradient(ellipse at 50% 10%,#4174a83b,#17232d 80%)}
+#gearFloatingLayer .item.epic,#eoa-quartermaster-game .item.epic{border-color:#a579e6;background:radial-gradient(ellipse at 50% 10%,#7f5baf42,#17232d 80%)}
+#gearFloatingLayer .slot.common,#eoa-quartermaster-game .slot.common,.departure-gear-slot.common{border-color:#aaa293;color:var(--rarity-common)}
+#gearFloatingLayer .slot.uncommon,#eoa-quartermaster-game .slot.uncommon,.departure-gear-slot.uncommon{border-color:#75aa85;color:var(--rarity-uncommon)}
+#gearFloatingLayer .slot.rare,#eoa-quartermaster-game .slot.rare,.departure-gear-slot.rare{border-color:#6599d0;color:var(--rarity-rare)}
+#gearFloatingLayer .slot.epic,#eoa-quartermaster-game .slot.epic,.departure-gear-slot.epic{border-color:#a579e6;color:var(--rarity-epic)}
+.departure-gear-slot.common strong{color:var(--rarity-common)}
+.departure-gear-slot.uncommon strong{color:var(--rarity-uncommon)}
+.departure-gear-slot.rare strong{color:var(--rarity-rare)}
+.departure-gear-slot.epic strong{color:var(--rarity-epic)}
+#eoa-quartermaster-game .slot.common,#eoa-quartermaster-game .slot.uncommon,#eoa-quartermaster-game .slot.rare,#eoa-quartermaster-game .slot.epic{box-shadow:inset 0 0 0 1px currentColor}
+#eoa-quartermaster-game .rarity-key .common,#gearFloatingLayer .rarity-key .common{color:var(--rarity-common)!important}
+#eoa-quartermaster-game .rarity-key .uncommon,#gearFloatingLayer .rarity-key .uncommon{color:var(--rarity-uncommon)!important}
+#eoa-quartermaster-game .rarity-key .rare,#gearFloatingLayer .rarity-key .rare{color:var(--rarity-rare)!important}
+#eoa-quartermaster-game .rarity-key .epic,#gearFloatingLayer .rarity-key .epic{color:var(--rarity-epic)!important}
+#eoa-quartermaster-game .rarity-key .rare::before,#gearFloatingLayer .rarity-key .rare::before{content:'◆'}
+#eoa-quartermaster-game .rarity-key .epic::before,#gearFloatingLayer .rarity-key .epic::before{content:'✦'}
+#gearFloatingLayer .item.rare svg,#eoa-quartermaster-game .item.rare svg{color:var(--rarity-rare)}
+#gearFloatingLayer .item.epic svg,#eoa-quartermaster-game .item.epic svg{color:var(--rarity-epic)}
+/* Cracked treasure reveal: each grade has distinct illumination and item-name text. */
+.relic-reveal-card.common{border-color:#bfb6a5;background:radial-gradient(ellipse at 50% 8%,#4a4a4df5,#17212bf8 83%);box-shadow:0 0 0 3px #0b1218bb,0 18px 45px #000d,0 0 28px #cdbfa180}
+.relic-reveal-card.uncommon{border-color:#7fdf97;background:radial-gradient(ellipse at 50% 8%,#2b5844f5,#15282af7 82%);box-shadow:0 0 0 3px #397b5390,0 18px 45px #000d,0 0 43px #70d48f9c}
+.relic-reveal-card.rare{border-color:#80beff;background:radial-gradient(ellipse at 50% 8%,#2c537df5,#14253cf7 83%);box-shadow:0 0 0 3px #386ba694,0 18px 45px #000d,0 0 46px #5ca8ffc2}
+.relic-reveal-card.epic{border-color:#ba91ff;background:radial-gradient(ellipse at 50% 8%,#593f7df5,#211c38f7 82%);box-shadow:0 0 0 3px #754bb68a,0 18px 45px #000d,0 0 50px #aa74ffc9,0 0 15px #d3a8ffb2}
+.relic-reveal-card.common strong{color:var(--rarity-common)}
+.relic-reveal-card.uncommon strong{color:var(--rarity-uncommon)}
+.relic-reveal-card.rare strong{color:var(--rarity-rare)}
+.relic-reveal-card.epic strong{color:var(--rarity-epic)}
+.relic-reveal-card.common .relic-reveal-eyebrow{color:#ced3d9}
+.relic-reveal-card.uncommon .relic-reveal-eyebrow{color:#b4f4b5}
+.relic-reveal-card.rare .relic-reveal-eyebrow{color:#b4d8ff}
+.relic-reveal-card.epic .relic-reveal-eyebrow{color:#d8b7ff}
+.relic-reveal-card.common svg{color:var(--rarity-common)}
+.relic-reveal-card.uncommon svg{color:var(--rarity-uncommon)}
+.relic-reveal-card.rare svg{color:var(--rarity-rare)}
+.relic-reveal-card.epic svg{color:var(--rarity-epic)}
+.gear-tier-tag{display:inline-flex;width:max-content;align-items:center;margin:4px 0 7px;padding:3px 7px;border:1px solid #7d8192;border-radius:4px;background:#28333c;color:#d6d9dc;font:700 10px/1.1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+/* Counter is at the top-right corner of the whole inspector, not inline with status. */
+#sepulcher-enemy-symbol-restored .inspector{position:relative}
+#sepulcher-enemy-symbol-restored .dungeon-relics-held{position:absolute;z-index:2;top:12px;right:12px;margin:0}
+#sepulcher-enemy-symbol-restored .inspect-head{padding-right:94px}
+#sepulcher-enemy-symbol-restored .dungeon-status-relic-row{margin-top:8px}
+/* Readiness badges retain a margin from the edges of the combat panel at every width. */
+.arena .encounter-header.combat-round-header{box-sizing:border-box;padding-inline:22px;margin-inline:8px;gap:12px;justify-content:center}
+.arena .combat-round-indicator{padding-inline:16px}
+@media(max-width:760px){#sepulcher-enemy-symbol-restored .inspect-head{padding-right:14px}#sepulcher-enemy-symbol-restored .inspector:has(.dungeon-relics-held:not([hidden])) .inspect-body{padding-top:45px}}
+@media(max-width:540px){.arena .encounter-header.combat-round-header{padding-inline:12px;margin-inline:4px;gap:7px}.arena .combat-round-indicator{min-width:0;flex:1;padding-inline:8px}}
+@media(max-width:480px){#sepulcher-enemy-symbol-restored .inspect-head{padding-right:93px}#sepulcher-enemy-symbol-restored .inspector:has(.dungeon-relics-held:not([hidden])) .inspect-body{padding-top:14px}}

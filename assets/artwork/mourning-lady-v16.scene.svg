@@ -1,0 +1,539 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene eoa-ml-scene" viewBox="0 0 720 420" role="img" aria-label="The Mourning Lady sprite and battle effects; target player rendered by host game" preserveAspectRatio="xMidYMid meet">
+<defs>
+<linearGradient id="ml-veil" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bbc8d3" stop-opacity=".7"/><stop offset=".4" stop-color="#7f879c" stop-opacity=".47"/><stop offset="1" stop-color="#4f4568" stop-opacity=".05"/></linearGradient>
+<linearGradient id="ml-robe" x1="0" y1="0" x2=".75" y2="1"><stop stop-color="#e8e9e1"/><stop offset=".34" stop-color="#a5adb7"/><stop offset=".75" stop-color="#606c80"/><stop offset="1" stop-color="#35374d" stop-opacity=".12"/></linearGradient>
+<linearGradient id="ml-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3f2e9"/><stop offset=".55" stop-color="#a8b9bd"/><stop offset="1" stop-color="#687d92"/></linearGradient>
+<linearGradient id="ml-gold"><stop stop-color="#72604f"/><stop offset=".35" stop-color="#d5c5a5"/><stop offset=".7" stop-color="#827969"/><stop offset="1" stop-color="#f1e0b4"/></linearGradient>
+<radialGradient id="ml-aura"><stop stop-color="#b7e7f7" stop-opacity=".35"/><stop offset=".55" stop-color="#9f9dc9" stop-opacity=".17"/><stop offset="1" stop-color="#9db9ed" stop-opacity="0"/></radialGradient>
+<radialGradient id="ml-hollow"><stop stop-color="#b3eafa"/><stop offset=".2" stop-color="#71cee9"/><stop offset=".65" stop-color="#4b7ba9" stop-opacity=".5"/><stop offset="1" stop-color="#4b7ba9" stop-opacity="0"/></radialGradient>
+<linearGradient id="ml-mist"><stop stop-color="#c7e8fa" stop-opacity="0"/><stop offset=".5" stop-color="#b5c7dc" stop-opacity=".45"/><stop offset="1" stop-color="#9aa9c4" stop-opacity="0"/></linearGradient>
+<filter id="ml-blur"><feGaussianBlur stdDeviation="11"/></filter><filter id="ml-soft"><feGaussianBlur stdDeviation="3"/></filter>
+
+<radialGradient id="ml-ice-glow"><stop stop-color="#e5ffff" stop-opacity=".95"/><stop offset=".32" stop-color="#a9efff" stop-opacity=".7"/><stop offset=".75" stop-color="#81c9e8" stop-opacity=".25"/><stop offset="1" stop-color="#5fb6db" stop-opacity="0"/></radialGradient>
+<linearGradient id="ml-ice-tear" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbffff"/><stop offset=".33" stop-color="#b5f0ff"/><stop offset=".67" stop-color="#62badb"/><stop offset="1" stop-color="#286c9f"/></linearGradient>
+<radialGradient id="ml12-ectoplasm" cx="40%" cy="49%" r="62%"><stop stop-color="#e9ffff" stop-opacity=".58"/><stop offset=".26" stop-color="#a2f0f8" stop-opacity=".38"/><stop offset=".58" stop-color="#928ac9" stop-opacity=".22"/><stop offset="1" stop-color="#6057a1" stop-opacity="0"/></radialGradient>
+<linearGradient id="ml12-hand" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#d4ffff" stop-opacity=".74"/><stop offset=".4" stop-color="#8fd6e6" stop-opacity=".42"/><stop offset=".7" stop-color="#a8a4db" stop-opacity=".29"/><stop offset="1" stop-color="#d1baff" stop-opacity=".08"/></linearGradient>
+<radialGradient id="ml12-palm"><stop stop-color="#eafaff" stop-opacity=".08"/><stop offset=".65" stop-color="#b4b8ea" stop-opacity=".18"/><stop offset="1" stop-color="#d6ffff" stop-opacity=".04"/></radialGradient>
+<radialGradient id="ml-psychic-bloom"><stop stop-color="#f7eeff" stop-opacity=".83"/><stop offset=".4" stop-color="#b4a0ff" stop-opacity=".46"/><stop offset="1" stop-color="#8d8ada" stop-opacity="0"/></radialGradient>
+<radialGradient id="ml-cold-aura"><stop stop-color="#a4f1ff" stop-opacity=".27"/><stop offset=".58" stop-color="#a8dcff" stop-opacity=".16"/><stop offset="1" stop-color="#7ac8ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="ml9-iceface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbffff"/><stop offset=".35" stop-color="#b7f4ff"/><stop offset=".75" stop-color="#5eadd4"/><stop offset="1" stop-color="#2d668f"/></linearGradient>
+<linearGradient id="ml9-powder" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ecf6fa"/><stop offset=".4" stop-color="#c4d5df"/><stop offset="1" stop-color="#6f8797"/></linearGradient>
+<radialGradient id="ml9-tearglow"><stop stop-color="#f6ffff" stop-opacity=".95"/><stop offset=".4" stop-color="#83daff" stop-opacity=".5"/><stop offset="1" stop-color="#4988e1" stop-opacity="0"/></radialGradient>
+<radialGradient id="ml9-impactglow"><stop stop-color="#fff" stop-opacity=".95"/><stop offset=".32" stop-color="#d0f9ff" stop-opacity=".8"/><stop offset=".7" stop-color="#85cdf2" stop-opacity=".38"/><stop offset="1" stop-color="#6098da" stop-opacity="0"/></radialGradient>
+<radialGradient id="ml9-haze"><stop stop-color="#dcf2f8" stop-opacity=".52"/><stop offset="1" stop-color="#8ba7bd" stop-opacity="0"/></radialGradient>
+<radialGradient id="ld-hitglow"><stop stop-color="#f5fbff" stop-opacity=".95"/><stop offset=".3" stop-color="#a6d7ff" stop-opacity=".68"/><stop offset="1" stop-color="#92a8ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="ml-v8-gown-shadow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18243c" stop-opacity=".08"/><stop offset=".32" stop-color="#26334f" stop-opacity=".1"/><stop offset=".67" stop-color="#25344d" stop-opacity=".7"/><stop offset="1" stop-color="#121c36" stop-opacity=".18"/></linearGradient>
+<linearGradient id="ml-v8-lace-shadow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d8edf1" stop-opacity=".05"/><stop offset=".42" stop-color="#47586f" stop-opacity=".12"/><stop offset=".9" stop-color="#2c405e" stop-opacity=".45"/><stop offset="1" stop-color="#3d5971" stop-opacity=".09"/></linearGradient>
+<linearGradient id="ml-v8-face-shadow" x1="0" y1="0" x2="1" y2=".4"><stop stop-color="#e9f0ed" stop-opacity=".02"/><stop offset=".5" stop-color="#7e9cae" stop-opacity=".06"/><stop offset="1" stop-color="#435970" stop-opacity=".46"/></linearGradient>
+<linearGradient id="ml-v8-tear-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".46" stop-color="#c8faff"/><stop offset="1" stop-color="#3579b9"/></linearGradient>
+<radialGradient id="ml-v8-tear-fire"><stop stop-color="#f9ffff" stop-opacity="1"/><stop offset=".25" stop-color="#b8f5ff" stop-opacity=".82"/><stop offset=".58" stop-color="#64caed" stop-opacity=".3"/><stop offset="1" stop-color="#71d7ef" stop-opacity="0"/></radialGradient>
+<linearGradient id="ml-v8-dust" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8e9ee"/><stop offset=".45" stop-color="#9bb6c5"/><stop offset="1" stop-color="#556c86"/></linearGradient>
+<radialGradient id="ml-v8-dust-cloud"><stop stop-color="#dcf4f6" stop-opacity=".65"/><stop offset=".5" stop-color="#a8c8d9" stop-opacity=".4"/><stop offset="1" stop-color="#8ab4cd" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="cold-aura" aria-label="Cold aura around Mourning Lady">
+<ellipse class="cold-halo" cx="517" cy="238" rx="172" ry="177" fill="url(#ml-cold-aura)"/>
+<ellipse class="cold-ground" cx="515" cy="364" rx="138" ry="20" fill="url(#ml-ice-glow)" opacity=".5" filter="url(#ml-blur)"/>
+<path class="cold-stream a" d="M432 299 Q395 271 419 230 Q433 194 411 173" fill="none" stroke="#b1ebff" stroke-opacity=".25" stroke-width="4" filter="url(#ml-soft)"/>
+<path class="cold-stream b" d="M586 307 Q625 276 612 236 Q607 207 628 179" fill="none" stroke="#b1ebff" stroke-opacity=".21" stroke-width="5" filter="url(#ml-soft)"/>
+<circle class="frost-drift" cx="394" cy="353" r="1.7" fill="#c5f4ff" opacity=".6" style="--drift-x:-4px;--drift-y:-8px;--flake-time:4.50s;--flake-delay:-3.35s"/>
+<circle class="frost-drift" cx="548" cy="325" r="1.7" fill="#f1fdff" opacity=".6" style="--drift-x:0px;--drift-y:-11px;--flake-time:4.41s;--flake-delay:-1.33s"/>
+<circle class="frost-drift" cx="616" cy="344" r="1.4" fill="#a0e1ff" opacity=".6" style="--drift-x:16px;--drift-y:-18px;--flake-time:3.12s;--flake-delay:-2.07s"/>
+<circle class="frost-drift" cx="599" cy="150" r="2.4" fill="#c5f4ff" opacity=".6" style="--drift-x:-7px;--drift-y:-12px;--flake-time:3.28s;--flake-delay:-1.01s"/>
+<circle class="frost-drift" cx="537" cy="183" r="1" fill="#a0e1ff" opacity=".6" style="--drift-x:0px;--drift-y:-12px;--flake-time:3.07s;--flake-delay:-0.95s"/>
+<circle class="frost-drift" cx="591" cy="271" r="1.7" fill="#c5f4ff" opacity=".6" style="--drift-x:-9px;--drift-y:-20px;--flake-time:3.92s;--flake-delay:-2.78s"/>
+<circle class="frost-drift" cx="482" cy="101" r="1.7" fill="#c5f4ff" opacity=".6" style="--drift-x:14px;--drift-y:-15px;--flake-time:4.69s;--flake-delay:-4.01s"/>
+<circle class="frost-drift" cx="513" cy="273" r="1" fill="#f1fdff" opacity=".6" style="--drift-x:2px;--drift-y:-26px;--flake-time:3.88s;--flake-delay:-3.88s"/>
+<circle class="frost-drift" cx="633" cy="97" r="1.7" fill="#f1fdff" opacity=".6" style="--drift-x:1px;--drift-y:-19px;--flake-time:3.16s;--flake-delay:-2.53s"/>
+<circle class="frost-drift" cx="469" cy="232" r="1" fill="#c5f4ff" opacity=".6" style="--drift-x:1px;--drift-y:-11px;--flake-time:3.32s;--flake-delay:-1.00s"/>
+<circle class="frost-drift" cx="479" cy="217" r="1.4" fill="#a0e1ff" opacity=".6" style="--drift-x:12px;--drift-y:-10px;--flake-time:4.67s;--flake-delay:-3.39s"/>
+<circle class="frost-drift" cx="382" cy="285" r="1.4" fill="#c5f4ff" opacity=".6" style="--drift-x:-8px;--drift-y:-11px;--flake-time:4.14s;--flake-delay:-2.57s"/>
+<circle class="frost-drift" cx="402" cy="266" r="1.7" fill="#a0e1ff" opacity=".6" style="--drift-x:0px;--drift-y:-12px;--flake-time:2.47s;--flake-delay:-3.68s"/>
+<circle class="frost-drift" cx="558" cy="302" r="1.7" fill="#f1fdff" opacity=".6" style="--drift-x:12px;--drift-y:-24px;--flake-time:3.41s;--flake-delay:-0.87s"/>
+<circle class="frost-drift" cx="631" cy="321" r="1.7" fill="#c5f4ff" opacity=".6" style="--drift-x:9px;--drift-y:-24px;--flake-time:3.93s;--flake-delay:-2.72s"/>
+<circle class="frost-drift" cx="493" cy="264" r="1.4" fill="#f1fdff" opacity=".6" style="--drift-x:-13px;--drift-y:-12px;--flake-time:2.42s;--flake-delay:-2.47s"/>
+<circle class="frost-drift" cx="576" cy="95" r="2.1" fill="#f1fdff" opacity=".6" style="--drift-x:-6px;--drift-y:-27px;--flake-time:4.21s;--flake-delay:-3.87s"/>
+<circle class="frost-drift" cx="488" cy="244" r="2.4" fill="#c5f4ff" opacity=".6" style="--drift-x:-2px;--drift-y:-13px;--flake-time:3.45s;--flake-delay:-1.15s"/>
+<circle class="frost-drift" cx="452" cy="117" r="2.4" fill="#f1fdff" opacity=".6" style="--drift-x:-4px;--drift-y:-12px;--flake-time:2.43s;--flake-delay:-0.25s"/>
+<circle class="frost-drift" cx="477" cy="232" r="1.7" fill="#c5f4ff" opacity=".6" style="--drift-x:13px;--drift-y:-18px;--flake-time:4.97s;--flake-delay:-0.67s"/>
+<circle class="frost-drift" cx="630" cy="116" r="2.1" fill="#a0e1ff" opacity=".6" style="--drift-x:-10px;--drift-y:-15px;--flake-time:3.79s;--flake-delay:-3.08s"/>
+<circle class="frost-drift" cx="498" cy="134" r="2.4" fill="#c5f4ff" opacity=".6" style="--drift-x:8px;--drift-y:-9px;--flake-time:2.51s;--flake-delay:-2.06s"/>
+<circle class="frost-drift" cx="426" cy="200" r="2.4" fill="#a0e1ff" opacity=".6" style="--drift-x:-14px;--drift-y:-14px;--flake-time:4.80s;--flake-delay:-4.57s"/>
+<circle class="frost-drift" cx="587" cy="148" r="2.1" fill="#c5f4ff" opacity=".6" style="--drift-x:9px;--drift-y:-17px;--flake-time:3.40s;--flake-delay:-0.86s"/>
+<circle class="frost-drift" cx="570" cy="319" r="1.7" fill="#a0e1ff" opacity=".6" style="--drift-x:8px;--drift-y:-17px;--flake-time:3.35s;--flake-delay:-1.18s"/>
+<circle class="frost-drift" cx="511" cy="315" r="1" fill="#c5f4ff" opacity=".6" style="--drift-x:1px;--drift-y:-22px;--flake-time:5.07s;--flake-delay:-1.76s"/>
+<circle class="frost-drift" cx="423" cy="252" r="2.1" fill="#c5f4ff" opacity=".6" style="--drift-x:-14px;--drift-y:-15px;--flake-time:4.26s;--flake-delay:-2.62s"/>
+<circle class="frost-drift" cx="547" cy="350" r="1.7" fill="#a0e1ff" opacity=".6" style="--drift-x:14px;--drift-y:-10px;--flake-time:3.23s;--flake-delay:-4.07s"/>
+<circle class="frost-drift" cx="512" cy="297" r="2.1" fill="#c5f4ff" opacity=".6" style="--drift-x:9px;--drift-y:-27px;--flake-time:4.96s;--flake-delay:-3.81s"/>
+<circle class="frost-drift" cx="577" cy="98" r="1" fill="#f1fdff" opacity=".6" style="--drift-x:-12px;--drift-y:-28px;--flake-time:2.45s;--flake-delay:-1.42s"/>
+</g>
+<g id="lady-position" transform="translate(180 46) scale(.92)">
+<g class="boss-float">
+<g class="lady">
+<ellipse cx="365" cy="188" rx="135" ry="159" fill="url(#ml-aura)"/>
+<g class="veil-left"><path d="M347 94 Q295 68 270 126 Q235 186 228 264 Q262 237 281 292 Q294 249 314 239 Q306 317 290 355 Q343 330 359 264Z" fill="url(#ml-veil)" stroke="#b7c8d2" stroke-width="1.2" stroke-opacity=".35"/><path d="M338 104 Q299 133 283 205 Q264 256 286 284 Q297 233 326 204 Q324 290 306 339" fill="none" stroke="#29364a" stroke-opacity=".38" stroke-width="12" stroke-linecap="round"/><path d="M338 116 Q306 151 292 215" fill="none" stroke="#f0fbff" stroke-opacity=".29" stroke-width="2.2"/><path d="M334 100 Q298 140 287 197 T269 301" fill="none" stroke="#dbe5e8" stroke-opacity=".3" stroke-width="2"/></g>
+<g class="veil-right"><path d="M378 97 Q420 67 452 133 Q476 194 509 264 Q472 241 468 291 Q436 269 413 239 Q423 324 457 353 Q386 320 372 268Z" fill="url(#ml-veil)" stroke="#b4c6d6" stroke-width="1.2" stroke-opacity=".3"/><path d="M402 104 Q453 132 461 206 Q468 258 451 276 Q434 228 411 201 Q433 297 450 326" fill="none" stroke="#26364e" stroke-opacity=".42" stroke-width="13" stroke-linecap="round"/><path d="M409 111 Q442 145 451 211" fill="none" stroke="#eaf5ff" stroke-opacity=".32" stroke-width="2.2"/><path d="M388 103 Q425 151 436 201 T473 305" fill="none" stroke="#dfebf5" stroke-opacity=".27" stroke-width="2"/></g>
+<g class="gown-tails"><path d="M326 189 Q291 255 316 340 L300 387 Q335 350 356 384 L367 353 Q389 386 419 381 L408 341 Q440 279 399 189Z" fill="url(#ml-robe)" opacity=".83"/><path d="M368 220 Q393 276 388 329 L414 375 Q396 356 384 365 L367 345Z" fill="url(#ml-v8-gown-shadow)" opacity=".8"/><path d="M341 231 Q327 306 334 353 L320 372 Q344 342 358 366 L359 318Z" fill="#d9ebef" opacity=".12"/><path d="M331 221 Q337 292 322 363 M393 219 Q391 294 410 361 M362 244 L362 370" fill="none" stroke="#eef2e9" stroke-opacity=".32" stroke-width="2"/></g>
+<!-- Main ivory gown and bodice -->
+<path d="M341 163 Q318 175 314 204 Q331 237 324 278 Q346 297 367 287 Q392 300 415 278 Q396 240 416 203 Q404 170 386 164Z" fill="url(#ml-robe)" stroke="#d0d7da" stroke-opacity=".48" stroke-width="1.6"/><path d="M379 169 Q397 182 406 211 Q387 238 403 270 Q387 285 368 286 L370 259 Q385 228 378 198Z" fill="url(#ml-v8-gown-shadow)" opacity=".74"/>
+<path d="M340 177 Q326 199 332 229 Q344 244 342 266" stroke="#fff" stroke-opacity=".2" stroke-width="4" fill="none"/>
+<path d="M386 184 Q398 211 385 240 M349 237 Q358 255 357 282" stroke="#32435f" stroke-opacity=".46" stroke-width="3" fill="none"/>
+<path d="M351 249 Q366 259 385 248" stroke="#d0ebf3" stroke-opacity=".26" stroke-width="2" fill="none"/>
+<path d="M342 171 Q359 184 381 171 L391 206 Q370 224 339 208Z" fill="#525a72" opacity=".84" stroke="#c1c1b4" stroke-width="1.7"/><path d="M374 176 L386 192 L384 208 Q370 221 353 211 L361 202 Q373 197 374 176Z" fill="#1f3149" opacity=".5"/>
+<path d="M347 177 Q360 188 373 181" fill="none" stroke="#dce8ec" stroke-opacity=".4" stroke-width="1.8"/>
+<path d="M339 211 Q368 228 392 211 M343 230 Q367 247 394 229" fill="none" stroke="url(#ml-gold)" stroke-width="1.8" opacity=".7"/>
+<!-- Fine embroidered neckline, without necklace or amulet -->
+<path d="M344 175 Q361 194 382 174" fill="none" stroke="#e4e9e7" stroke-width="2" opacity=".8"/>
+<path d="M344 181 Q361 199 383 181" fill="none" stroke="#b5c6ce" stroke-width="1.2" opacity=".6"/>
+<path d="M357 192 Q361 201 359 208 M367 192 Q364 201 366 208" fill="none" stroke="#d4e1e3" stroke-opacity=".5" stroke-width="1.1"/>
+<!-- Sleeves & long translucent fingers -->
+<g class="arm-left"><path d="M336 180 Q319 176 308 196 L284 245 L300 256 Q324 234 342 205Z" fill="url(#ml-robe)" stroke="#c8d7db" stroke-opacity=".45" stroke-width="1.5"/><path d="M323 191 Q320 214 300 242" fill="none" stroke="#1c2b42" stroke-opacity=".36" stroke-width="7"/><path d="M313 195 Q305 217 293 236" fill="none" stroke="#f4ffff" stroke-opacity=".23" stroke-width="2"/><path d="M285 245 Q278 261 266 274 Q264 280 269 282 L286 267 L281 287 Q281 293 286 289 L294 268 L299 274 L301 268 L301 255Z" fill="#a7c8d5" stroke="#e5f4fb" stroke-width="1.3"/></g>
+<g class="arm-right"><path d="M390 181 Q410 178 422 200 L443 243 L429 256 Q411 233 385 207Z" fill="url(#ml-robe)" stroke="#c8d7db" stroke-opacity=".45" stroke-width="1.5"/><path d="M398 190 Q410 208 434 242" fill="none" stroke="#263851" stroke-opacity=".46" stroke-width="8"/><path d="M406 187 Q424 220 430 232" fill="none" stroke="#f2ffff" stroke-opacity=".22" stroke-width="2"/><path d="M430 253 L446 274 Q449 278 451 274 L443 259 L457 268 Q463 268 458 261 L443 244Z" fill="#afc9d8" stroke="#e7f4f9" stroke-width="1.3"/></g>
+<!-- Hair framing porcelain face -->
+<g class="hair"><path d="M341 99 Q315 100 315 139 Q305 172 302 206 Q330 189 339 160 L347 114Z M384 100 Q411 102 415 139 Q430 176 439 205 Q397 188 385 159 L377 110Z" fill="#b7bdc8" opacity=".82" stroke="#eff7fb" stroke-opacity=".4" stroke-width="1.2"/><path d="M322 125 Q328 159 311 198 M407 122 Q407 167 430 195" fill="none" stroke="#eff9fd" stroke-opacity=".55" stroke-width="2"/></g>
+<!-- Softer, nearly frontal face. A subtle leftward head tilt, not a full profile. -->
+<g class="face-angle" transform="rotate(-5 362 139)">
+<!-- Smooth oval porcelain face with a slightly narrower player-side cheek -->
+<path d="M362 100 Q380 100 389 114 Q393 132 386 153 Q381 169 366 176 Q351 177 343 164 Q336 149 336 132 Q337 113 349 105 Q354 101 362 100Z" fill="url(#ml-face)" stroke="#e3e9e7" stroke-width="1.7"/><path d="M369 103 Q386 110 388 128 Q390 149 378 165 Q369 172 363 173 Q378 157 378 134 Q380 114 369 103Z" fill="url(#ml-v8-face-shadow)" opacity=".75"/>
+<path d="M343 140 Q341 153 351 166" stroke="#f7fff7" stroke-opacity=".21" stroke-width="3" fill="none"/>
+<!-- soft cheek and hairline; no hooked nose -->
+<path d="M344 117 Q348 108 358 106 M380 108 Q385 113 386 123" stroke="#f3f5ee" stroke-opacity=".55" stroke-width="1.7" fill="none"/>
+<path d="M344 127 Q350 123 358 128 M369 127 Q376 124 383 129" stroke="#61727e" stroke-width="1.8" stroke-linecap="round" opacity=".75" fill="none"/>
+<g class="eyes">
+<path d="M344 135 Q350 131 357 135 Q351 140 344 135Z M369 135 Q374 132 381 136 Q376 141 369 135Z" fill="#34495b" stroke="#87b3c7" stroke-width=".8"/>
+<ellipse cx="350" cy="135.5" rx="2.8" ry="1.5" fill="url(#ml-hollow)"/>
+<ellipse cx="374" cy="136" rx="2.4" ry="1.4" fill="url(#ml-hollow)" opacity=".8"/>
+</g>
+<!-- tiny, defined nose rather than a large protruding profile -->
+<path d="M363 137 Q359 147 361 153 Q363 155 366 153" fill="none" stroke="#78919b" stroke-opacity=".8" stroke-width="1.35" stroke-linecap="round"/>
+<!-- quiet sorrowful mouth that can widen during the scream -->
+<g class="mouth"><path d="M356 164 Q363 161 370 164" fill="none" stroke="#586b77" stroke-width="1.65" stroke-linecap="round"/></g>
+<ellipse class="scream-mouth" cx="363" cy="164" rx="4.4" ry="8.5" fill="#172d3b" stroke="#9bb8bd" stroke-width=".8" opacity="0"/>
+<!-- subtler tear staining under the eyes -->
+<path d="M349 141 Q347 148 348 156 M376 141 Q377 149 375 156" fill="none" stroke="#52677c" stroke-opacity=".67" stroke-width="1.5"/>
+</g>
+<!-- soft veil headband, no crown, diadem or jewels -->
+<path d="M339 110 Q361 93 385 111" fill="none" stroke="#d8e3e6" stroke-opacity=".75" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M342 114 Q362 102 382 114" fill="none" stroke="#f1f5ee" stroke-opacity=".46" stroke-width="1.1"/>
+<g class="tear"><circle cx="340" cy="153" r="2.3" fill="#a8e6ff"/></g><g class="tear second"><circle cx="372" cy="150" r="1.8" fill="#bcd9ff"/></g>
+</g>
+</g>
+</g>
+<g class="widows-grasp" aria-label="Widow's Grasp ghostly spirit-hand projectile">
+  <!-- All trail layers move with the ghost-hand, originating at the boss's near palm. -->
+  <g class="ghost-haze">
+    <ellipse cx="472" cy="251" rx="64" ry="33" fill="url(#ml12-ectoplasm)" opacity=".54" filter="url(#ml-soft)"/>
+    <path d="M478 249 C517 209 535 215 574 224 S619 211 635 196" stroke="#97c7e6" stroke-width="23" opacity=".25" fill="none" filter="url(#ml-soft)" stroke-linecap="round"/>
+    <path d="M482 260 C515 294 548 289 574 274 S616 291 635 304" stroke="#b7a4e6" stroke-width="19" opacity=".25" fill="none" filter="url(#ml-soft)" stroke-linecap="round"/>
+  </g>
+  <g class="ghost-trails" fill="none" stroke-linecap="round">
+    <path class="ghost-trail ghost-t1" d="M484 246 Q510 224 541 229 Q574 237 586 214 Q603 196 632 207" stroke="#e2fcff" stroke-width="3.8" opacity=".72" stroke-dasharray="51 10 32 19"/>
+    <path class="ghost-trail ghost-t2" d="M488 262 Q521 272 545 263 Q567 253 588 270 Q611 287 631 275" stroke="#ceb8ff" stroke-width="3.5" opacity=".6" stroke-dasharray="36 17 40 12"/>
+    <path class="ghost-trail ghost-t3" d="M489 235 Q514 201 549 207 Q584 211 601 190" stroke="#a0e2f1" stroke-width="1.9" opacity=".72" stroke-dasharray="16 15 35 12"/>
+    <path class="ghost-trail ghost-t4" d="M492 274 Q535 310 566 289 Q592 279 608 299" stroke="#dfd2ff" stroke-width="2.3" opacity=".62" stroke-dasharray="25 14"/>
+    <path class="ghost-trail ghost-t5" d="M492 251 Q533 238 557 247 Q585 260 605 248" stroke="#a8f0ff" stroke-width="1.4" opacity=".65" stroke-dasharray="10 13"/>
+  </g>
+  <g class="ghost-whorls" stroke-linecap="round" fill="none">
+    <path d="M549 220 Q563 205 573 214 Q579 222 567 228 Q555 232 557 224" stroke="#dcefff" stroke-width="2.1" opacity=".57"/>
+    <path d="M554 276 Q574 287 582 275 Q584 266 575 265" stroke="#e3c9ff" stroke-width="2.2" opacity=".57"/>
+    <path d="M601 230 Q613 218 625 223" stroke="#bceaf5" stroke-width="1.7" opacity=".38"/>
+  </g>
+  <g class="cast-burst">
+    <ellipse cx="486" cy="250" rx="19" ry="19" fill="url(#ml12-ectoplasm)" opacity=".54"/>
+    <path d="M486 235 Q503 245 487 264" stroke="#efffff" stroke-width="1.3" opacity=".54" fill="none"/>
+  </g>
+  <ellipse class="projectile-glow" cx="459" cy="251" rx="53" ry="46" fill="url(#ml12-ectoplasm)" opacity=".9"/>
+  <g class="ghost-hand">
+    <!-- A softer, hollow spirit silhouette instead of a solid ice-like fist. -->
+    <path class="ghost-outline" d="M481 241 Q466 233 451 238 L439 232 L417 210 Q411 207 411 217 L425 241 L399 231 Q394 231 397 238 L421 250 L402 256 Q396 263 404 267 L431 263 L417 282 Q413 290 422 288 L449 265 Q469 269 482 262 Q491 257 490 249Z" fill="url(#ml12-hand)" stroke="#c9f8ff" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Receding inner palm creates a transparent spectral core. -->
+    <path d="M444 246 Q461 236 474 247 Q479 255 464 259 Q449 262 436 254Z" fill="url(#ml12-palm)" opacity=".95"/>
+    <path d="M450 242 Q438 229 418 212 M444 250 Q420 239 400 235 M441 257 Q415 262 402 262 M448 262 Q428 277 420 285" stroke="#e9ffff" stroke-width="2.7" opacity=".68" stroke-linecap="round" fill="none"/>
+    <path d="M464 242 Q473 249 471 257 M454 242 Q458 248 458 253" stroke="#94dff0" stroke-width="1.2" opacity=".8" stroke-linecap="round" fill="none"/>
+    <path d="M479 242 Q498 236 507 246 Q508 254 494 259 L476 260" fill="none" stroke="#b5abed" stroke-width="4.2" opacity=".56" stroke-linecap="round"/>
+    <circle cx="414" cy="216" r="2.7" fill="#e3ffff" opacity=".66"/><circle cx="402" cy="235" r="2.1" fill="#e0f9ff" opacity=".65"/><circle cx="404" cy="262" r="2.2" fill="#d6eaff" opacity=".62"/>
+  </g>
+  <g class="ghost-embers" fill="#dffaff">
+    <circle cx="508" cy="215" r="2.4"/><circle cx="546" cy="207" r="1.6"/><circle cx="557" cy="260" r="2.2"/><circle cx="582" cy="285" r="1.4"/>
+    <circle cx="611" cy="213" r="1.6"/><circle cx="527" cy="286" r="1.3"/><circle cx="589" cy="237" r="1.5"/><circle cx="627" cy="284" r="1.1"/>
+  </g>
+</g>
+<g data-eoa-ml-target="widows-hit"><g class="widows-hit" aria-label="Widow's Grasp impact" fill="none">
+  <ellipse cx="193" cy="251" rx="58" ry="72" fill="url(#ml-psychic-bloom)" stroke="#c5f0f5" stroke-width="1.9" opacity=".96"/>
+  <ellipse cx="193" cy="251" rx="40" ry="52" fill="none" stroke="#def8ff" stroke-width="2.2" opacity=".7"/>
+  <path d="M184 214 Q157 231 164 249 Q159 277 179 289 M203 212 Q228 234 217 255 Q222 281 203 294" stroke="#e8f9ff" stroke-width="4.6" opacity=".95"/>
+  <path d="M187 226 Q173 236 176 249 L187 268 M203 227 Q213 239 205 251 L196 272" stroke="#b4c0ee" stroke-width="3.1" opacity=".95"/>
+  <circle cx="193" cy="251" r="23" stroke="#e6f7ff" stroke-width="1.9" stroke-dasharray="12 7" opacity=".9"/>
+</g>
+</g><g class="psychic-sonar" aria-label="Successive psychic sonar rings">
+<g class="sonar-wave w1" style="--wave:0"><ellipse cx="486" cy="178" rx="32" ry="50" stroke="#f6f1ff" stroke-width="5"/><ellipse cx="486" cy="178" rx="23" ry="37" stroke="#f6f1ff" stroke-width="1.4" opacity=".55"/></g>
+<g class="sonar-wave w2" style="--wave:1"><ellipse cx="486" cy="178" rx="32" ry="50" stroke="#b5ccff" stroke-width="4.3"/><ellipse cx="486" cy="178" rx="23" ry="37" stroke="#b5ccff" stroke-width="1.4" opacity=".55"/></g>
+<g class="sonar-wave w3" style="--wave:2"><ellipse cx="486" cy="178" rx="32" ry="50" stroke="#c2a9ff" stroke-width="4.2"/><ellipse cx="486" cy="178" rx="23" ry="37" stroke="#c2a9ff" stroke-width="1.4" opacity=".55"/></g>
+<g class="sonar-wave w4" style="--wave:3"><ellipse cx="486" cy="178" rx="32" ry="50" stroke="#9bddf5" stroke-width="3.5"/><ellipse cx="486" cy="178" rx="23" ry="37" stroke="#9bddf5" stroke-width="1.4" opacity=".55"/></g>
+<g class="sonar-wave w5" style="--wave:4"><ellipse cx="486" cy="178" rx="32" ry="50" stroke="#e8d5ff" stroke-width="3.3"/><ellipse cx="486" cy="178" rx="23" ry="37" stroke="#e8d5ff" stroke-width="1.4" opacity=".55"/></g>
+  <g class="sonar-voice"><ellipse cx="482" cy="177" rx="31" ry="55" fill="url(#ml-psychic-bloom)"/><path d="M469 147 Q445 178 468 206" fill="none" stroke="#f2f5ff" stroke-width="3.2" opacity=".8"/></g>
+</g>
+<g data-eoa-ml-target="psychic-impact"><g class="psychic-impact" style="transform-origin:193px 251px" aria-hidden="true">
+  <!-- luminous violet-white shock that engulfs the player -->
+  <ellipse class="psychic-halo" cx="193" cy="251" rx="75" ry="85" fill="url(#ml-psychic-bloom)" opacity=".87"/>
+  <ellipse cx="193" cy="251" rx="48" ry="65" fill="url(#ml-ice-glow)" opacity=".76"/>
+  <g class="psychic-ripples" fill="none" stroke-linecap="round">
+    <ellipse cx="193" cy="251" rx="65" ry="75" stroke="#d5c0ff" stroke-width="3.6" opacity=".88"/>
+    <ellipse cx="193" cy="251" rx="53" ry="63" stroke="#a3d5ff" stroke-width="2.8" opacity=".93"/>
+    <ellipse cx="193" cy="251" rx="35" ry="48" stroke="#f9f0ff" stroke-width="3.3" opacity=".9"/>
+    <path d="M132 230 Q116 253 137 276 M252 214 Q277 249 251 287" stroke="#bca0ff" stroke-width="3.2" opacity=".7"/>
+  </g>
+  <g class="psychic-rays" fill="none" stroke="#e3ddff" stroke-width="3.2" stroke-linecap="round" opacity=".85">
+    <path d="M193 174 L193 155 M193 327 L193 347"/>
+    <path d="M141 213 L126 199 M243 213 L258 197"/>
+    <path d="M132 288 L117 304 M252 288 L269 306"/>
+  </g>
+  <ellipse cx="193" cy="251" rx="14" ry="30" fill="#f3eeff" opacity=".52"/>
+</g>
+</g><g class="ml10-dust" id="ml10-dust">
+  <ellipse class="ml10-settled-shadow" cx="519" cy="377" rx="111" ry="8" fill="#07101b"/>
+  <g class="ml10-fill">
+    <path d="M421 374 Q442 368 459 367 Q471 360 480 363 Q496 351 504 356 Q519 341 534 349 Q545 344 555 355 Q578 350 594 365 Q613 367 622 374 Q530 388 421 374Z" fill="url(#ml9-powder)" stroke="#c8dce3" stroke-width=".9"/>
+    <path d="M446 373 Q471 364 486 364 M497 358 Q517 351 537 355 M552 359 Q570 361 592 369" fill="none" stroke="#f2ffff" stroke-width="1.4" opacity=".32"/>
+  </g>
+<ellipse class="ml10-speck" cx="489.47" cy="220.28" rx="3.01" ry="2.26" fill="#eff7f9" style="--ml10-x:-35.67px;--ml10-y:144.99px;--ml10-delay:0.148s;--ml10-time:1.067s"/>
+<ellipse class="ml10-speck" cx="475.67" cy="173.96" rx="2.36" ry="1.77" fill="#dce7eb" style="--ml10-x:-35.11px;--ml10-y:190.37px;--ml10-delay:0.150s;--ml10-time:1.259s"/>
+<ellipse class="ml10-speck" cx="461.33" cy="217.94" rx="2.16" ry="1.62" fill="#c2d2dc" style="--ml10-x:79.88px;--ml10-y:147.74px;--ml10-delay:0.164s;--ml10-time:1.132s"/>
+<ellipse class="ml10-speck" cx="577.59" cy="215.82" rx="2.95" ry="2.21" fill="#9bb3c4" style="--ml10-x:-90.15px;--ml10-y:139.71px;--ml10-delay:0.115s;--ml10-time:1.091s"/>
+<ellipse class="ml10-speck" cx="566.48" cy="293.30" rx="2.18" ry="1.64" fill="#b7cdd8" style="--ml10-x:41.88px;--ml10-y:79.99px;--ml10-delay:0.174s;--ml10-time:0.954s"/>
+<ellipse class="ml10-speck" cx="513.33" cy="169.85" rx="1.65" ry="1.24" fill="#7c99aa" style="--ml10-x:39.30px;--ml10-y:183.02px;--ml10-delay:0.166s;--ml10-time:1.104s"/>
+<ellipse class="ml10-speck" cx="504.88" cy="304.98" rx="2.93" ry="2.20" fill="#dde4e4" style="--ml10-x:60.94px;--ml10-y:49.49px;--ml10-delay:0.223s;--ml10-time:0.859s"/>
+<ellipse class="ml10-speck" cx="522.09" cy="159.22" rx="2.30" ry="1.72" fill="#eff7f9" style="--ml10-x:53.97px;--ml10-y:195.50px;--ml10-delay:0.176s;--ml10-time:1.234s"/>
+<ellipse class="ml10-speck" cx="544.61" cy="171.67" rx="1.60" ry="1.20" fill="#dce7eb" style="--ml10-x:-41.77px;--ml10-y:178.24px;--ml10-delay:0.228s;--ml10-time:1.106s"/>
+<ellipse class="ml10-speck" cx="550.15" cy="261.51" rx="2.65" ry="1.99" fill="#c2d2dc" style="--ml10-x:17.40px;--ml10-y:96.66px;--ml10-delay:0.193s;--ml10-time:0.962s"/>
+<ellipse class="ml10-speck" cx="549.70" cy="271.11" rx="2.78" ry="2.08" fill="#9bb3c4" style="--ml10-x:-90.15px;--ml10-y:86.52px;--ml10-delay:0.266s;--ml10-time:0.963s"/>
+<ellipse class="ml10-speck" cx="494.29" cy="257.09" rx="2.67" ry="2.00" fill="#b7cdd8" style="--ml10-x:-62.06px;--ml10-y:119.56px;--ml10-delay:0.287s;--ml10-time:1.099s"/>
+<ellipse class="ml10-speck" cx="558.78" cy="228.90" rx="1.80" ry="1.35" fill="#7c99aa" style="--ml10-x:-1.02px;--ml10-y:123.02px;--ml10-delay:0.242s;--ml10-time:1.036s"/>
+<ellipse class="ml10-speck" cx="529.47" cy="307.92" rx="1.39" ry="1.05" fill="#dde4e4" style="--ml10-x:-17.62px;--ml10-y:54.39px;--ml10-delay:0.307s;--ml10-time:0.948s"/>
+<ellipse class="ml10-speck" cx="563.60" cy="307.02" rx="1.86" ry="1.40" fill="#eff7f9" style="--ml10-x:-37.12px;--ml10-y:46.28px;--ml10-delay:0.291s;--ml10-time:0.869s"/>
+<ellipse class="ml10-speck" cx="511.20" cy="308.62" rx="1.82" ry="1.37" fill="#dce7eb" style="--ml10-x:-63.52px;--ml10-y:59.90px;--ml10-delay:0.339s;--ml10-time:0.852s"/>
+<ellipse class="ml10-speck" cx="557.81" cy="271.15" rx="3.07" ry="2.30" fill="#c2d2dc" style="--ml10-x:24.51px;--ml10-y:105.22px;--ml10-delay:0.321s;--ml10-time:1.046s"/>
+<ellipse class="ml10-speck" cx="498.98" cy="187.24" rx="1.73" ry="1.30" fill="#9bb3c4" style="--ml10-x:55.54px;--ml10-y:171.75px;--ml10-delay:0.301s;--ml10-time:1.116s"/>
+<ellipse class="ml10-speck" cx="569.01" cy="288.60" rx="3.50" ry="2.62" fill="#b7cdd8" style="--ml10-x:-85.83px;--ml10-y:77.87px;--ml10-delay:0.394s;--ml10-time:0.948s"/>
+<ellipse class="ml10-speck" cx="549.26" cy="283.40" rx="1.90" ry="1.42" fill="#7c99aa" style="--ml10-x:52.28px;--ml10-y:88.37px;--ml10-delay:0.334s;--ml10-time:0.900s"/>
+<ellipse class="ml10-speck" cx="524.27" cy="191.26" rx="2.47" ry="1.85" fill="#dde4e4" style="--ml10-x:-35.29px;--ml10-y:163.06px;--ml10-delay:0.357s;--ml10-time:1.062s"/>
+<ellipse class="ml10-speck" cx="529.57" cy="310.73" rx="2.99" ry="2.24" fill="#eff7f9" style="--ml10-x:-45.34px;--ml10-y:63.14px;--ml10-delay:0.421s;--ml10-time:0.838s"/>
+<ellipse class="ml10-speck" cx="570.64" cy="236.61" rx="2.03" ry="1.52" fill="#dce7eb" style="--ml10-x:-55.16px;--ml10-y:138.60px;--ml10-delay:0.374s;--ml10-time:1.025s"/>
+<ellipse class="ml10-speck" cx="518.78" cy="222.51" rx="1.83" ry="1.37" fill="#c2d2dc" style="--ml10-x:33.05px;--ml10-y:150.30px;--ml10-delay:0.394s;--ml10-time:1.070s"/>
+<ellipse class="ml10-speck" cx="511.80" cy="183.44" rx="1.42" ry="1.07" fill="#9bb3c4" style="--ml10-x:46.25px;--ml10-y:182.08px;--ml10-delay:0.401s;--ml10-time:1.242s"/>
+<ellipse class="ml10-speck" cx="508.40" cy="239.19" rx="1.86" ry="1.40" fill="#b7cdd8" style="--ml10-x:94.85px;--ml10-y:138.15px;--ml10-delay:0.471s;--ml10-time:1.138s"/>
+<ellipse class="ml10-speck" cx="472.00" cy="276.16" rx="1.99" ry="1.49" fill="#7c99aa" style="--ml10-x:75.93px;--ml10-y:98.46px;--ml10-delay:0.481s;--ml10-time:1.032s"/>
+<ellipse class="ml10-speck" cx="465.85" cy="242.24" rx="2.85" ry="2.14" fill="#dde4e4" style="--ml10-x:67.37px;--ml10-y:104.34px;--ml10-delay:0.501s;--ml10-time:0.955s"/>
+<ellipse class="ml10-speck" cx="515.66" cy="166.26" rx="2.21" ry="1.65" fill="#eff7f9" style="--ml10-x:99.01px;--ml10-y:207.28px;--ml10-delay:0.526s;--ml10-time:1.209s"/>
+<ellipse class="ml10-speck" cx="525.73" cy="280.29" rx="1.37" ry="1.03" fill="#dce7eb" style="--ml10-x:58.22px;--ml10-y:77.67px;--ml10-delay:0.536s;--ml10-time:0.883s"/>
+<ellipse class="ml10-speck" cx="540.18" cy="221.17" rx="2.64" ry="1.98" fill="#c2d2dc" style="--ml10-x:52.98px;--ml10-y:141.38px;--ml10-delay:0.553s;--ml10-time:1.156s"/>
+<ellipse class="ml10-speck" cx="558.19" cy="179.98" rx="1.44" ry="1.08" fill="#9bb3c4" style="--ml10-x:-23.55px;--ml10-y:168.27px;--ml10-delay:0.496s;--ml10-time:1.121s"/>
+<ellipse class="ml10-speck" cx="518.39" cy="196.93" rx="1.37" ry="1.03" fill="#b7cdd8" style="--ml10-x:30.20px;--ml10-y:164.16px;--ml10-delay:0.585s;--ml10-time:1.140s"/>
+<ellipse class="ml10-speck" cx="502.40" cy="251.21" rx="2.74" ry="2.05" fill="#7c99aa" style="--ml10-x:14.70px;--ml10-y:92.81px;--ml10-delay:0.579s;--ml10-time:0.903s"/>
+<ellipse class="ml10-speck" cx="517.61" cy="216.54" rx="1.52" ry="1.14" fill="#dde4e4" style="--ml10-x:-81.30px;--ml10-y:149.32px;--ml10-delay:0.541s;--ml10-time:1.056s"/>
+<ellipse class="ml10-speck" cx="490.58" cy="304.28" rx="2.44" ry="1.83" fill="#eff7f9" style="--ml10-x:97.13px;--ml10-y:62.34px;--ml10-delay:0.566s;--ml10-time:0.969s"/>
+<ellipse class="ml10-speck" cx="472.35" cy="217.05" rx="3.60" ry="2.70" fill="#dce7eb" style="--ml10-x:4.74px;--ml10-y:135.93px;--ml10-delay:0.558s;--ml10-time:1.125s"/>
+<ellipse class="ml10-speck" cx="565.19" cy="203.01" rx="1.87" ry="1.40" fill="#c2d2dc" style="--ml10-x:-55.68px;--ml10-y:144.21px;--ml10-delay:0.653s;--ml10-time:1.070s"/>
+<ellipse class="ml10-speck" cx="492.42" cy="306.26" rx="2.39" ry="1.79" fill="#9bb3c4" style="--ml10-x:-24.19px;--ml10-y:61.78px;--ml10-delay:0.634s;--ml10-time:0.946s"/>
+<ellipse class="ml10-speck" cx="575.59" cy="273.26" rx="2.38" ry="1.79" fill="#b7cdd8" style="--ml10-x:-129.13px;--ml10-y:98.33px;--ml10-delay:0.670s;--ml10-time:0.974s"/>
+<ellipse class="ml10-speck" cx="473.34" cy="292.94" rx="2.79" ry="2.09" fill="#7c99aa" style="--ml10-x:131.53px;--ml10-y:75.31px;--ml10-delay:0.617s;--ml10-time:0.972s"/>
+<ellipse class="ml10-speck" cx="481.56" cy="293.98" rx="2.60" ry="1.95" fill="#dde4e4" style="--ml10-x:-11.45px;--ml10-y:66.25px;--ml10-delay:0.668s;--ml10-time:0.952s"/>
+<ellipse class="ml10-speck" cx="468.76" cy="180.59" rx="2.47" ry="1.85" fill="#eff7f9" style="--ml10-x:110.95px;--ml10-y:192.46px;--ml10-delay:0.707s;--ml10-time:1.123s"/>
+<ellipse class="ml10-speck" cx="487.31" cy="181.18" rx="1.38" ry="1.04" fill="#dce7eb" style="--ml10-x:121.33px;--ml10-y:194.44px;--ml10-delay:0.648s;--ml10-time:1.222s"/>
+<ellipse class="ml10-speck" cx="487.65" cy="269.57" rx="2.36" ry="1.77" fill="#c2d2dc" style="--ml10-x:-22.06px;--ml10-y:92.16px;--ml10-delay:0.715s;--ml10-time:0.983s"/>
+<ellipse class="ml10-speck" cx="573.81" cy="301.94" rx="3.21" ry="2.41" fill="#9bb3c4" style="--ml10-x:-106.28px;--ml10-y:62.76px;--ml10-delay:0.674s;--ml10-time:0.894s"/>
+<ellipse class="ml10-speck" cx="477.92" cy="248.33" rx="2.13" ry="1.60" fill="#b7cdd8" style="--ml10-x:59.30px;--ml10-y:128.66px;--ml10-delay:0.729s;--ml10-time:0.985s"/>
+<ellipse class="ml10-speck" cx="517.70" cy="282.21" rx="2.63" ry="1.97" fill="#7c99aa" style="--ml10-x:20.77px;--ml10-y:84.89px;--ml10-delay:0.724s;--ml10-time:0.990s"/>
+<ellipse class="ml10-speck" cx="552.40" cy="206.57" rx="1.73" ry="1.29" fill="#dde4e4" style="--ml10-x:40.62px;--ml10-y:154.89px;--ml10-delay:0.726s;--ml10-time:1.036s"/>
+<ellipse class="ml10-speck" cx="552.20" cy="231.34" rx="1.84" ry="1.38" fill="#eff7f9" style="--ml10-x:55.26px;--ml10-y:138.00px;--ml10-delay:0.791s;--ml10-time:1.095s"/>
+<ellipse class="ml10-speck" cx="524.87" cy="214.59" rx="2.05" ry="1.54" fill="#dce7eb" style="--ml10-x:-50.77px;--ml10-y:157.96px;--ml10-delay:0.783s;--ml10-time:1.083s"/>
+<ellipse class="ml10-speck" cx="482.02" cy="176.36" rx="1.86" ry="1.39" fill="#c2d2dc" style="--ml10-x:24.54px;--ml10-y:168.45px;--ml10-delay:0.805s;--ml10-time:1.080s"/>
+<ellipse class="ml10-speck" cx="557.50" cy="281.30" rx="1.65" ry="1.24" fill="#9bb3c4" style="--ml10-x:-58.76px;--ml10-y:87.44px;--ml10-delay:0.853s;--ml10-time:0.898s"/>
+<ellipse class="ml10-speck" cx="510.34" cy="180.74" rx="3.04" ry="2.28" fill="#b7cdd8" style="--ml10-x:-72.33px;--ml10-y:195.09px;--ml10-delay:0.853s;--ml10-time:1.147s"/>
+<ellipse class="ml10-speck" cx="546.94" cy="168.08" rx="3.81" ry="2.86" fill="#7c99aa" style="--ml10-x:-14.72px;--ml10-y:176.48px;--ml10-delay:0.870s;--ml10-time:1.160s"/>
+<ellipse class="ml10-speck" cx="496.89" cy="308.03" rx="2.10" ry="1.58" fill="#dde4e4" style="--ml10-x:-49.64px;--ml10-y:65.45px;--ml10-delay:0.867s;--ml10-time:0.888s"/>
+<ellipse class="ml10-speck" cx="480.28" cy="237.68" rx="1.51" ry="1.13" fill="#eff7f9" style="--ml10-x:-46.79px;--ml10-y:137.17px;--ml10-delay:0.819s;--ml10-time:1.136s"/>
+<ellipse class="ml10-speck" cx="462.49" cy="281.48" rx="1.52" ry="1.14" fill="#dce7eb" style="--ml10-x:62.33px;--ml10-y:81.07px;--ml10-delay:0.922s;--ml10-time:1.008s"/>
+<ellipse class="ml10-speck" cx="557.53" cy="275.69" rx="2.78" ry="2.09" fill="#c2d2dc" style="--ml10-x:23.03px;--ml10-y:89.35px;--ml10-delay:0.890s;--ml10-time:0.959s"/>
+<ellipse class="ml10-speck" cx="481.38" cy="294.03" rx="1.88" ry="1.41" fill="#9bb3c4" style="--ml10-x:-60.15px;--ml10-y:82.29px;--ml10-delay:0.925s;--ml10-time:0.968s"/>
+<ellipse class="ml10-speck" cx="517.80" cy="174.26" rx="2.82" ry="2.12" fill="#b7cdd8" style="--ml10-x:53.53px;--ml10-y:190.28px;--ml10-delay:0.939s;--ml10-time:1.202s"/>
+<ellipse class="ml10-speck" cx="548.27" cy="252.02" rx="1.67" ry="1.25" fill="#7c99aa" style="--ml10-x:-32.03px;--ml10-y:117.11px;--ml10-delay:0.975s;--ml10-time:1.049s"/>
+<ellipse class="ml10-speck" cx="489.56" cy="185.00" rx="2.41" ry="1.81" fill="#dde4e4" style="--ml10-x:61.50px;--ml10-y:185.18px;--ml10-delay:0.921s;--ml10-time:1.164s"/>
+<ellipse class="ml10-speck" cx="470.82" cy="196.69" rx="2.57" ry="1.92" fill="#eff7f9" style="--ml10-x:32.46px;--ml10-y:151.47px;--ml10-delay:0.999s;--ml10-time:1.137s"/>
+<ellipse class="ml10-speck" cx="463.79" cy="293.48" rx="2.97" ry="2.22" fill="#dce7eb" style="--ml10-x:49.58px;--ml10-y:67.45px;--ml10-delay:0.980s;--ml10-time:0.851s"/>
+<ellipse class="ml10-speck" cx="550.57" cy="276.82" rx="3.15" ry="2.36" fill="#c2d2dc" style="--ml10-x:-75.90px;--ml10-y:86.84px;--ml10-delay:1.021s;--ml10-time:1.010s"/>
+<ellipse class="ml10-speck" cx="518.46" cy="161.33" rx="1.90" ry="1.43" fill="#9bb3c4" style="--ml10-x:49.26px;--ml10-y:214.48px;--ml10-delay:0.975s;--ml10-time:1.304s"/>
+<ellipse class="ml10-speck" cx="568.41" cy="235.52" rx="2.07" ry="1.55" fill="#b7cdd8" style="--ml10-x:-140.55px;--ml10-y:135.67px;--ml10-delay:1.050s;--ml10-time:1.027s"/>
+<ellipse class="ml10-speck" cx="551.93" cy="232.05" rx="2.70" ry="2.03" fill="#7c99aa" style="--ml10-x:-68.24px;--ml10-y:137.82px;--ml10-delay:1.056s;--ml10-time:1.107s"/>
+<ellipse class="ml10-speck" cx="574.86" cy="231.63" rx="3.06" ry="2.29" fill="#dde4e4" style="--ml10-x:-136.60px;--ml10-y:135.91px;--ml10-delay:1.000s;--ml10-time:1.096s"/>
+<ellipse class="ml10-speck" cx="483.13" cy="249.70" rx="2.95" ry="2.21" fill="#eff7f9" style="--ml10-x:76.71px;--ml10-y:104.90px;--ml10-delay:1.073s;--ml10-time:1.046s"/>
+<ellipse class="ml10-speck" cx="561.48" cy="161.06" rx="2.52" ry="1.89" fill="#dce7eb" style="--ml10-x:29.80px;--ml10-y:203.65px;--ml10-delay:1.102s;--ml10-time:1.152s"/>
+<ellipse class="ml10-speck" cx="521.13" cy="303.16" rx="3.90" ry="2.92" fill="#c2d2dc" style="--ml10-x:73.92px;--ml10-y:60.32px;--ml10-delay:1.045s;--ml10-time:0.864s"/>
+<ellipse class="ml10-speck" cx="577.50" cy="193.13" rx="2.09" ry="1.57" fill="#9bb3c4" style="--ml10-x:-30.30px;--ml10-y:175.78px;--ml10-delay:1.092s;--ml10-time:1.095s"/>
+<ellipse class="ml10-speck" cx="489.65" cy="248.79" rx="2.09" ry="1.57" fill="#b7cdd8" style="--ml10-x:15.74px;--ml10-y:121.04px;--ml10-delay:1.083s;--ml10-time:1.076s"/>
+<ellipse class="ml10-speck" cx="496.11" cy="308.72" rx="3.06" ry="2.30" fill="#7c99aa" style="--ml10-x:-34.58px;--ml10-y:68.36px;--ml10-delay:1.107s;--ml10-time:0.988s"/>
+<ellipse class="ml10-speck" cx="516.66" cy="291.07" rx="2.34" ry="1.75" fill="#dde4e4" style="--ml10-x:-50.20px;--ml10-y:84.15px;--ml10-delay:1.171s;--ml10-time:0.924s"/>
+<ellipse class="ml10-speck" cx="542.55" cy="298.38" rx="1.40" ry="1.05" fill="#eff7f9" style="--ml10-x:45.90px;--ml10-y:71.56px;--ml10-delay:1.163s;--ml10-time:0.995s"/>
+<ellipse class="ml10-speck" cx="567.10" cy="305.52" rx="2.24" ry="1.68" fill="#dce7eb" style="--ml10-x:37.78px;--ml10-y:62.35px;--ml10-delay:1.150s;--ml10-time:0.938s"/>
+<ellipse class="ml10-speck" cx="542.53" cy="305.13" rx="2.26" ry="1.69" fill="#c2d2dc" style="--ml10-x:-48.19px;--ml10-y:55.29px;--ml10-delay:1.166s;--ml10-time:0.941s"/>
+<ellipse class="ml10-speck" cx="498.01" cy="162.36" rx="2.15" ry="1.61" fill="#9bb3c4" style="--ml10-x:11.67px;--ml10-y:183.19px;--ml10-delay:1.142s;--ml10-time:1.144s"/>
+<ellipse class="ml10-speck" cx="558.98" cy="240.75" rx="3.34" ry="2.51" fill="#b7cdd8" style="--ml10-x:-128.97px;--ml10-y:136.55px;--ml10-delay:1.224s;--ml10-time:1.142s"/>
+<ellipse class="ml10-speck" cx="516.77" cy="292.94" rx="1.61" ry="1.21" fill="#7c99aa" style="--ml10-x:-6.02px;--ml10-y:75.78px;--ml10-delay:1.223s;--ml10-time:0.940s"/>
+<ellipse class="ml10-speck" cx="488.29" cy="295.17" rx="2.97" ry="2.23" fill="#dde4e4" style="--ml10-x:-59.93px;--ml10-y:77.80px;--ml10-delay:1.235s;--ml10-time:0.948s"/>
+<ellipse class="ml10-speck" cx="468.85" cy="200.91" rx="1.58" ry="1.18" fill="#eff7f9" style="--ml10-x:35.39px;--ml10-y:148.48px;--ml10-delay:1.227s;--ml10-time:1.026s"/>
+<ellipse class="ml10-speck" cx="527.76" cy="257.01" rx="1.41" ry="1.06" fill="#dce7eb" style="--ml10-x:67.72px;--ml10-y:105.16px;--ml10-delay:1.253s;--ml10-time:0.999s"/>
+<ellipse class="ml10-speck" cx="497.71" cy="194.94" rx="2.00" ry="1.50" fill="#c2d2dc" style="--ml10-x:-53.58px;--ml10-y:180.18px;--ml10-delay:1.288s;--ml10-time:1.103s"/>
+<ellipse class="ml10-speck" cx="519.63" cy="248.06" rx="1.71" ry="1.28" fill="#9bb3c4" style="--ml10-x:-11.80px;--ml10-y:97.67px;--ml10-delay:1.304s;--ml10-time:1.023s"/>
+<ellipse class="ml10-speck" cx="574.77" cy="182.16" rx="2.35" ry="1.76" fill="#b7cdd8" style="--ml10-x:-88.12px;--ml10-y:165.70px;--ml10-delay:1.333s;--ml10-time:1.152s"/>
+<ellipse class="ml10-speck" cx="466.44" cy="219.59" rx="2.76" ry="2.07" fill="#7c99aa" style="--ml10-x:70.44px;--ml10-y:142.58px;--ml10-delay:1.280s;--ml10-time:1.066s"/>
+<ellipse class="ml10-speck" cx="541.57" cy="153.96" rx="3.47" ry="2.60" fill="#dde4e4" style="--ml10-x:38.43px;--ml10-y:209.82px;--ml10-delay:1.293s;--ml10-time:1.221s"/>
+<ellipse class="ml10-speck" cx="575.19" cy="176.54" rx="2.79" ry="2.09" fill="#eff7f9" style="--ml10-x:-128.89px;--ml10-y:188.74px;--ml10-delay:1.352s;--ml10-time:1.186s"/>
+<ellipse class="ml10-speck" cx="476.35" cy="279.71" rx="3.08" ry="2.31" fill="#dce7eb" style="--ml10-x:-21.87px;--ml10-y:82.15px;--ml10-delay:1.333s;--ml10-time:0.975s"/>
+<ellipse class="ml10-speck" cx="461.67" cy="275.46" rx="2.88" ry="2.16" fill="#c2d2dc" style="--ml10-x:-37.66px;--ml10-y:100.96px;--ml10-delay:1.400s;--ml10-time:0.948s"/>
+<ellipse class="ml10-speck" cx="466.04" cy="297.09" rx="2.67" ry="2.00" fill="#9bb3c4" style="--ml10-x:62.17px;--ml10-y:70.33px;--ml10-delay:1.398s;--ml10-time:0.985s"/>
+<ellipse class="ml10-speck" cx="565.36" cy="239.25" rx="2.14" ry="1.60" fill="#b7cdd8" style="--ml10-x:44.71px;--ml10-y:136.32px;--ml10-delay:0.083s;--ml10-time:1.114s"/>
+<ellipse class="ml10-speck" cx="490.09" cy="267.03" rx="1.94" ry="1.45" fill="#7c99aa" style="--ml10-x:3.56px;--ml10-y:107.90px;--ml10-delay:0.128s;--ml10-time:1.004s"/>
+<ellipse class="ml10-speck" cx="499.67" cy="185.87" rx="2.50" ry="1.87" fill="#dde4e4" style="--ml10-x:-43.61px;--ml10-y:171.48px;--ml10-delay:0.116s;--ml10-time:1.183s"/>
+<ellipse class="ml10-speck" cx="537.60" cy="203.18" rx="1.80" ry="1.35" fill="#eff7f9" style="--ml10-x:43.77px;--ml10-y:158.78px;--ml10-delay:0.112s;--ml10-time:1.130s"/>
+<ellipse class="ml10-speck" cx="528.07" cy="181.66" rx="1.74" ry="1.31" fill="#dce7eb" style="--ml10-x:-5.47px;--ml10-y:179.76px;--ml10-delay:0.210s;--ml10-time:1.109s"/>
+<ellipse class="ml10-speck" cx="557.74" cy="167.96" rx="1.93" ry="1.44" fill="#c2d2dc" style="--ml10-x:-124.78px;--ml10-y:206.41px;--ml10-delay:0.199s;--ml10-time:1.273s"/>
+<ellipse class="ml10-speck" cx="568.66" cy="284.29" rx="2.31" ry="1.74" fill="#9bb3c4" style="--ml10-x:-2.01px;--ml10-y:74.43px;--ml10-delay:0.226s;--ml10-time:0.965s"/>
+<ellipse class="ml10-speck" cx="578.09" cy="272.96" rx="3.07" ry="2.30" fill="#b7cdd8" style="--ml10-x:-138.57px;--ml10-y:90.77px;--ml10-delay:0.214s;--ml10-time:1.026s"/>
+<ellipse class="ml10-speck" cx="519.17" cy="187.34" rx="2.23" ry="1.68" fill="#7c99aa" style="--ml10-x:-85.52px;--ml10-y:183.34px;--ml10-delay:0.198s;--ml10-time:1.102s"/>
+<ellipse class="ml10-speck" cx="490.87" cy="221.25" rx="2.95" ry="2.21" fill="#dde4e4" style="--ml10-x:20.55px;--ml10-y:140.42px;--ml10-delay:0.253s;--ml10-time:1.137s"/>
+<ellipse class="ml10-speck" cx="478.38" cy="228.32" rx="1.68" ry="1.26" fill="#eff7f9" style="--ml10-x:104.41px;--ml10-y:146.48px;--ml10-delay:0.264s;--ml10-time:1.027s"/>
+<ellipse class="ml10-speck" cx="563.40" cy="220.32" rx="2.91" ry="2.18" fill="#dce7eb" style="--ml10-x:-37.96px;--ml10-y:128.74px;--ml10-delay:0.297s;--ml10-time:1.064s"/>
+<ellipse class="ml10-speck" cx="529.16" cy="170.37" rx="2.29" ry="1.72" fill="#c2d2dc" style="--ml10-x:-14.66px;--ml10-y:192.03px;--ml10-delay:0.279s;--ml10-time:1.228s"/>
+<ellipse class="ml10-speck" cx="494.12" cy="229.72" rx="2.49" ry="1.87" fill="#9bb3c4" style="--ml10-x:0.09px;--ml10-y:125.89px;--ml10-delay:0.291s;--ml10-time:1.114s"/>
+<ellipse class="ml10-speck" cx="459.52" cy="207.89" rx="2.07" ry="1.55" fill="#b7cdd8" style="--ml10-x:128.61px;--ml10-y:162.34px;--ml10-delay:0.331s;--ml10-time:1.198s"/>
+<ellipse class="ml10-speck" cx="469.45" cy="269.35" rx="1.70" ry="1.28" fill="#7c99aa" style="--ml10-x:34.00px;--ml10-y:87.25px;--ml10-delay:0.318s;--ml10-time:0.912s"/>
+<ellipse class="ml10-speck" cx="484.92" cy="168.96" rx="2.99" ry="2.24" fill="#dde4e4" style="--ml10-x:58.78px;--ml10-y:183.41px;--ml10-delay:0.311s;--ml10-time:1.146s"/>
+<ellipse class="ml10-speck" cx="544.98" cy="254.54" rx="2.48" ry="1.86" fill="#eff7f9" style="--ml10-x:10.95px;--ml10-y:106.71px;--ml10-delay:0.319s;--ml10-time:0.968s"/>
+<ellipse class="ml10-speck" cx="550.46" cy="291.41" rx="1.67" ry="1.25" fill="#dce7eb" style="--ml10-x:-41.77px;--ml10-y:67.03px;--ml10-delay:0.332s;--ml10-time:0.878s"/>
+<ellipse class="ml10-speck" cx="564.55" cy="303.94" rx="2.38" ry="1.79" fill="#c2d2dc" style="--ml10-x:-95.08px;--ml10-y:71.00px;--ml10-delay:0.383s;--ml10-time:0.952s"/>
+<ellipse class="ml10-speck" cx="576.84" cy="175.82" rx="1.81" ry="1.36" fill="#9bb3c4" style="--ml10-x:-105.40px;--ml10-y:185.09px;--ml10-delay:0.421s;--ml10-time:1.218s"/>
+<ellipse class="ml10-speck" cx="571.07" cy="218.00" rx="1.87" ry="1.40" fill="#b7cdd8" style="--ml10-x:-91.69px;--ml10-y:144.51px;--ml10-delay:0.420s;--ml10-time:1.155s"/>
+<ellipse class="ml10-speck" cx="497.22" cy="294.88" rx="3.58" ry="2.68" fill="#7c99aa" style="--ml10-x:-42.18px;--ml10-y:79.04px;--ml10-delay:0.366s;--ml10-time:0.964s"/>
+<ellipse class="ml10-speck" cx="546.83" cy="283.43" rx="1.38" ry="1.04" fill="#dde4e4" style="--ml10-x:-37.82px;--ml10-y:91.72px;--ml10-delay:0.409s;--ml10-time:0.905s"/>
+<ellipse class="ml10-speck" cx="527.05" cy="298.30" rx="2.95" ry="2.21" fill="#eff7f9" style="--ml10-x:-38.08px;--ml10-y:55.22px;--ml10-delay:0.412s;--ml10-time:0.961s"/>
+<ellipse class="ml10-speck" cx="515.37" cy="270.20" rx="2.26" ry="1.70" fill="#dce7eb" style="--ml10-x:-87.19px;--ml10-y:100.66px;--ml10-delay:0.421s;--ml10-time:1.031s"/>
+<ellipse class="ml10-speck" cx="480.28" cy="179.42" rx="2.55" ry="1.91" fill="#c2d2dc" style="--ml10-x:-32.29px;--ml10-y:194.89px;--ml10-delay:0.485s;--ml10-time:1.265s"/>
+<ellipse class="ml10-speck" cx="560.89" cy="263.05" rx="2.55" ry="1.91" fill="#9bb3c4" style="--ml10-x:-79.77px;--ml10-y:108.18px;--ml10-delay:0.445s;--ml10-time:0.933s"/>
+<ellipse class="ml10-speck" cx="486.73" cy="285.15" rx="1.91" ry="1.43" fill="#b7cdd8" style="--ml10-x:-5.99px;--ml10-y:83.07px;--ml10-delay:0.484s;--ml10-time:1.009s"/>
+<ellipse class="ml10-speck" cx="544.62" cy="200.36" rx="2.37" ry="1.78" fill="#7c99aa" style="--ml10-x:-72.80px;--ml10-y:157.72px;--ml10-delay:0.492s;--ml10-time:1.069s"/>
+<ellipse class="ml10-speck" cx="571.76" cy="225.90" rx="2.82" ry="2.12" fill="#dde4e4" style="--ml10-x:29.07px;--ml10-y:142.31px;--ml10-delay:0.506s;--ml10-time:1.150s"/>
+<ellipse class="ml10-speck" cx="545.77" cy="244.39" rx="3.61" ry="2.71" fill="#eff7f9" style="--ml10-x:-107.83px;--ml10-y:128.21px;--ml10-delay:0.516s;--ml10-time:1.000s"/>
+<ellipse class="ml10-speck" cx="494.83" cy="276.36" rx="3.11" ry="2.33" fill="#dce7eb" style="--ml10-x:10.94px;--ml10-y:80.89px;--ml10-delay:0.514s;--ml10-time:0.988s"/>
+<ellipse class="ml10-speck" cx="477.46" cy="196.35" rx="1.75" ry="1.31" fill="#c2d2dc" style="--ml10-x:136.11px;--ml10-y:178.17px;--ml10-delay:0.550s;--ml10-time:1.214s"/>
+<ellipse class="ml10-speck" cx="496.11" cy="235.90" rx="1.43" ry="1.07" fill="#9bb3c4" style="--ml10-x:15.39px;--ml10-y:132.53px;--ml10-delay:0.526s;--ml10-time:1.007s"/>
+<ellipse class="ml10-speck" cx="480.85" cy="275.63" rx="2.22" ry="1.67" fill="#b7cdd8" style="--ml10-x:-9.74px;--ml10-y:101.45px;--ml10-delay:0.555s;--ml10-time:0.960s"/>
+<ellipse class="ml10-speck" cx="537.48" cy="224.21" rx="1.80" ry="1.35" fill="#7c99aa" style="--ml10-x:34.25px;--ml10-y:151.55px;--ml10-delay:0.588s;--ml10-time:1.045s"/>
+<ellipse class="ml10-speck" cx="510.27" cy="161.44" rx="1.78" ry="1.34" fill="#dde4e4" style="--ml10-x:86.20px;--ml10-y:207.77px;--ml10-delay:0.630s;--ml10-time:1.255s"/>
+<ellipse class="ml10-speck" cx="571.24" cy="154.26" rx="2.51" ry="1.88" fill="#eff7f9" style="--ml10-x:-79.39px;--ml10-y:206.88px;--ml10-delay:0.639s;--ml10-time:1.157s"/>
+<ellipse class="ml10-speck" cx="486.29" cy="263.42" rx="2.61" ry="1.96" fill="#dce7eb" style="--ml10-x:47.35px;--ml10-y:91.29px;--ml10-delay:0.594s;--ml10-time:0.990s"/>
+<ellipse class="ml10-speck" cx="517.83" cy="254.71" rx="2.40" ry="1.80" fill="#c2d2dc" style="--ml10-x:7.65px;--ml10-y:110.15px;--ml10-delay:0.610s;--ml10-time:1.045s"/>
+<ellipse class="ml10-speck" cx="558.36" cy="163.31" rx="2.97" ry="2.23" fill="#9bb3c4" style="--ml10-x:55.71px;--ml10-y:211.15px;--ml10-delay:0.707s;--ml10-time:1.266s"/>
+<ellipse class="ml10-speck" cx="558.61" cy="169.25" rx="3.02" ry="2.27" fill="#b7cdd8" style="--ml10-x:-73.72px;--ml10-y:186.20px;--ml10-delay:0.707s;--ml10-time:1.222s"/>
+<ellipse class="ml10-speck" cx="512.53" cy="231.14" rx="2.25" ry="1.69" fill="#7c99aa" style="--ml10-x:-81.84px;--ml10-y:138.10px;--ml10-delay:0.734s;--ml10-time:1.110s"/>
+<ellipse class="ml10-speck" cx="559.74" cy="250.75" rx="2.78" ry="2.08" fill="#dde4e4" style="--ml10-x:-36.83px;--ml10-y:110.92px;--ml10-delay:0.713s;--ml10-time:1.045s"/>
+<ellipse class="ml10-speck" cx="535.40" cy="197.76" rx="1.41" ry="1.06" fill="#eff7f9" style="--ml10-x:-87.43px;--ml10-y:178.22px;--ml10-delay:0.705s;--ml10-time:1.156s"/>
+<ellipse class="ml10-speck" cx="528.43" cy="301.91" rx="2.21" ry="1.66" fill="#dce7eb" style="--ml10-x:-71.18px;--ml10-y:55.19px;--ml10-delay:0.715s;--ml10-time:0.904s"/>
+<ellipse class="ml10-speck" cx="549.90" cy="172.00" rx="1.48" ry="1.11" fill="#c2d2dc" style="--ml10-x:1.14px;--ml10-y:202.06px;--ml10-delay:0.736s;--ml10-time:1.262s"/>
+<ellipse class="ml10-speck" cx="566.35" cy="263.24" rx="2.55" ry="1.91" fill="#9bb3c4" style="--ml10-x:-133.98px;--ml10-y:110.37px;--ml10-delay:0.737s;--ml10-time:1.043s"/>
+<ellipse class="ml10-speck" cx="526.36" cy="272.98" rx="1.70" ry="1.28" fill="#b7cdd8" style="--ml10-x:21.12px;--ml10-y:88.11px;--ml10-delay:0.757s;--ml10-time:0.998s"/>
+<ellipse class="ml10-speck" cx="509.38" cy="250.08" rx="2.02" ry="1.52" fill="#7c99aa" style="--ml10-x:-26.30px;--ml10-y:117.52px;--ml10-delay:0.799s;--ml10-time:1.093s"/>
+<ellipse class="ml10-speck" cx="523.59" cy="156.15" rx="1.59" ry="1.20" fill="#dde4e4" style="--ml10-x:-80.01px;--ml10-y:211.96px;--ml10-delay:0.765s;--ml10-time:1.172s"/>
+<ellipse class="ml10-speck" cx="574.24" cy="223.52" rx="2.24" ry="1.68" fill="#eff7f9" style="--ml10-x:-120.37px;--ml10-y:150.12px;--ml10-delay:0.843s;--ml10-time:1.047s"/>
+<ellipse class="ml10-speck" cx="475.35" cy="188.15" rx="2.93" ry="2.19" fill="#dce7eb" style="--ml10-x:78.04px;--ml10-y:170.62px;--ml10-delay:0.800s;--ml10-time:1.220s"/>
+<ellipse class="ml10-speck" cx="549.04" cy="219.71" rx="2.82" ry="2.11" fill="#c2d2dc" style="--ml10-x:-108.62px;--ml10-y:144.95px;--ml10-delay:0.811s;--ml10-time:1.147s"/>
+<ellipse class="ml10-speck" cx="480.33" cy="295.54" rx="2.67" ry="2.00" fill="#9bb3c4" style="--ml10-x:81.59px;--ml10-y:76.07px;--ml10-delay:0.891s;--ml10-time:0.969s"/>
+<ellipse class="ml10-speck" cx="536.71" cy="160.19" rx="1.90" ry="1.42" fill="#b7cdd8" style="--ml10-x:12.72px;--ml10-y:196.61px;--ml10-delay:0.876s;--ml10-time:1.265s"/>
+<ellipse class="ml10-speck" cx="506.92" cy="155.58" rx="2.54" ry="1.91" fill="#7c99aa" style="--ml10-x:-48.47px;--ml10-y:215.41px;--ml10-delay:0.840s;--ml10-time:1.180s"/>
+<ellipse class="ml10-speck" cx="495.58" cy="185.69" rx="2.45" ry="1.84" fill="#dde4e4" style="--ml10-x:-56.79px;--ml10-y:187.35px;--ml10-delay:0.896s;--ml10-time:1.228s"/>
+<ellipse class="ml10-speck" cx="460.93" cy="238.16" rx="2.53" ry="1.89" fill="#eff7f9" style="--ml10-x:146.01px;--ml10-y:131.88px;--ml10-delay:0.945s;--ml10-time:1.047s"/>
+<ellipse class="ml10-speck" cx="553.33" cy="191.90" rx="2.93" ry="2.20" fill="#dce7eb" style="--ml10-x:-88.07px;--ml10-y:181.99px;--ml10-delay:0.901s;--ml10-time:1.183s"/>
+<ellipse class="ml10-speck" cx="466.74" cy="222.76" rx="3.15" ry="2.36" fill="#c2d2dc" style="--ml10-x:81.27px;--ml10-y:154.50px;--ml10-delay:0.957s;--ml10-time:1.067s"/>
+<ellipse class="ml10-speck" cx="510.50" cy="213.49" rx="2.55" ry="1.91" fill="#9bb3c4" style="--ml10-x:58.27px;--ml10-y:156.74px;--ml10-delay:0.987s;--ml10-time:1.140s"/>
+<ellipse class="ml10-speck" cx="516.91" cy="292.61" rx="3.03" ry="2.27" fill="#b7cdd8" style="--ml10-x:-57.02px;--ml10-y:73.38px;--ml10-delay:0.928s;--ml10-time:0.976s"/>
+<ellipse class="ml10-speck" cx="492.05" cy="210.54" rx="2.90" ry="2.18" fill="#7c99aa" style="--ml10-x:-2.31px;--ml10-y:154.16px;--ml10-delay:1.003s;--ml10-time:1.045s"/>
+<ellipse class="ml10-speck" cx="474.65" cy="198.38" rx="2.07" ry="1.55" fill="#dde4e4" style="--ml10-x:23.05px;--ml10-y:160.97px;--ml10-delay:0.983s;--ml10-time:1.166s"/>
+<ellipse class="ml10-speck" cx="512.77" cy="243.56" rx="2.18" ry="1.63" fill="#eff7f9" style="--ml10-x:-23.22px;--ml10-y:111.94px;--ml10-delay:1.007s;--ml10-time:1.064s"/>
+<ellipse class="ml10-speck" cx="494.18" cy="206.18" rx="3.04" ry="2.28" fill="#dce7eb" style="--ml10-x:9.20px;--ml10-y:138.17px;--ml10-delay:1.002s;--ml10-time:1.108s"/>
+<ellipse class="ml10-speck" cx="505.75" cy="212.40" rx="3.14" ry="2.36" fill="#c2d2dc" style="--ml10-x:-22.67px;--ml10-y:149.02px;--ml10-delay:1.029s;--ml10-time:1.120s"/>
+<ellipse class="ml10-speck" cx="568.08" cy="260.64" rx="2.55" ry="1.92" fill="#9bb3c4" style="--ml10-x:-40.51px;--ml10-y:111.72px;--ml10-delay:1.024s;--ml10-time:1.009s"/>
+<ellipse class="ml10-speck" cx="534.08" cy="299.93" rx="3.09" ry="2.32" fill="#b7cdd8" style="--ml10-x:-107.51px;--ml10-y:72.72px;--ml10-delay:1.055s;--ml10-time:0.961s"/>
+<ellipse class="ml10-speck" cx="547.66" cy="311.74" rx="2.33" ry="1.74" fill="#7c99aa" style="--ml10-x:-93.39px;--ml10-y:53.54px;--ml10-delay:1.034s;--ml10-time:0.811s"/>
+<ellipse class="ml10-speck" cx="516.21" cy="300.84" rx="2.98" ry="2.23" fill="#dde4e4" style="--ml10-x:-4.93px;--ml10-y:69.18px;--ml10-delay:1.113s;--ml10-time:0.922s"/>
+<ellipse class="ml10-speck" cx="476.25" cy="274.64" rx="2.68" ry="2.01" fill="#eff7f9" style="--ml10-x:-4.44px;--ml10-y:82.74px;--ml10-delay:1.114s;--ml10-time:0.919s"/>
+<ellipse class="ml10-speck" cx="524.94" cy="240.49" rx="2.05" ry="1.54" fill="#dce7eb" style="--ml10-x:35.64px;--ml10-y:125.77px;--ml10-delay:1.125s;--ml10-time:1.056s"/>
+<ellipse class="ml10-speck" cx="555.73" cy="211.71" rx="2.75" ry="2.06" fill="#c2d2dc" style="--ml10-x:52.14px;--ml10-y:160.49px;--ml10-delay:1.138s;--ml10-time:1.095s"/>
+<ellipse class="ml10-speck" cx="544.63" cy="312.18" rx="3.45" ry="2.59" fill="#9bb3c4" style="--ml10-x:12.93px;--ml10-y:46.70px;--ml10-delay:1.090s;--ml10-time:0.917s"/>
+<ellipse class="ml10-speck" cx="509.09" cy="268.25" rx="2.24" ry="1.68" fill="#b7cdd8" style="--ml10-x:23.96px;--ml10-y:106.62px;--ml10-delay:1.158s;--ml10-time:1.030s"/>
+<ellipse class="ml10-speck" cx="552.80" cy="176.69" rx="1.71" ry="1.28" fill="#7c99aa" style="--ml10-x:-70.53px;--ml10-y:182.11px;--ml10-delay:1.133s;--ml10-time:1.221s"/>
+<ellipse class="ml10-speck" cx="499.72" cy="176.53" rx="1.64" ry="1.23" fill="#dde4e4" style="--ml10-x:115.11px;--ml10-y:200.76px;--ml10-delay:1.200s;--ml10-time:1.247s"/>
+<ellipse class="ml10-speck" cx="502.38" cy="205.00" rx="1.97" ry="1.48" fill="#eff7f9" style="--ml10-x:92.93px;--ml10-y:161.82px;--ml10-delay:1.219s;--ml10-time:1.163s"/>
+<ellipse class="ml10-speck" cx="539.40" cy="290.04" rx="1.94" ry="1.45" fill="#dce7eb" style="--ml10-x:-75.57px;--ml10-y:83.40px;--ml10-delay:1.185s;--ml10-time:0.922s"/>
+<ellipse class="ml10-speck" cx="472.43" cy="296.32" rx="1.44" ry="1.08" fill="#c2d2dc" style="--ml10-x:-17.24px;--ml10-y:79.10px;--ml10-delay:1.224s;--ml10-time:0.887s"/>
+<ellipse class="ml10-speck" cx="554.62" cy="263.69" rx="2.83" ry="2.12" fill="#9bb3c4" style="--ml10-x:-116.33px;--ml10-y:103.11px;--ml10-delay:1.269s;--ml10-time:0.962s"/>
+<ellipse class="ml10-speck" cx="566.22" cy="267.06" rx="1.37" ry="1.03" fill="#b7cdd8" style="--ml10-x:41.37px;--ml10-y:103.82px;--ml10-delay:1.264s;--ml10-time:0.947s"/>
+<ellipse class="ml10-speck" cx="535.31" cy="249.17" rx="3.49" ry="2.62" fill="#7c99aa" style="--ml10-x:-30.74px;--ml10-y:95.89px;--ml10-delay:1.289s;--ml10-time:1.026s"/>
+<ellipse class="ml10-speck" cx="469.53" cy="216.13" rx="2.59" ry="1.94" fill="#dde4e4" style="--ml10-x:124.70px;--ml10-y:158.74px;--ml10-delay:1.262s;--ml10-time:1.078s"/>
+<ellipse class="ml10-speck" cx="489.31" cy="173.16" rx="1.56" ry="1.17" fill="#eff7f9" style="--ml10-x:58.21px;--ml10-y:197.27px;--ml10-delay:1.264s;--ml10-time:1.260s"/>
+<ellipse class="ml10-speck" cx="498.61" cy="168.83" rx="2.85" ry="2.14" fill="#dce7eb" style="--ml10-x:88.11px;--ml10-y:195.64px;--ml10-delay:1.286s;--ml10-time:1.211s"/>
+<ellipse class="ml10-speck" cx="476.43" cy="286.70" rx="2.33" ry="1.75" fill="#c2d2dc" style="--ml10-x:-47.37px;--ml10-y:86.46px;--ml10-delay:1.272s;--ml10-time:0.896s"/>
+<ellipse class="ml10-speck" cx="578.74" cy="210.26" rx="1.62" ry="1.21" fill="#9bb3c4" style="--ml10-x:-47.26px;--ml10-y:139.61px;--ml10-delay:1.282s;--ml10-time:1.015s"/>
+<ellipse class="ml10-speck" cx="479.13" cy="195.91" rx="2.70" ry="2.03" fill="#b7cdd8" style="--ml10-x:95.50px;--ml10-y:167.16px;--ml10-delay:1.328s;--ml10-time:1.118s"/>
+<ellipse class="ml10-speck" cx="473.42" cy="182.74" rx="2.12" ry="1.59" fill="#7c99aa" style="--ml10-x:30.30px;--ml10-y:177.46px;--ml10-delay:1.383s;--ml10-time:1.140s"/>
+<ellipse class="ml10-speck" cx="489.68" cy="203.73" rx="2.16" ry="1.62" fill="#dde4e4" style="--ml10-x:107.07px;--ml10-y:173.61px;--ml10-delay:1.358s;--ml10-time:1.180s"/>
+<ellipse class="ml10-speck" cx="501.52" cy="283.76" rx="2.42" ry="1.81" fill="#eff7f9" style="--ml10-x:68.25px;--ml10-y:83.37px;--ml10-delay:1.398s;--ml10-time:0.985s"/>
+<ellipse class="ml10-speck" cx="488.12" cy="307.50" rx="2.14" ry="1.60" fill="#dce7eb" style="--ml10-x:-59.61px;--ml10-y:66.99px;--ml10-delay:0.099s;--ml10-time:0.926s"/>
+<ellipse class="ml10-speck" cx="462.51" cy="220.34" rx="2.90" ry="2.17" fill="#c2d2dc" style="--ml10-x:-8.56px;--ml10-y:152.80px;--ml10-delay:0.116s;--ml10-time:1.079s"/>
+<ellipse class="ml10-speck" cx="472.39" cy="313.29" rx="1.75" ry="1.31" fill="#9bb3c4" style="--ml10-x:132.78px;--ml10-y:58.40px;--ml10-delay:0.118s;--ml10-time:0.827s"/>
+<ellipse class="ml10-speck" cx="472.50" cy="302.20" rx="1.99" ry="1.49" fill="#b7cdd8" style="--ml10-x:51.87px;--ml10-y:59.60px;--ml10-delay:0.196s;--ml10-time:0.873s"/>
+<ellipse class="ml10-speck" cx="529.63" cy="303.15" rx="1.67" ry="1.25" fill="#7c99aa" style="--ml10-x:4.46px;--ml10-y:65.89px;--ml10-delay:0.177s;--ml10-time:0.851s"/>
+<ellipse class="ml10-speck" cx="466.72" cy="189.71" rx="1.38" ry="1.03" fill="#dde4e4" style="--ml10-x:108.26px;--ml10-y:172.72px;--ml10-delay:0.202s;--ml10-time:1.154s"/>
+<ellipse class="ml10-speck" cx="459.73" cy="288.30" rx="1.37" ry="1.03" fill="#eff7f9" style="--ml10-x:130.13px;--ml10-y:74.10px;--ml10-delay:0.172s;--ml10-time:0.984s"/>
+<ellipse class="ml10-speck" cx="517.63" cy="263.92" rx="1.78" ry="1.33" fill="#dce7eb" style="--ml10-x:47.53px;--ml10-y:93.00px;--ml10-delay:0.247s;--ml10-time:0.911s"/>
+<ellipse class="ml10-speck" cx="498.12" cy="244.01" rx="2.92" ry="2.19" fill="#c2d2dc" style="--ml10-x:-59.84px;--ml10-y:124.86px;--ml10-delay:0.236s;--ml10-time:1.034s"/>
+<ellipse class="ml10-speck" cx="559.91" cy="159.77" rx="1.82" ry="1.37" fill="#9bb3c4" style="--ml10-x:-75.42px;--ml10-y:194.93px;--ml10-delay:0.232s;--ml10-time:1.194s"/>
+<ellipse class="ml10-speck" cx="493.98" cy="186.79" rx="2.87" ry="2.15" fill="#b7cdd8" style="--ml10-x:120.64px;--ml10-y:186.91px;--ml10-delay:0.270s;--ml10-time:1.174s"/>
+<ellipse class="ml10-speck" cx="479.19" cy="176.82" rx="1.63" ry="1.22" fill="#7c99aa" style="--ml10-x:93.58px;--ml10-y:188.55px;--ml10-delay:0.257s;--ml10-time:1.159s"/>
+<ellipse class="ml10-speck" cx="492.38" cy="297.95" rx="2.60" ry="1.95" fill="#dde4e4" style="--ml10-x:-37.21px;--ml10-y:59.42px;--ml10-delay:0.310s;--ml10-time:0.970s"/>
+<ellipse class="ml10-speck" cx="494.19" cy="223.83" rx="2.80" ry="2.10" fill="#eff7f9" style="--ml10-x:-73.98px;--ml10-y:152.79px;--ml10-delay:0.301s;--ml10-time:1.081s"/>
+<ellipse class="ml10-speck" cx="538.79" cy="155.52" rx="2.59" ry="1.94" fill="#dce7eb" style="--ml10-x:-80.22px;--ml10-y:202.46px;--ml10-delay:0.341s;--ml10-time:1.226s"/>
+<ellipse class="ml10-speck" cx="570.27" cy="225.23" rx="2.30" ry="1.73" fill="#c2d2dc" style="--ml10-x:16.59px;--ml10-y:138.26px;--ml10-delay:0.316s;--ml10-time:1.071s"/>
+<ellipse class="ml10-speck" cx="495.04" cy="195.92" rx="2.95" ry="2.21" fill="#9bb3c4" style="--ml10-x:119.06px;--ml10-y:180.44px;--ml10-delay:0.349s;--ml10-time:1.139s"/>
+<ellipse class="ml10-speck" cx="546.94" cy="223.59" rx="2.64" ry="1.98" fill="#b7cdd8" style="--ml10-x:-56.65px;--ml10-y:132.11px;--ml10-delay:0.347s;--ml10-time:1.127s"/>
+<ellipse class="ml10-speck" cx="470.17" cy="207.65" rx="2.07" ry="1.56" fill="#7c99aa" style="--ml10-x:-35.32px;--ml10-y:159.90px;--ml10-delay:0.388s;--ml10-time:1.049s"/>
+<ellipse class="ml10-speck" cx="543.79" cy="235.14" rx="2.08" ry="1.56" fill="#dde4e4" style="--ml10-x:-2.87px;--ml10-y:138.85px;--ml10-delay:0.342s;--ml10-time:1.135s"/>
+<ellipse class="ml10-speck" cx="555.22" cy="273.57" rx="1.62" ry="1.22" fill="#eff7f9" style="--ml10-x:-76.05px;--ml10-y:89.76px;--ml10-delay:0.420s;--ml10-time:0.943s"/>
+<ellipse class="ml10-speck" cx="530.62" cy="273.55" rx="1.68" ry="1.26" fill="#dce7eb" style="--ml10-x:59.60px;--ml10-y:102.93px;--ml10-delay:0.397s;--ml10-time:1.037s"/>
+<ellipse class="ml10-speck" cx="538.32" cy="189.80" rx="1.46" ry="1.10" fill="#c2d2dc" style="--ml10-x:-76.64px;--ml10-y:183.65px;--ml10-delay:0.411s;--ml10-time:1.157s"/>
+<ellipse class="ml10-speck" cx="487.34" cy="192.61" rx="1.88" ry="1.41" fill="#9bb3c4" style="--ml10-x:-62.68px;--ml10-y:181.57px;--ml10-delay:0.428s;--ml10-time:1.116s"/>
+<ellipse class="ml10-speck" cx="525.03" cy="267.60" rx="2.83" ry="2.12" fill="#b7cdd8" style="--ml10-x:-8.02px;--ml10-y:83.60px;--ml10-delay:0.460s;--ml10-time:1.013s"/>
+<ellipse class="ml10-speck" cx="562.56" cy="152.08" rx="2.96" ry="2.22" fill="#7c99aa" style="--ml10-x:-28.76px;--ml10-y:205.47px;--ml10-delay:0.469s;--ml10-time:1.222s"/>
+<ellipse class="ml10-speck" cx="532.61" cy="292.13" rx="3.28" ry="2.46" fill="#dde4e4" style="--ml10-x:0.58px;--ml10-y:67.94px;--ml10-delay:0.490s;--ml10-time:0.858s"/>
+<ellipse class="ml10-speck" cx="554.28" cy="247.50" rx="1.59" ry="1.19" fill="#eff7f9" style="--ml10-x:-25.85px;--ml10-y:98.13px;--ml10-delay:0.460s;--ml10-time:1.037s"/>
+<ellipse class="ml10-speck" cx="468.23" cy="179.03" rx="1.77" ry="1.33" fill="#dce7eb" style="--ml10-x:-24.89px;--ml10-y:196.88px;--ml10-delay:0.506s;--ml10-time:1.224s"/>
+<ellipse class="ml10-speck" cx="563.84" cy="256.99" rx="3.07" ry="2.30" fill="#c2d2dc" style="--ml10-x:27.28px;--ml10-y:115.38px;--ml10-delay:0.493s;--ml10-time:0.967s"/>
+<ellipse class="ml10-speck" cx="567.19" cy="166.52" rx="1.93" ry="1.45" fill="#9bb3c4" style="--ml10-x:-35.51px;--ml10-y:187.61px;--ml10-delay:0.509s;--ml10-time:1.175s"/>
+<ellipse class="ml10-speck" cx="495.41" cy="195.36" rx="2.76" ry="2.07" fill="#b7cdd8" style="--ml10-x:-14.24px;--ml10-y:173.60px;--ml10-delay:0.509s;--ml10-time:1.202s"/>
+<ellipse class="ml10-speck" cx="536.31" cy="174.55" rx="2.77" ry="2.07" fill="#7c99aa" style="--ml10-x:54.16px;--ml10-y:186.20px;--ml10-delay:0.500s;--ml10-time:1.133s"/>
+<ellipse class="ml10-speck" cx="511.14" cy="253.24" rx="2.46" ry="1.85" fill="#dde4e4" style="--ml10-x:-32.07px;--ml10-y:98.42px;--ml10-delay:0.518s;--ml10-time:0.970s"/>
+<ellipse class="ml10-speck" cx="535.45" cy="219.44" rx="3.08" ry="2.31" fill="#eff7f9" style="--ml10-x:45.12px;--ml10-y:150.30px;--ml10-delay:0.613s;--ml10-time:1.075s"/>
+<ellipse class="ml10-speck" cx="470.74" cy="201.29" rx="3.68" ry="2.76" fill="#dce7eb" style="--ml10-x:122.51px;--ml10-y:166.25px;--ml10-delay:0.558s;--ml10-time:1.187s"/>
+<ellipse class="ml10-speck" cx="538.72" cy="229.12" rx="1.98" ry="1.49" fill="#c2d2dc" style="--ml10-x:-40.97px;--ml10-y:129.94px;--ml10-delay:0.556s;--ml10-time:0.983s"/>
+<ellipse class="ml10-speck" cx="543.85" cy="210.48" rx="2.86" ry="2.14" fill="#9bb3c4" style="--ml10-x:21.86px;--ml10-y:159.06px;--ml10-delay:0.568s;--ml10-time:1.147s"/>
+<ellipse class="ml10-speck" cx="499.08" cy="163.34" rx="2.46" ry="1.85" fill="#b7cdd8" style="--ml10-x:-71.58px;--ml10-y:207.97px;--ml10-delay:0.629s;--ml10-time:1.171s"/>
+<ellipse class="ml10-speck" cx="544.43" cy="211.25" rx="2.27" ry="1.70" fill="#7c99aa" style="--ml10-x:-38.57px;--ml10-y:150.59px;--ml10-delay:0.616s;--ml10-time:1.150s"/>
+<ellipse class="ml10-speck" cx="567.92" cy="168.06" rx="2.67" ry="2.00" fill="#dde4e4" style="--ml10-x:-31.21px;--ml10-y:198.82px;--ml10-delay:0.623s;--ml10-time:1.209s"/>
+<ellipse class="ml10-speck" cx="529.33" cy="198.69" rx="3.11" ry="2.33" fill="#eff7f9" style="--ml10-x:11.52px;--ml10-y:149.42px;--ml10-delay:0.649s;--ml10-time:1.043s"/>
+<ellipse class="ml10-speck" cx="550.71" cy="281.81" rx="1.99" ry="1.49" fill="#dce7eb" style="--ml10-x:16.58px;--ml10-y:70.66px;--ml10-delay:0.711s;--ml10-time:0.889s"/>
+<ellipse class="ml10-speck" cx="568.39" cy="221.93" rx="1.51" ry="1.14" fill="#c2d2dc" style="--ml10-x:39.52px;--ml10-y:155.21px;--ml10-delay:0.710s;--ml10-time:1.068s"/>
+<ellipse class="ml10-speck" cx="517.07" cy="175.03" rx="1.97" ry="1.48" fill="#9bb3c4" style="--ml10-x:-70.16px;--ml10-y:190.40px;--ml10-delay:0.732s;--ml10-time:1.212s"/>
+<ellipse class="ml10-speck" cx="537.85" cy="208.23" rx="2.25" ry="1.68" fill="#b7cdd8" style="--ml10-x:69.47px;--ml10-y:169.26px;--ml10-delay:0.687s;--ml10-time:1.214s"/>
+<ellipse class="ml10-speck" cx="559.31" cy="173.13" rx="1.94" ry="1.45" fill="#7c99aa" style="--ml10-x:-28.86px;--ml10-y:181.23px;--ml10-delay:0.692s;--ml10-time:1.108s"/>
+<ellipse class="ml10-speck" cx="502.76" cy="193.38" rx="1.64" ry="1.23" fill="#dde4e4" style="--ml10-x:30.74px;--ml10-y:172.75px;--ml10-delay:0.768s;--ml10-time:1.127s"/>
+<ellipse class="ml10-speck" cx="465.88" cy="281.97" rx="1.86" ry="1.40" fill="#eff7f9" style="--ml10-x:17.07px;--ml10-y:86.87px;--ml10-delay:0.714s;--ml10-time:1.022s"/>
+<ellipse class="ml10-speck" cx="548.35" cy="267.03" rx="1.50" ry="1.13" fill="#dce7eb" style="--ml10-x:-26.59px;--ml10-y:95.01px;--ml10-delay:0.748s;--ml10-time:1.016s"/>
+<ellipse class="ml10-speck" cx="470.12" cy="176.82" rx="2.04" ry="1.53" fill="#c2d2dc" style="--ml10-x:-46.87px;--ml10-y:196.93px;--ml10-delay:0.825s;--ml10-time:1.267s"/>
+<ellipse class="ml10-speck" cx="558.25" cy="166.10" rx="2.27" ry="1.70" fill="#9bb3c4" style="--ml10-x:3.88px;--ml10-y:197.82px;--ml10-delay:0.822s;--ml10-time:1.153s"/>
+<ellipse class="ml10-speck" cx="464.52" cy="153.37" rx="1.43" ry="1.07" fill="#b7cdd8" style="--ml10-x:120.08px;--ml10-y:221.61px;--ml10-delay:0.782s;--ml10-time:1.301s"/>
+<ellipse class="ml10-speck" cx="570.48" cy="245.76" rx="3.84" ry="2.88" fill="#7c99aa" style="--ml10-x:-37.96px;--ml10-y:109.88px;--ml10-delay:0.791s;--ml10-time:0.965s"/>
+<ellipse class="ml10-speck" cx="480.92" cy="226.49" rx="2.52" ry="1.89" fill="#dde4e4" style="--ml10-x:-49.67px;--ml10-y:147.51px;--ml10-delay:0.833s;--ml10-time:1.097s"/>
+<ellipse class="ml10-speck" cx="502.68" cy="212.52" rx="1.51" ry="1.13" fill="#eff7f9" style="--ml10-x:-64.09px;--ml10-y:158.48px;--ml10-delay:0.811s;--ml10-time:1.153s"/>
+<ellipse class="ml10-speck" cx="569.89" cy="210.52" rx="2.43" ry="1.82" fill="#dce7eb" style="--ml10-x:-65.04px;--ml10-y:152.28px;--ml10-delay:0.865s;--ml10-time:1.098s"/>
+<ellipse class="ml10-speck" cx="464.88" cy="224.07" rx="2.46" ry="1.84" fill="#c2d2dc" style="--ml10-x:-44.84px;--ml10-y:153.28px;--ml10-delay:0.916s;--ml10-time:1.050s"/>
+<ellipse class="ml10-speck" cx="464.57" cy="270.51" rx="2.34" ry="1.75" fill="#9bb3c4" style="--ml10-x:-28.69px;--ml10-y:104.11px;--ml10-delay:0.856s;--ml10-time:1.055s"/>
+<ellipse class="ml10-speck" cx="515.57" cy="309.77" rx="2.76" ry="2.07" fill="#b7cdd8" style="--ml10-x:-21.86px;--ml10-y:60.00px;--ml10-delay:0.885s;--ml10-time:0.860s"/>
+<ellipse class="ml10-speck" cx="503.07" cy="276.19" rx="1.45" ry="1.09" fill="#7c99aa" style="--ml10-x:39.11px;--ml10-y:92.96px;--ml10-delay:0.876s;--ml10-time:1.014s"/>
+<ellipse class="ml10-speck" cx="473.09" cy="276.45" rx="2.31" ry="1.73" fill="#dde4e4" style="--ml10-x:82.33px;--ml10-y:100.18px;--ml10-delay:0.975s;--ml10-time:0.967s"/>
+<ellipse class="ml10-speck" cx="485.13" cy="158.29" rx="3.67" ry="2.75" fill="#eff7f9" style="--ml10-x:23.86px;--ml10-y:202.02px;--ml10-delay:0.904s;--ml10-time:1.158s"/>
+<ellipse class="ml10-speck" cx="489.20" cy="233.84" rx="1.66" ry="1.24" fill="#dce7eb" style="--ml10-x:-43.30px;--ml10-y:137.36px;--ml10-delay:0.966s;--ml10-time:1.088s"/>
+<ellipse class="ml10-speck" cx="504.28" cy="173.61" rx="2.16" ry="1.62" fill="#c2d2dc" style="--ml10-x:60.28px;--ml10-y:183.90px;--ml10-delay:0.979s;--ml10-time:1.188s"/>
+<ellipse class="ml10-speck" cx="470.94" cy="297.95" rx="2.97" ry="2.23" fill="#9bb3c4" style="--ml10-x:37.74px;--ml10-y:63.02px;--ml10-delay:0.951s;--ml10-time:0.920s"/>
+<ellipse class="ml10-speck" cx="571.98" cy="287.81" rx="2.35" ry="1.76" fill="#b7cdd8" style="--ml10-x:21.69px;--ml10-y:82.14px;--ml10-delay:0.963s;--ml10-time:0.978s"/>
+<ellipse class="ml10-speck" cx="493.84" cy="301.09" rx="2.50" ry="1.88" fill="#7c99aa" style="--ml10-x:3.40px;--ml10-y:45.45px;--ml10-delay:1.003s;--ml10-time:0.826s"/>
+<ellipse class="ml10-speck" cx="475.34" cy="279.58" rx="2.46" ry="1.85" fill="#dde4e4" style="--ml10-x:137.05px;--ml10-y:95.66px;--ml10-delay:1.041s;--ml10-time:0.961s"/>
+<ellipse class="ml10-speck" cx="505.55" cy="190.96" rx="1.46" ry="1.10" fill="#eff7f9" style="--ml10-x:70.65px;--ml10-y:184.04px;--ml10-delay:1.034s;--ml10-time:1.157s"/>
+<ellipse class="ml10-speck" cx="460.07" cy="292.73" rx="3.11" ry="2.34" fill="#dce7eb" style="--ml10-x:77.98px;--ml10-y:59.61px;--ml10-delay:1.022s;--ml10-time:0.842s"/>
+<ellipse class="ml10-speck" cx="572.21" cy="237.70" rx="1.84" ry="1.38" fill="#c2d2dc" style="--ml10-x:-52.01px;--ml10-y:131.57px;--ml10-delay:1.065s;--ml10-time:1.107s"/>
+<ellipse class="ml10-speck" cx="483.81" cy="286.85" rx="3.15" ry="2.36" fill="#9bb3c4" style="--ml10-x:-51.08px;--ml10-y:83.43px;--ml10-delay:1.093s;--ml10-time:0.931s"/>
+<ellipse class="ml10-speck" cx="571.02" cy="216.83" rx="1.79" ry="1.34" fill="#b7cdd8" style="--ml10-x:-28.30px;--ml10-y:147.67px;--ml10-delay:1.061s;--ml10-time:1.084s"/>
+<ellipse class="ml10-speck" cx="532.38" cy="154.65" rx="1.37" ry="1.03" fill="#7c99aa" style="--ml10-x:11.99px;--ml10-y:207.22px;--ml10-delay:1.113s;--ml10-time:1.215s"/>
+<ellipse class="ml10-speck" cx="518.03" cy="275.30" rx="1.49" ry="1.12" fill="#dde4e4" style="--ml10-x:39.13px;--ml10-y:76.87px;--ml10-delay:1.100s;--ml10-time:0.882s"/>
+<ellipse class="ml10-speck" cx="514.91" cy="305.19" rx="2.58" ry="1.94" fill="#eff7f9" style="--ml10-x:-19.55px;--ml10-y:44.53px;--ml10-delay:1.121s;--ml10-time:0.890s"/>
+<ellipse class="ml10-speck" cx="531.27" cy="186.66" rx="1.44" ry="1.08" fill="#dce7eb" style="--ml10-x:-62.88px;--ml10-y:173.73px;--ml10-delay:1.136s;--ml10-time:1.201s"/>
+<ellipse class="ml10-speck" cx="524.75" cy="246.71" rx="1.77" ry="1.32" fill="#c2d2dc" style="--ml10-x:-47.86px;--ml10-y:124.47px;--ml10-delay:1.168s;--ml10-time:1.074s"/>
+<ellipse class="ml10-speck" cx="551.44" cy="232.31" rx="1.84" ry="1.38" fill="#9bb3c4" style="--ml10-x:18.19px;--ml10-y:137.25px;--ml10-delay:1.199s;--ml10-time:1.047s"/>
+<ellipse class="ml10-speck" cx="528.58" cy="172.87" rx="1.81" ry="1.36" fill="#b7cdd8" style="--ml10-x:-38.89px;--ml10-y:191.90px;--ml10-delay:1.203s;--ml10-time:1.180s"/>
+<ellipse class="ml10-speck" cx="529.30" cy="271.02" rx="2.37" ry="1.78" fill="#7c99aa" style="--ml10-x:-84.39px;--ml10-y:105.21px;--ml10-delay:1.174s;--ml10-time:1.043s"/>
+<ellipse class="ml10-speck" cx="553.70" cy="172.30" rx="2.03" ry="1.52" fill="#dde4e4" style="--ml10-x:-93.95px;--ml10-y:201.98px;--ml10-delay:1.234s;--ml10-time:1.271s"/>
+<ellipse class="ml10-speck" cx="562.51" cy="195.21" rx="2.05" ry="1.53" fill="#eff7f9" style="--ml10-x:9.73px;--ml10-y:157.83px;--ml10-delay:1.263s;--ml10-time:1.107s"/>
+<ellipse class="ml10-speck" cx="477.05" cy="254.73" rx="2.54" ry="1.91" fill="#dce7eb" style="--ml10-x:-3.12px;--ml10-y:111.24px;--ml10-delay:1.283s;--ml10-time:1.016s"/>
+<ellipse class="ml10-speck" cx="460.94" cy="294.68" rx="1.40" ry="1.05" fill="#c2d2dc" style="--ml10-x:94.93px;--ml10-y:70.27px;--ml10-delay:1.263s;--ml10-time:0.944s"/>
+<ellipse class="ml10-speck" cx="548.76" cy="311.35" rx="2.87" ry="2.15" fill="#9bb3c4" style="--ml10-x:53.19px;--ml10-y:65.21px;--ml10-delay:1.288s;--ml10-time:0.983s"/>
+<ellipse class="ml10-speck" cx="508.72" cy="215.36" rx="1.67" ry="1.26" fill="#b7cdd8" style="--ml10-x:2.70px;--ml10-y:148.58px;--ml10-delay:1.259s;--ml10-time:1.079s"/>
+<ellipse class="ml10-speck" cx="468.49" cy="244.41" rx="1.78" ry="1.34" fill="#7c99aa" style="--ml10-x:57.15px;--ml10-y:130.88px;--ml10-delay:1.282s;--ml10-time:1.053s"/>
+<ellipse class="ml10-speck" cx="548.86" cy="196.67" rx="1.96" ry="1.47" fill="#dde4e4" style="--ml10-x:-52.95px;--ml10-y:160.17px;--ml10-delay:1.276s;--ml10-time:1.053s"/>
+<ellipse class="ml10-speck" cx="567.48" cy="310.99" rx="2.17" ry="1.63" fill="#eff7f9" style="--ml10-x:-2.62px;--ml10-y:54.59px;--ml10-delay:1.312s;--ml10-time:0.923s"/>
+<ellipse class="ml10-speck" cx="576.77" cy="230.28" rx="1.97" ry="1.48" fill="#dce7eb" style="--ml10-x:-50.07px;--ml10-y:143.39px;--ml10-delay:1.364s;--ml10-time:1.105s"/>
+<ellipse class="ml10-speck" cx="566.82" cy="266.92" rx="1.47" ry="1.10" fill="#c2d2dc" style="--ml10-x:-79.91px;--ml10-y:82.40px;--ml10-delay:1.318s;--ml10-time:0.979s"/>
+<ellipse class="ml10-speck" cx="546.89" cy="179.41" rx="3.06" ry="2.29" fill="#9bb3c4" style="--ml10-x:-31.05px;--ml10-y:187.54px;--ml10-delay:1.316s;--ml10-time:1.202s"/>
+<ellipse class="ml10-speck" cx="471.31" cy="206.25" rx="2.20" ry="1.65" fill="#b7cdd8" style="--ml10-x:-46.70px;--ml10-y:167.64px;--ml10-delay:1.376s;--ml10-time:1.167s"/>
+<ellipse class="ml10-speck" cx="520.19" cy="173.67" rx="2.19" ry="1.64" fill="#7c99aa" style="--ml10-x:15.47px;--ml10-y:195.36px;--ml10-delay:0.118s;--ml10-time:1.132s"/>
+<ellipse class="ml10-speck" cx="466.37" cy="247.41" rx="3.02" ry="2.27" fill="#dde4e4" style="--ml10-x:-35.38px;--ml10-y:121.27px;--ml10-delay:0.129s;--ml10-time:0.996s"/>
+<ellipse class="ml10-speck" cx="561.20" cy="273.07" rx="2.29" ry="1.72" fill="#eff7f9" style="--ml10-x:-69.92px;--ml10-y:75.46px;--ml10-delay:0.151s;--ml10-time:0.958s"/>
+<ellipse class="ml10-speck" cx="498.05" cy="279.00" rx="2.19" ry="1.64" fill="#dce7eb" style="--ml10-x:32.98px;--ml10-y:78.49px;--ml10-delay:0.159s;--ml10-time:0.985s"/>
+<ellipse class="ml10-speck" cx="536.60" cy="170.17" rx="1.59" ry="1.19" fill="#c2d2dc" style="--ml10-x:-11.72px;--ml10-y:206.98px;--ml10-delay:0.138s;--ml10-time:1.185s"/>
+<ellipse class="ml10-speck" cx="517.68" cy="279.43" rx="2.24" ry="1.68" fill="#9bb3c4" style="--ml10-x:-84.02px;--ml10-y:93.22px;--ml10-delay:0.176s;--ml10-time:1.037s"/>
+<ellipse class="ml10-speck" cx="545.77" cy="232.93" rx="2.00" ry="1.50" fill="#b7cdd8" style="--ml10-x:-68.16px;--ml10-y:141.96px;--ml10-delay:0.199s;--ml10-time:1.084s"/>
+<ellipse class="ml10-speck" cx="500.92" cy="312.92" rx="3.08" ry="2.31" fill="#7c99aa" style="--ml10-x:21.68px;--ml10-y:55.95px;--ml10-delay:0.190s;--ml10-time:0.828s"/>
+<ellipse class="ml10-speck" cx="473.36" cy="307.84" rx="1.98" ry="1.49" fill="#dde4e4" style="--ml10-x:-13.06px;--ml10-y:57.61px;--ml10-delay:0.250s;--ml10-time:0.885s"/>
+<ellipse class="ml10-speck" cx="525.64" cy="236.90" rx="1.88" ry="1.41" fill="#eff7f9" style="--ml10-x:-15.20px;--ml10-y:136.33px;--ml10-delay:0.264s;--ml10-time:1.084s"/>
+<ellipse class="ml10-speck" cx="553.01" cy="236.60" rx="2.49" ry="1.87" fill="#dce7eb" style="--ml10-x:22.23px;--ml10-y:131.23px;--ml10-delay:0.264s;--ml10-time:1.114s"/>
+<ellipse class="ml10-speck" cx="537.49" cy="248.20" rx="1.39" ry="1.04" fill="#c2d2dc" style="--ml10-x:-36.54px;--ml10-y:121.45px;--ml10-delay:0.294s;--ml10-time:1.104s"/>
+<ellipse class="ml10-speck" cx="566.37" cy="267.01" rx="2.54" ry="1.91" fill="#9bb3c4" style="--ml10-x:-2.60px;--ml10-y:85.49px;--ml10-delay:0.261s;--ml10-time:0.908s"/>
+<ellipse class="ml10-speck" cx="566.72" cy="275.01" rx="1.73" ry="1.30" fill="#b7cdd8" style="--ml10-x:-12.12px;--ml10-y:89.40px;--ml10-delay:0.262s;--ml10-time:0.903s"/>
+<ellipse class="ml10-speck" cx="491.74" cy="284.05" rx="3.06" ry="2.30" fill="#7c99aa" style="--ml10-x:32.93px;--ml10-y:68.58px;--ml10-delay:0.257s;--ml10-time:0.964s"/>
+<ellipse class="ml10-speck" cx="476.05" cy="172.33" rx="1.75" ry="1.31" fill="#dde4e4" style="--ml10-x:69.07px;--ml10-y:186.69px;--ml10-delay:0.342s;--ml10-time:1.137s"/>
+<ellipse class="ml10-speck" cx="554.21" cy="210.99" rx="1.59" ry="1.19" fill="#eff7f9" style="--ml10-x:55.33px;--ml10-y:162.98px;--ml10-delay:0.354s;--ml10-time:1.064s"/>
+<ellipse class="ml10-speck" cx="553.06" cy="207.32" rx="2.77" ry="2.08" fill="#dce7eb" style="--ml10-x:16.76px;--ml10-y:148.08px;--ml10-delay:0.308s;--ml10-time:1.168s"/>
+<ellipse class="ml10-speck" cx="492.65" cy="154.78" rx="2.73" ry="2.05" fill="#c2d2dc" style="--ml10-x:9.99px;--ml10-y:198.77px;--ml10-delay:0.371s;--ml10-time:1.200s"/>
+<ellipse class="ml10-speck" cx="470.88" cy="228.07" rx="1.50" ry="1.12" fill="#9bb3c4" style="--ml10-x:-24.68px;--ml10-y:138.25px;--ml10-delay:0.351s;--ml10-time:1.034s"/>
+<ellipse class="ml10-speck" cx="531.91" cy="170.68" rx="1.51" ry="1.13" fill="#b7cdd8" style="--ml10-x:84.94px;--ml10-y:206.72px;--ml10-delay:0.367s;--ml10-time:1.261s"/>
+<ellipse class="ml10-speck" cx="513.52" cy="190.64" rx="2.88" ry="2.16" fill="#7c99aa" style="--ml10-x:-16.51px;--ml10-y:184.23px;--ml10-delay:0.356s;--ml10-time:1.129s"/>
+<ellipse class="ml10-speck" cx="573.56" cy="226.44" rx="1.95" ry="1.47" fill="#dde4e4" style="--ml10-x:-139.24px;--ml10-y:146.12px;--ml10-delay:0.445s;--ml10-time:1.148s"/>
+<ellipse class="ml10-speck" cx="563.47" cy="261.01" rx="2.49" ry="1.87" fill="#eff7f9" style="--ml10-x:-75.45px;--ml10-y:87.53px;--ml10-delay:0.403s;--ml10-time:0.994s"/>
+<ellipse class="ml10-speck" cx="559.50" cy="274.02" rx="2.93" ry="2.20" fill="#dce7eb" style="--ml10-x:50.76px;--ml10-y:98.89px;--ml10-delay:0.476s;--ml10-time:1.024s"/>
+<ellipse class="ml10-speck" cx="496.99" cy="307.53" rx="1.93" ry="1.45" fill="#c2d2dc" style="--ml10-x:76.52px;--ml10-y:62.17px;--ml10-delay:0.433s;--ml10-time:0.963s"/>
+<ellipse class="ml10-speck" cx="510.56" cy="191.19" rx="1.70" ry="1.27" fill="#9bb3c4" style="--ml10-x:-26.67px;--ml10-y:182.67px;--ml10-delay:0.458s;--ml10-time:1.127s"/>
+<ellipse class="ml10-speck" cx="554.22" cy="161.77" rx="1.42" ry="1.06" fill="#b7cdd8" style="--ml10-x:-44.61px;--ml10-y:210.11px;--ml10-delay:0.450s;--ml10-time:1.287s"/>
+<ellipse class="ml10-speck" cx="538.14" cy="237.42" rx="1.68" ry="1.26" fill="#7c99aa" style="--ml10-x:19.63px;--ml10-y:128.33px;--ml10-delay:0.484s;--ml10-time:1.029s"/>
+<ellipse class="ml10-speck" cx="489.72" cy="172.07" rx="1.84" ry="1.38" fill="#dde4e4" style="--ml10-x:112.69px;--ml10-y:203.42px;--ml10-delay:0.468s;--ml10-time:1.267s"/>
+<ellipse class="ml10-speck" cx="463.38" cy="276.68" rx="3.53" ry="2.65" fill="#eff7f9" style="--ml10-x:100.75px;--ml10-y:78.83px;--ml10-delay:0.504s;--ml10-time:0.881s"/>
+<ellipse class="ml10-speck" cx="548.37" cy="238.04" rx="2.59" ry="1.94" fill="#dce7eb" style="--ml10-x:-116.98px;--ml10-y:137.76px;--ml10-delay:0.539s;--ml10-time:1.009s"/>
+<ellipse class="ml10-speck" cx="460.83" cy="167.65" rx="1.77" ry="1.32" fill="#c2d2dc" style="--ml10-x:51.48px;--ml10-y:191.14px;--ml10-delay:0.545s;--ml10-time:1.195s"/>
+<ellipse class="ml10-speck" cx="553.14" cy="179.42" rx="3.03" ry="2.27" fill="#9bb3c4" style="--ml10-x:-18.70px;--ml10-y:168.06px;--ml10-delay:0.526s;--ml10-time:1.196s"/>
+<ellipse class="ml10-speck" cx="521.16" cy="252.08" rx="1.84" ry="1.38" fill="#b7cdd8" style="--ml10-x:-100.72px;--ml10-y:124.69px;--ml10-delay:0.528s;--ml10-time:1.041s"/>
+<ellipse class="ml10-speck" cx="565.45" cy="260.07" rx="2.70" ry="2.03" fill="#7c99aa" style="--ml10-x:50.40px;--ml10-y:116.30px;--ml10-delay:0.594s;--ml10-time:1.050s"/>
+<ellipse class="ml10-speck" cx="533.82" cy="297.76" rx="2.87" ry="2.15" fill="#dde4e4" style="--ml10-x:-94.01px;--ml10-y:77.95px;--ml10-delay:0.615s;--ml10-time:0.920s"/>
+<ellipse class="ml10-speck" cx="569.14" cy="284.01" rx="1.68" ry="1.26" fill="#eff7f9" style="--ml10-x:-108.73px;--ml10-y:71.08px;--ml10-delay:0.646s;--ml10-time:0.918s"/>
+<ellipse class="ml10-speck" cx="514.37" cy="225.53" rx="1.53" ry="1.15" fill="#dce7eb" style="--ml10-x:79.96px;--ml10-y:144.65px;--ml10-delay:0.579s;--ml10-time:1.053s"/>
+<ellipse class="ml10-speck" cx="505.93" cy="157.60" rx="3.12" ry="2.34" fill="#c2d2dc" style="--ml10-x:-81.52px;--ml10-y:219.53px;--ml10-delay:0.666s;--ml10-time:1.311s"/>
+<ellipse class="ml10-speck" cx="573.37" cy="165.93" rx="1.59" ry="1.19" fill="#9bb3c4" style="--ml10-x:-80.98px;--ml10-y:199.56px;--ml10-delay:0.607s;--ml10-time:1.245s"/>
+<ellipse class="ml10-speck" cx="574.79" cy="289.95" rx="2.18" ry="1.64" fill="#b7cdd8" style="--ml10-x:-2.16px;--ml10-y:80.83px;--ml10-delay:0.625s;--ml10-time:1.011s"/>
+<ellipse class="ml10-speck" cx="498.03" cy="162.02" rx="2.26" ry="1.69" fill="#7c99aa" style="--ml10-x:68.11px;--ml10-y:200.19px;--ml10-delay:0.636s;--ml10-time:1.219s"/>
+<ellipse class="ml10-speck" cx="466.31" cy="173.06" rx="2.37" ry="1.78" fill="#dde4e4" style="--ml10-x:-5.03px;--ml10-y:182.99px;--ml10-delay:0.735s;--ml10-time:1.225s"/>
+<ellipse class="ml10-speck" cx="470.28" cy="202.54" rx="1.47" ry="1.10" fill="#eff7f9" style="--ml10-x:83.11px;--ml10-y:160.63px;--ml10-delay:0.669s;--ml10-time:1.123s"/>
+<ellipse class="ml10-speck" cx="500.62" cy="310.68" rx="2.93" ry="2.20" fill="#dce7eb" style="--ml10-x:33.95px;--ml10-y:54.82px;--ml10-delay:0.753s;--ml10-time:0.898s"/>
+<ellipse class="ml10-speck" cx="533.86" cy="202.86" rx="2.32" ry="1.74" fill="#c2d2dc" style="--ml10-x:3.24px;--ml10-y:169.27px;--ml10-delay:0.772s;--ml10-time:1.085s"/>
+<ellipse class="ml10-speck" cx="576.98" cy="252.27" rx="1.99" ry="1.49" fill="#9bb3c4" style="--ml10-x:-140.05px;--ml10-y:124.23px;--ml10-delay:0.780s;--ml10-time:1.104s"/>
+<ellipse class="ml10-speck" cx="544.93" cy="196.29" rx="2.79" ry="2.09" fill="#b7cdd8" style="--ml10-x:-49.36px;--ml10-y:156.37px;--ml10-delay:0.745s;--ml10-time:1.161s"/>
+<ellipse class="ml10-speck" cx="534.07" cy="211.20" rx="2.84" ry="2.13" fill="#7c99aa" style="--ml10-x:-28.13px;--ml10-y:159.58px;--ml10-delay:0.726s;--ml10-time:1.104s"/>
+<ellipse class="ml10-speck" cx="555.45" cy="165.01" rx="2.87" ry="2.15" fill="#dde4e4" style="--ml10-x:-79.29px;--ml10-y:205.91px;--ml10-delay:0.824s;--ml10-time:1.288s"/>
+<ellipse class="ml10-speck" cx="517.78" cy="297.82" rx="2.89" ry="2.17" fill="#eff7f9" style="--ml10-x:86.20px;--ml10-y:70.46px;--ml10-delay:0.828s;--ml10-time:0.934s"/>
+<ellipse class="ml10-speck" cx="506.42" cy="178.87" rx="1.41" ry="1.05" fill="#dce7eb" style="--ml10-x:32.39px;--ml10-y:189.00px;--ml10-delay:0.851s;--ml10-time:1.203s"/>
+<ellipse class="ml10-speck" cx="469.18" cy="211.23" rx="2.42" ry="1.82" fill="#c2d2dc" style="--ml10-x:50.41px;--ml10-y:135.46px;--ml10-delay:0.836s;--ml10-time:1.085s"/>
+<ellipse class="ml10-speck" cx="499.07" cy="284.85" rx="2.10" ry="1.58" fill="#9bb3c4" style="--ml10-x:73.14px;--ml10-y:88.89px;--ml10-delay:0.811s;--ml10-time:0.907s"/>
+</g>
+</svg>

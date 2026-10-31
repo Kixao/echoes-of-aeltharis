@@ -1,0 +1,128 @@
+<svg viewBox="150 30 300 425" role="img" aria-label="Blue hooded combat mage facing right, holding a faceted crystal staff and extending a gloved casting hand" class="combat-model-svg" xmlns="http://www.w3.org/2000/svg" id="ael-mage-combat">
+<style>
+#ael-mage-combat{font-family:Georgia,serif;color:var(--foreground)}#ael-mage-combat .bar{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:12px 0}#ael-mage-combat .state{margin-left:auto;color:var(--muted-foreground)}#ael-mage-combat .stage{background:radial-gradient(ellipse at 49% 47%,#344452,#17232e 72%);border-radius:8px}#ael-mage-combat svg{display:block;width:100%;height:470px}#ael-mage-combat .robe{fill:url(#mc-blue);stroke:#101f32;stroke-width:2.3;stroke-linejoin:round}#ael-mage-combat .gold{fill:none;stroke:#b8a575;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}#ael-mage-combat .seam{fill:none;stroke:#83aac4;stroke-width:1.5;stroke-opacity:.5}#ael-mage-combat .body{transform-origin:276px 291px}#ael-mage-combat .hood{transform-origin:280px 149px}#ael-mage-combat .cast-arm{transform-origin:301px 184px;transform:rotate(0deg)}#ael-mage-combat .forearm{transform-origin:312px 236px;transform:rotate(0deg)}#ael-mage-combat .staff-arm{transform-origin:247px 184px}#ael-mage-combat .cape{transform-origin:258px 173px}#ael-mage-combat .rig{transform-origin:274px 426px}#ael-mage-combat .spell{opacity:0;transform-origin:390px 198px}#ael-mage-combat .crystal-glow{animation:mc-crystal 3s ease-in-out infinite}#ael-mage-combat .mage-actor[data-mage-state=idle] .body{animation:mc-breathe 4.4s ease-in-out infinite}#ael-mage-combat .mage-actor[data-mage-state=idle] .cape{animation:mc-cloth 5s ease-in-out infinite}#ael-mage-combat .mage-actor[data-mage-state=cast] .body{animation:mc-cast-body 1.6s both}#ael-mage-combat .mage-actor[data-mage-state=cast] .cast-arm{animation:mc-arm 1.6s both}#ael-mage-combat .mage-actor[data-mage-state=cast] .forearm{animation:mc-hand 1.6s both}#ael-mage-combat .mage-actor[data-mage-state=cast] .staff-arm{animation:mc-staff 1.6s both}#ael-mage-combat .mage-actor[data-mage-state=cast] .spell{animation:mc-spell 1.6s both}#ael-mage-combat .mage-actor[data-mage-state=cast] .cape{animation:mc-cast-cloth 1.6s both}#ael-mage-combat .mage-actor[data-mage-state=hit] .body{animation:mc-hit .7s both}#ael-mage-combat .mage-actor[data-mage-state=hit] .hood{animation:mc-flinch .7s both}#ael-mage-combat .mage-actor[data-mage-state=hit] .rig{animation:mc-flash .7s both}#ael-mage-combat .mage-actor[data-mage-state=death] .rig{animation:mc-defeat 1.8s both}#ael-mage-combat .mage-actor[data-mage-state=death] .body{animation:mc-slump 1.8s both}#ael-mage-combat .mage-actor[data-mage-state=death] .hood{animation:mc-bow 1.8s both}#ael-mage-combat .mage-actor[data-mage-state=death] .crystal-glow{animation:mc-out 1.1s both}#ael-mage-combat .mage-actor[data-mage-state=death] .cast-arm{animation:mc-arm-fall 1.8s both}
+@keyframes mc-breathe{50%{transform:translateY(-1px) rotate(.6deg)}}@keyframes mc-cloth{50%{transform:skewX(-1.7deg)}}@keyframes mc-crystal{50%{opacity:.35}}@keyframes mc-cast-body{0%,100%{transform:none}29%{transform:rotate(-3deg)}54%,67%{transform:rotate(5deg)}82%{transform:rotate(2deg)}}@keyframes mc-arm{0%,100%{transform:rotate(0deg)}14%{transform:rotate(3deg)}46%,66%{transform:rotate(-35deg)}80%{transform:rotate(-21deg)}93%{transform:rotate(-4deg)}}@keyframes mc-hand{0%,100%{transform:rotate(0deg)}16%{transform:rotate(-5deg)}46%,66%{transform:rotate(-55deg)}80%{transform:rotate(-40deg)}93%{transform:rotate(-8deg)}}@keyframes mc-staff{0%,100%{transform:none}30%{transform:rotate(5deg)}54%,65%{transform:rotate(-8deg)}}@keyframes mc-spell{0%,15%,100%{opacity:0;transform:scale(.3)}35%{opacity:.5;transform:scale(.8)}52%{opacity:1;transform:scale(1.1)}63%{opacity:.8;transform:scale(1.5)}83%{opacity:0;transform:scale(1.8)}}@keyframes mc-cast-cloth{50%{transform:skewX(-6deg)}75%{transform:skewX(2deg)}}@keyframes mc-hit{0%,100%{transform:none}18%{transform:translate(-9px,5px) rotate(-10deg)}42%{transform:translate(-5px,3px) rotate(-6deg)}75%{transform:rotate(1deg)}}@keyframes mc-flinch{20%{transform:rotate(-15deg)}70%{transform:rotate(3deg)}}@keyframes mc-flash{18%{filter:brightness(1.7) sepia(.25)}55%,100%{filter:none}}@keyframes mc-defeat{0%{transform:none}35%{transform:translateY(10px)}100%{transform:translateY(51px) scaleY(.87)}}@keyframes mc-slump{0%{transform:none}35%{transform:rotate(8deg)}100%{transform:rotate(25deg)}}@keyframes mc-bow{100%{transform:rotate(23deg)}}@keyframes mc-arm-fall{0%,100%{transform:rotate(0deg)}}@keyframes mc-out{100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){#ael-mage-combat .mage-actor[data-mage-state=idle] *,#ael-mage-combat .crystal-glow{animation:none!important}}
+#ael-mage-combat .enemy-stage .bone{fill:url(#sk-bone);stroke:#514a40;stroke-width:1.8;stroke-linejoin:round}#ael-mage-combat .enemy-stage .detail{fill:none;stroke:#776c55;stroke-width:1.4;stroke-linecap:round}#ael-mage-combat .enemy-stage .iron{fill:url(#sk-iron);stroke:#252e2e;stroke-width:2}#ael-mage-combat .enemy-stage .rag{fill:url(#sk-cloth);stroke:#172326;stroke-width:1.5}#ael-mage-combat .enemy-stage .joint{fill:#a99d7e;stroke:#514a40;stroke-width:2}#ael-mage-combat .enemy-stage .rig{transform-origin:280px 430px}#ael-mage-combat .enemy-stage .upper{transform-origin:280px 285px}#ael-mage-combat .enemy-stage .head{transform-origin:280px 151px}#ael-mage-combat .enemy-stage .sword-arm{transform-origin:245px 172px}#ael-mage-combat .enemy-stage .off-arm{transform-origin:312px 173px}#ael-mage-combat .enemy-stage .cloth-tail{transform-origin:308px 177px}#ael-mage-combat .enemy-stage .leg-left{transform-origin:265px 293px}#ael-mage-combat .enemy-stage .leg-right{transform-origin:295px 293px}
+#ael-mage-combat .enemy-stage [data-state=idle] .upper{animation:sk-idle 4s ease-in-out infinite}#ael-mage-combat .enemy-stage [data-state=idle] .head{animation:sk-head 6s ease-in-out infinite}#ael-mage-combat .enemy-stage [data-state=idle] .sword-arm{animation:sk-hand 4s ease-in-out infinite}#ael-mage-combat .enemy-stage [data-state=idle] .cloth-tail{animation:sk-rag 4s ease-in-out infinite}
+#ael-mage-combat .enemy-stage [data-state=attack] .upper{animation:sk-lunge 1.25s both}#ael-mage-combat .enemy-stage [data-state=attack] .sword-arm{animation:sk-slash 1.25s both}#ael-mage-combat .enemy-stage [data-state=attack] .off-arm{animation:sk-counter 1.25s both}#ael-mage-combat .enemy-stage [data-state=attack] .slash{animation:sk-trail 1.25s both}#ael-mage-combat .enemy-stage [data-state=hit] .upper{animation:sk-hit .65s both}#ael-mage-combat .enemy-stage [data-state=hit] .head{animation:sk-flinch .65s both}#ael-mage-combat .enemy-stage [data-state=hit] .rig{animation:sk-flash .65s both}#ael-mage-combat .enemy-stage [data-state=death] .upper{animation:sk-fall 1.7s forwards}#ael-mage-combat .enemy-stage [data-state=death] .head{animation:sk-drop 1.7s forwards}#ael-mage-combat .enemy-stage [data-state=death] .leg-left{animation:sk-leg-l 1.7s forwards}#ael-mage-combat .enemy-stage [data-state=death] .leg-right{animation:sk-leg-r 1.7s forwards}#ael-mage-combat .enemy-stage [data-state=death] .eye{animation:sk-extinguish .7s forwards}#ael-mage-combat .enemy-stage .slash{opacity:0}
+@keyframes sk-idle{0%,100%{transform:rotate(-1deg) translateY(0)}50%{transform:rotate(1.4deg) translateY(2px)}}@keyframes sk-head{0%,42%,52%,100%{transform:rotate(-3deg)}46%{transform:rotate(2deg)}70%{transform:rotate(-5deg)}}@keyframes sk-hand{0%,100%{transform:rotate(2deg)}50%{transform:rotate(-3deg)}}@keyframes sk-rag{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(4deg)}}@keyframes sk-lunge{0%,100%{transform:none}35%{transform:rotate(9deg) translate(6px,4px)}52%{transform:rotate(-15deg) translate(-16px,14px)}68%{transform:rotate(-10deg) translate(-10px,8px)}}@keyframes sk-slash{0%,100%{transform:none}35%{transform:rotate(112deg)}52%{transform:rotate(-30deg)}68%{transform:rotate(-25deg)}}@keyframes sk-counter{35%{transform:rotate(-28deg)}55%{transform:rotate(30deg)}}@keyframes sk-trail{0%,38%,66%,100%{opacity:0}46%{opacity:.6}57%{opacity:.15}}@keyframes sk-hit{0%,100%{transform:none}18%{transform:translate(12px,12px) rotate(12deg)}42%{transform:translate(6px,7px) rotate(7deg)}}@keyframes sk-flinch{20%{transform:rotate(20deg)}65%{transform:rotate(-7deg)}}@keyframes sk-flash{20%{filter:brightness(1.8) sepia(.4)}100%{filter:none}}@keyframes sk-fall{0%{transform:none}25%{transform:translateY(16px) rotate(9deg)}100%{transform:translate(-45px,126px) rotate(-67deg)}}@keyframes sk-drop{30%{transform:none}100%{transform:translate(-55px,55px) rotate(-95deg)}}@keyframes sk-leg-l{100%{transform:translate(4px,116px) rotate(66deg)}}@keyframes sk-leg-r{100%{transform:translate(-5px,109px) rotate(-70deg)}}@keyframes sk-extinguish{100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){#ael-mage-combat .enemy-stage [data-state=idle] *{animation:none!important}}
+#ael-mage-combat .enemy-stage [data-state=death] .rig{visibility:hidden}#ael-mage-combat .enemy-stage [data-state=death] .rig *{animation:none!important}#ael-mage-combat .enemy-stage .debris .eye{display:none}
+#ael-mage-combat .stage{position:relative}
+#ael-mage-combat .main-arena{height:470px}
+#ael-mage-combat .enemy-art{width:400px;height:440px;overflow:visible}
+#ael-mage-combat canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#ael-mage-combat .mage-actor[data-mage-state=hit] .cape{animation:mc-cape-hit .85s both}
+#ael-mage-combat .mage-boots{transform-origin:276px 430px}
+#ael-mage-combat .mage-actor[data-mage-state=hit] .mage-boots{animation:mc-knee-hit .7s both}
+@keyframes mc-cape-hit{0%,100%{transform:none}24%{transform:skewX(7deg)}48%{transform:skewX(3deg)}72%{transform:skewX(-2deg)}}
+@keyframes mc-knee-hit{0%,100%{transform:none}20%{transform:skewX(2deg)}45%{transform:skewX(1deg)}}
+
+#ael-mage-combat .open-hand{transform-origin:362px 226px;transform:rotate(0deg)}
+#ael-mage-combat .mage-actor[data-mage-state=cast] .open-hand{animation:mc-wrist 1.6s both}
+@keyframes mc-wrist{0%,100%{transform:rotate(0deg)}46%,66%{transform:rotate(-3deg)}82%{transform:rotate(0deg)}}
+</style><defs>
+<linearGradient id="mc-blue" x1="0" x2="1" y2=".45"><stop stop-color="#20334e" /><stop offset=".28" stop-color="#3a6896" /><stop offset=".48" stop-color="#477daa" /><stop offset=".7" stop-color="#284c77" /><stop offset="1" stop-color="#152b4a" /></linearGradient>
+<linearGradient id="mc-dark" x2="1" y2=".6"><stop stop-color="#263c59" /><stop offset=".5" stop-color="#172a43" /><stop offset="1" stop-color="#0d1a2c" /></linearGradient>
+<linearGradient id="mc-silver" x2="1"><stop stop-color="#566571" /><stop offset=".45" stop-color="#c0c9c8" /><stop offset=".65" stop-color="#7f969d" /><stop offset="1" stop-color="#344753" /></linearGradient>
+<linearGradient id="mc-crystal" x2="1" y2="1"><stop stop-color="#d4f6ff" /><stop offset=".4" stop-color="#75d6f0" /><stop offset="1" stop-color="#326eb9" /></linearGradient>
+<radialGradient id="mc-aura"><stop stop-color="#71c9e8" stop-opacity=".14" /><stop offset="1" stop-color="#71c9e8" stop-opacity="0" /></radialGradient>
+<filter id="mc-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6" /></filter>
+<filter id="mc-gem-soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3" /></filter></defs>
+<g class="mage-actor" data-mage-state="idle"><ellipse cx="278" cy="256" rx="123" ry="183" fill="url(#mc-aura)" />
+<ellipse cx="276" cy="430" rx="79" ry="9" fill="#080f17" opacity=".55" />
+<g class="rig" stroke-linejoin="round">
+<g class="mage-boots"><path d="M250 371L239 420 222 427 222 434 260 434 267 379M284 378L289 424 304 433 333 433 334 426 309 418 310 371" fill="#1c2630" stroke="#0d1722" stroke-width="2.5" />
+<path d="M242 416L260 418M294 416L309 415" stroke="#8b8f87" stroke-width="2" />
+</g><g class="cape-follow"><g class="cape"><path d="M255 156Q224 157 220 208L211 302 185 414 222 424 257 405 279 294Z" fill="url(#mc-dark)" stroke="#0f1c2e" stroke-width="2.5" />
+<path d="M242 185Q229 258 232 305L206 408M251 212L247 328 224 407" class="seam" /><path d="M224 207L215 300 193 410 220 416" class="gold" />
+</g>
+</g><g class="lower-robes">
+<path class="robe" d="M246 275Q273 285 299 272Q298 311 308 344Q314 385 331 414Q320 425 302 423Q290 421 280 425Q268 434 252 428Q233 429 217 416Q235 382 237 344Q242 309 246 275Z" />
+<path d="M252 293Q246 332 248 351Q246 392 233 416Q246 421 254 416Q263 382 260 352Q258 323 267 299Z" fill="#234568" />
+<path d="M289 294Q280 330 287 359Q294 392 302 419Q315 419 320 413Q302 374 300 348Q291 315 299 294Z" fill="#1a3456" />
+<path d="M271 297Q265 336 268 367Q269 397 260 422Q273 428 283 420Q286 402 279 369Q274 337 281 298Z" fill="#5b84a4" />
+<path d="M251 305Q242 345 245 368M260 352Q258 389 248 411M292 319Q287 346 299 386M278 322Q273 341 278 360M226 413Q240 422 253 421M289 416Q305 424 322 414" class="seam" />
+<path d="M221 415Q237 428 253 424Q270 434 282 422Q302 429 327 416" class="gold" />
+</g><g class="body">
+<g class="staff-arm">
+<path class="robe" d="M251 174Q233 172 227 190Q220 203 212 224Q207 234 215 246Q225 258 238 245Q250 229 256 207Q267 185 251 174Z" />
+<path d="M235 186L222 226 236 232 253 197" class="seam" />
+<path d="M211 223L225 224 234 242 218 252 207 237Z" fill="#21374f" stroke="#b8a575" stroke-width="2" />
+<g class="staff" transform="translate(8 0)">
+<path d="M193 430L211 105" stroke="#101b28" stroke-width="9" stroke-linecap="round" />
+<path d="M193 428L211 105" stroke="#78684c" stroke-width="5" stroke-linecap="round" />
+<path d="M195 417L212 109" stroke="#b3a77f" stroke-width="1.4" />
+<path d="M203 112L190 88 199 73M216 112L234 89 227 74" fill="none" stroke="#172637" stroke-width="8" />
+<path d="M203 112L190 88 199 73M216 112L234 89 227 74" fill="none" stroke="url(#mc-silver)" stroke-width="5" />
+<path d="M203 112L209 119 218 111 216 103 205 102Z" fill="url(#mc-silver)" />
+<g class="crystal-glow" fill="#83dcfa" filter="url(#mc-glow)"><path d="M213 37L230 68 211 98 196 68Z" /></g>
+<path d="M213 37L230 68 211 98 196 68Z" fill="url(#mc-crystal)" stroke="#b8e5f1" stroke-width="1.8" />
+<path d="M213 38L209 67 197 68Z" fill="#dcf8ff" /><path d="M209 67L229 68 211 96Z" fill="#387fb6" /><path d="M213 39L209 67 211 95M209 67L197 68" fill="none" stroke="#b9f1fc" stroke-width="1.2" />
+</g>
+<g class="staff-grip" stroke="#344d5e" stroke-width="1.1" stroke-linejoin="round">
+<path d="M214 222Q222 219 226 227L227 239Q224 249 215 249L207 245 205 229Z" fill="#839b9e" />
+<path data-finger="index" d="M217 224L208 223Q201 222 201 227Q201 230 206 230L217 231Q221 228 217 224Z" fill="#b0bdb9" />
+<path data-finger="middle" d="M216 230L205 229Q199 229 200 233Q201 236 206 236L216 236Q220 234 216 230Z" fill="#a5b5b2" />
+<path data-finger="ring" d="M216 236L205 235Q200 236 202 240L207 242 216 242Q219 239 216 236Z" fill="#96aaab" />
+<path data-finger="little" d="M215 242L207 241Q203 242 205 245L210 248 216 247Q219 244 215 242Z" fill="#869ea2" />
+<path data-finger="thumb" d="M224 225Q219 219 216 221L210 227Q208 230 211 232L215 232 218 228Q220 236 224 237L227 232Z" fill="#a6b6b3" />
+<path d="M204 226L207 227M203 232L207 233M205 238L208 239M208 244L211 245" fill="none" stroke="#d2d7cd" stroke-width=".7" />
+</g></g>
+<path class="robe" d="M255 156Q275 149 291 158Q310 167 311 196Q315 225 301 261L298 280Q285 296 272 294Q253 291 243 280Q237 253 239 230Q230 195 241 175Q244 162 255 156Z" />
+<path d="M250 187Q253 201 249 224Q246 253 262 272Q275 289 293 270Q282 275 274 258Q260 233 268 201Z" fill="#203d63" />
+<path d="M254 200Q247 226 256 247M290 202Q301 223 289 251M263 258Q270 275 284 276" class="seam" />
+<path d="M254 200Q247 226 256 247M290 202Q301 223 289 251M263 258Q270 275 284 276" class="seam" />
+<path d="M259 273L280 282 300 266 301 283 276 297 246 285 244 272Z" fill="#443e36" stroke="#111f2e" stroke-width="2" />
+<path d="M270 279L283 279 287 287 277 294 267 288Z" fill="#b6a473" stroke="#514b3b" stroke-width="1.3" />
+<path d="M274 282L281 283 282 287 276 289Z" fill="#356c8d" />
+<path d="M248 278L239 285 238 310 254 315 264 306 260 285Z" fill="#4d4b44" stroke="#142536" stroke-width="2" />
+<path d="M241 288L260 289 258 297 241 298Z" fill="#74715b" /><circle cx="251" cy="293" r="2.3" fill="#c3b382" />
+<path d="M249 154Q266 165 282 162Q300 156 308 172Q314 181 305 188Q294 197 279 187Q263 200 248 193Q239 189 231 180Q230 166 249 154Z" fill="#426c94" stroke="#152940" stroke-width="2" />
+<path d="M237 175Q253 193 272 182Q287 173 304 182" class="gold" />
+<path d="M241 167Q254 180 268 171Q258 186 248 185Q238 183 241 167Z" fill="#638cac" />
+<circle cx="287" cy="177" r="6.5" fill="#b5a778" stroke="#3e515b" stroke-width="2" /><path d="M287 172L290 177 287 182 284 177Z" fill="#90d9ed" />
+<g class="hood">
+<path d="M246 159Q230 144 235 115Q238 83 259 68Q276 51 291 67Q307 80 307 101Q307 109 320 119Q321 127 313 132L304 152Q295 166 279 172Q258 172 246 159Z" fill="url(#mc-blue)" stroke="#14283f" stroke-width="2.2" />
+<path d="M242 140Q235 117 248 91Q259 72 275 65Q257 88 256 112Q249 136 259 153Z" fill="#5888af" />
+<path d="M276 67Q299 74 300 102Q300 113 313 121L296 118Q282 101 269 105Q269 83 276 67Z" fill="#3c6994" />
+<path d="M266 107Q280 94 293 105Q305 116 309 128Q306 149 285 160Q271 163 258 147Q251 134 257 120Z" fill="#081522" />
+<path d="M289 109Q301 120 301 130Q300 145 285 152Q278 155 270 151Q286 147 287 136Q279 120 289 109Z" fill="#152c3e" />
+<path d="M259 120Q261 107 273 103Q289 97 301 117L308 126" fill="none" stroke="#7b9fb7" stroke-width="3.5" stroke-linecap="round" />
+<path d="M257 120Q249 139 260 151Q271 167 286 162Q304 156 310 137Q309 155 297 169Q283 182 261 169Q248 163 246 149Z" fill="#26486d" />
+<path d="M248 149Q255 174 277 176Q296 178 305 158Q286 174 268 161Z" fill="#4d7698" />
+<path d="M240 125Q237 105 251 88M244 147Q238 138 240 133M259 81Q266 72 273 69M265 166Q279 175 292 167" fill="none" stroke="#7fa2bb" stroke-width="1.4" opacity=".5" />
+</g><g class="cast-arm">
+<path d="M289 177Q302 167 314 178Q321 185 321 202L325 225Q326 240 316 246Q304 249 299 236Q294 218 292 205Q284 190 289 177Z" class="robe" />
+<path d="M301 181Q311 183 311 204L317 230Q315 237 309 235Q302 220 301 204Z" fill="#517da0" />
+<path d="M294 188Q291 209 303 232M308 194Q310 212 315 222" class="seam" />
+<g class="forearm">
+<path d="M302 229Q311 223 321 231Q327 240 325 257L329 277Q324 285 314 285L300 278Q302 265 299 250Q294 235 302 229Z" class="robe" />
+<path d="M306 236Q314 232 316 244L317 269Q322 278 313 279L307 274Q308 261 305 250Z" fill="#3e6993" />
+<path d="M302 244Q307 253 305 267M319 243Q318 255 323 269" class="seam" />
+<path d="M301 271Q315 277 327 271L329 282Q318 290 300 280Z" fill="#233b53" stroke="#aa9a70" stroke-width="1.5" />
+<path d="M305 276Q316 281 325 277" fill="none" stroke="#8d9b9f" stroke-width="1.5" />
+<g class="hand-placement" transform="translate(315 282) rotate(90) translate(-362 -226)"><g class="open-hand" stroke-linecap="round" stroke-linejoin="round">
+<path class="hand-contour" d="M359 220Q370 216 377 213Q387 214 388 226Q387 236 376 237L360 231Z" fill="#9eadac" stroke="#304a5a" stroke-width="1.2" opacity="0" />
+<path class="fist-details" d="M369 218Q375 216 380 219L382 222Q381 225 378 224L373 222M379 227L386 228M378 231L383 233M367 229L370 233" fill="none" stroke="#5d7680" stroke-width="1" opacity="0" />
+<path class="palm-details" d="M371 218Q375 220 376 224M381 221L379 224M382 227L380 230M369 230Q374 233 379 230" fill="none" stroke="#647d85" stroke-width=".85" opacity="0" />
+<g class="resting-fist">
+<path d="M359 220L367 218Q368 212 372 212Q375 208 379 212Q383 210 386 215Q389 219 388 226Q389 233 383 236Q376 240 369 236L361 231Z" fill="#99aaaa" stroke="#304a5a" stroke-width="1.25" stroke-linejoin="round" />
+<path d="M376 214Q382 211 385 216L386 219 380 219M380 220Q387 218 387 224L380 224M380 225Q387 224 386 229L379 229M378 230Q385 229 384 233L377 234" fill="#aab6b1" stroke="#5c747d" stroke-width=".9" stroke-linecap="round" />
+<path d="M369 216Q372 212 376 215L381 220Q384 222 382 225Q380 227 377 224L373 222 369 222Z" fill="#b7c0b8" stroke="#486370" stroke-width="1" />
+<path d="M365 226Q369 228 370 233M375 219L378 220" fill="none" stroke="#69818a" stroke-width=".8" stroke-linecap="round" />
+</g></g></g>
+</g>
+<g class="shoulder-cloth">
+<path d="M288 176Q301 167 313 179Q321 188 323 204Q314 211 303 204Q291 197 288 186Z" fill="url(#mc-blue)" stroke="#18314b" stroke-width="1.6" />
+<path d="M292 178Q301 177 306 184Q312 190 319 200Q309 198 303 192Z" fill="#527d9e" />
+<path d="M292 184Q300 198 316 203" fill="none" stroke="#86a6bb" stroke-width="1.3" stroke-opacity=".55" />
+</g>
+</g><g class="hood-shoulder-drape">
+<path d="M246 149Q256 165 276 169Q292 173 303 158Q309 169 308 182Q304 191 293 189Q280 198 263 190Q248 186 239 172Q238 157 246 149Z" fill="url(#mc-blue)" stroke="#152b43" stroke-width="1.8" />
+<path d="M246 154Q261 178 281 177Q296 177 302 166L303 177Q293 187 279 185Q260 186 249 173Z" fill="#537e9f" />
+<path d="M243 169Q257 188 276 188Q292 192 303 178Q302 191 289 194Q269 201 252 188Z" fill="#284969" />
+<path d="M247 165Q263 185 281 183Q294 186 301 176" fill="none" stroke="#83a3ba" stroke-opacity=".55" stroke-width="1.4" stroke-linecap="round" />
+</g></g></g>
+</g></svg>

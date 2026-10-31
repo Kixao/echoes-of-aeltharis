@@ -1,0 +1,59 @@
+/* EoA v0.0.45 — three live Greyhaven shop modals, free gear and departure safety UI. */
+#app .eoa-shop-dialog{position:fixed;inset:0;margin:auto;box-sizing:border-box;
+ width:min(1250px,calc(100vw - 52px));max-width:none;max-height:calc(100dvh - 44px);
+ padding:0;overflow:auto;overscroll-behavior:contain;border:1px solid #9b896e;
+ border-radius:13px;color:#e7e0d2;background:#172630;
+ box-shadow:0 28px 95px #000c;scrollbar-color:#697c80 #18252e;}
+#app .eoa-shop-dialog::backdrop{background:rgba(4,9,14,.76);backdrop-filter:blur(4px)}
+#app .eoa-shop-dialog-head{position:sticky;top:0;z-index:9;display:flex;justify-content:space-between;align-items:center;
+ padding:8px 14px 8px 20px;min-height:48px;background:#192a34ed;border-bottom:1px solid #6c777b;
+ color:#e5d4b7;font-size:12px;letter-spacing:.9px;backdrop-filter:blur(7px)}
+#app .eoa-shop-dialog-head button{font-size:24px;line-height:1;border:1px solid #65747b;border-radius:5px;
+ color:#eee2cf;background:#263943;padding:4px 10px}
+#app .eoa-shop-dialog .main.eoa-location-main{display:block;max-width:none;width:100%;min-width:0;
+ min-height:0;margin:0;padding:0;background:#182730}
+#app .eoa-shop-dialog .eoa-smith-page,#app .eoa-shop-dialog .eoa-studies,
+#app .eoa-shop-dialog .eoa-mysteries-page{min-height:0!important;padding:10px 12px 22px!important;}
+#app .eoa-shop-dialog .eoa-workshop-frame{width:min(1150px,100%)!important;min-height:0;
+ margin:0 auto;background:linear-gradient(180deg,#16242f9c,#15242cd9 85%);
+ border:1px solid #73818a8c;border-radius:9px;backdrop-filter:blur(3px)}
+#app .eoa-shop-dialog .smith-hero{min-height:clamp(120px,14vw,170px)!important;}
+#app .eoa-shop-dialog .eoa-studies-head{min-height:clamp(165px,17vw,215px)!important;}
+#app .eoa-shop-dialog .mysteries-hero{min-height:clamp(135px,14vw,165px)!important;}
+#app .eoa-shop-dialog .eoa-smith-frame .smith-shop-shell,#app .eoa-shop-dialog .eoa-studies-content,
+#app .eoa-shop-dialog .mysteries-content{width:100%;max-width:1100px}
+#app .eoa-shop-dialog .smith-return-button,#app .eoa-shop-dialog .eoa-studies-actions button{
+ white-space:nowrap}
+#app .eoa-shop-dialog .eoa-smith-page::before,#app .eoa-shop-dialog .eoa-studies::before,
+#app .eoa-shop-dialog .eoa-mysteries-page::before{height:560px!important;
+ -webkit-mask-image:linear-gradient(#000 0%,#000b 15%,#0007 31%,transparent 60%)!important;
+ mask-image:linear-gradient(#000 0%,#000b 15%,#0007 31%,transparent 60%)!important}
+#app .smith-free-gear-row{display:flex;justify-content:space-between;align-items:center;gap:12px;
+ padding:11px 13px;margin:0 0 12px;background:#263729db;border:1px solid #627d69;border-radius:7px}
+#app .smith-free-gear-row strong{display:block;color:#d1e4c1;font-size:13px}
+#app .smith-free-gear-row small{display:block;color:#aec4b6;font-size:11px;margin-top:4px;line-height:1.4}
+#app .smith-claim-all{border:1px solid #b1b978;border-radius:5px;background:#445234;color:#f3eac8;
+ padding:11px 15px;font-size:12px;white-space:nowrap}
+#app .smith-claim-all:disabled{opacity:.48;cursor:not-allowed}
+#app .eoa-starter-gear-hint{display:block;position:absolute;right:6px;top:-9px;color:#f0e4b4;
+ border:1px solid #ac985b;border-radius:4px;padding:2px 6px;font-size:10px;white-space:nowrap;background:#324536}
+#app #mainBlacksmithEntry{position:relative}
+#app #mainBlacksmithEntry:focus-visible{outline:2px solid #d8c68f}
+.eoa-unarmed-dialog{position:fixed;inset:0;margin:auto;padding:22px 24px;width:min(470px,calc(100vw - 28px));
+ max-width:none;border:1px solid #c6a66b;border-radius:11px;color:#e9e1d3;
+ background:linear-gradient(150deg,#273942,#15252e);box-shadow:0 25px 85px #000c}
+.eoa-unarmed-dialog::backdrop{background:#060b11ba;backdrop-filter:blur(4px)}
+.eoa-unarmed-dialog h2{font:normal 25px Georgia,serif;color:#f2dfb9;margin:8px 0 12px}
+.eoa-unarmed-dialog p{color:#cad2d0;font-size:13px;line-height:1.65}
+.eoa-unarmed-buttons{display:flex;gap:10px;justify-content:flex-end;margin-top:20px;flex-wrap:wrap}
+.eoa-unarmed-buttons button{border:1px solid #6e8186;border-radius:5px;background:#293a44;padding:10px 14px;color:#e4dcca}
+.eoa-unarmed-buttons button.primary{border-color:#cab072;background:linear-gradient(#cfb77e,#967447);color:#241d14}
+@media(max-width:680px){
+ #app .eoa-shop-dialog{width:calc(100vw - 14px);max-height:calc(100dvh - 14px);border-radius:8px}
+ #app .eoa-shop-dialog-head{padding:8px 10px}
+ #app .eoa-shop-dialog .eoa-smith-page,#app .eoa-shop-dialog .eoa-studies,#app .eoa-shop-dialog .eoa-mysteries-page{padding:7px!important}
+ #app .eoa-shop-dialog .eoa-smith-frame .smith-hero{min-height:145px!important}
+ #app .eoa-shop-dialog .eoa-studies-head{min-height:230px!important}
+ #app .smith-free-gear-row{align-items:stretch;flex-direction:column}
+ #app .smith-claim-all{width:100%}
+}

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="eoa-rel-title">
+  <title id="eoa-rel-title">Aetherbound Reliquary — magical orb icon</title>
+  <!-- Simplified, inventory-scale adaptation of the V7 Aetherbound Reliquary. Transparent background. -->
+  <style><![CDATA[
+/* Echoes of Aeltharis · Aetherbound Reliquary inventory icon.
+   Apply to inline SVG with class="eoa-relic-icon".
+   For <img> use the self-animated relic-icon-animated.svg instead. */
+svg{display:block;overflow:visible;}
+.relic-icon__aura{transform-origin:64px 63px;animation:eoa-icon-glow 3s ease-in-out infinite;}
+.relic-icon__swirl{transform-origin:64px 63px;animation:eoa-icon-spin 12s linear infinite;}
+.relic-icon__stream{animation:eoa-icon-flow 3.5s linear infinite;}
+.relic-icon__heart{transform-origin:64px 63px;animation:eoa-icon-glow 2.4s ease-in-out infinite;}
+.relic-icon__motes{transform-origin:64px 63px;animation:eoa-icon-spin 9s linear infinite reverse;}
+.relic-icon__motes circle,.relic-icon__glints{animation:eoa-icon-twinkle 2.2s ease-in-out infinite alternate;}
+@keyframes eoa-icon-glow{0%,100%{opacity:.64;transform:scale(.96)}50%{opacity:1;transform:scale(1.07)}}
+@keyframes eoa-icon-spin{to{transform:rotate(360deg)}}
+@keyframes eoa-icon-flow{to{stroke-dashoffset:-152}}
+@keyframes eoa-icon-twinkle{0%{opacity:.45}100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  ]]></style>
+  <defs>
+    <radialGradient id="eoa-ri-aura"><stop stop-color="#a8eaff" stop-opacity=".58"/><stop offset=".43" stop-color="#a18cff" stop-opacity=".35"/><stop offset="1" stop-color="#8063e9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="eoa-ri-glass" cx=".38" cy=".32" r=".85"><stop stop-color="#667ece"/><stop offset=".28" stop-color="#353b85"/><stop offset=".7" stop-color="#1b2451"/><stop offset="1" stop-color="#101a34"/></radialGradient>
+    <radialGradient id="eoa-ri-core"><stop stop-color="#f8ffff"/><stop offset=".13" stop-color="#b6efff" stop-opacity=".98"/><stop offset=".39" stop-color="#a5abff" stop-opacity=".85"/><stop offset=".7" stop-color="#7954e7" stop-opacity=".43"/><stop offset="1" stop-color="#725bfa" stop-opacity="0"/></radialGradient>
+    <linearGradient id="eoa-ri-gold" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#79502d"/><stop offset=".22" stop-color="#fff2bd"/><stop offset=".45" stop-color="#daab6e"/><stop offset=".73" stop-color="#95633a"/><stop offset="1" stop-color="#fff0bc"/></linearGradient>
+    <linearGradient id="eoa-ri-gem" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7fbff"/><stop offset=".3" stop-color="#8edbff"/><stop offset=".65" stop-color="#9d80ff"/><stop offset="1" stop-color="#5a39bc"/></linearGradient>
+    <linearGradient id="eoa-ri-cyan"><stop stop-color="#70b6ff" stop-opacity=".4"/><stop offset=".45" stop-color="#c7fbff"/><stop offset="1" stop-color="#9580ff" stop-opacity=".75"/></linearGradient>
+    <clipPath id="eoa-ri-clip"><circle cx="64" cy="63" r="39"/></clipPath>
+  </defs>
+  <circle class="relic-icon__aura" cx="64" cy="63" r="61" fill="url(#eoa-ri-aura)"/>
+  <circle cx="64" cy="63" r="43" fill="#121935" stroke="#f1ce87" stroke-width="1.5"/>
+  <circle cx="64" cy="63" r="40.3" fill="url(#eoa-ri-glass)" stroke="#819bdc" stroke-width="1.4"/>
+  <g clip-path="url(#eoa-ri-clip)">
+    <g class="relic-icon__magic">
+      <circle cx="64" cy="63" r="36" fill="url(#eoa-ri-core)" opacity=".73"/>
+      <g class="relic-icon__swirl" fill="none" stroke-linecap="round">
+        <ellipse cx="64" cy="63" rx="29" ry="12" transform="rotate(-26 64 63)" stroke="#97b6ff" opacity=".56" stroke-width="3.6" stroke-dasharray="80 36"/>
+        <ellipse cx="64" cy="63" rx="24" ry="27" transform="rotate(34 64 63)" stroke="#b18aff" opacity=".6" stroke-width="2.8" stroke-dasharray="55 40"/>
+        <path class="relic-icon__stream" d="M29 69 C43 30 88 33 98 59 S75 96 49 79 S54 41 79 48 S83 75 56 77" stroke="url(#eoa-ri-cyan)" stroke-width="4" stroke-dasharray="30 9 19 10"/>
+        <path class="relic-icon__stream" d="M35 50 C45 84 83 94 91 58 S57 39 48 56 S74 83 82 65" stroke="#cea2ff" stroke-width="2.8" stroke-dasharray="27 11 13 9" opacity=".85"/>
+      </g>
+      <circle class="relic-icon__heart" cx="64" cy="63" r="21" fill="url(#eoa-ri-core)" opacity=".7"/>
+      <g class="relic-icon__motes" fill="#eafaff">
+        <circle cx="48" cy="47" r="1.7"/><circle cx="87" cy="57" r="2"/><circle cx="56" cy="83" r="1.3"/><circle cx="73" cy="41" r="1.2"/><circle cx="77" cy="77" r="1.4"/>
+      </g>
+    </g>
+  </g>
+  <!-- Metalwork matched to the V7 crown, side gems and lower crescent. -->
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M26 47 Q31 30 46 25 L55 33 L64 14 L73 33 L82 25 Q97 30 102 47" stroke="#533a34" stroke-width="8"/>
+    <path d="M26 47 Q31 30 46 25 L55 33 L64 14 L73 33 L82 25 Q97 30 102 47" stroke="url(#eoa-ri-gold)" stroke-width="5.5"/>
+    <path d="M26 80 Q33 100 54 104 L64 110 L74 104 Q95 100 102 80" stroke="#513b37" stroke-width="8"/>
+    <path d="M26 80 Q33 100 54 104 L64 110 L74 104 Q95 100 102 80" stroke="url(#eoa-ri-gold)" stroke-width="5.5"/>
+    <path d="M24 50 Q19 63 24 77 M104 50 Q109 63 104 77" stroke="#513b37" stroke-width="7"/>
+    <path d="M24 50 Q19 63 24 77 M104 50 Q109 63 104 77" stroke="url(#eoa-ri-gold)" stroke-width="4.6"/>
+    <path d="M32 41 Q42 30 52 35 M96 41 Q86 30 76 35 M35 91 Q45 100 52 97 M93 91 Q83 100 76 97" stroke="#ffe7a7" stroke-width="1.1" opacity=".8"/>
+  </g>
+  <!-- Rhombus side mounts. -->
+  <g stroke="url(#eoa-ri-gold)" stroke-linejoin="round" stroke-width="3">
+    <path d="M21 63 L29 53 L38 63 L29 73Z" fill="#23264f"/>
+    <path d="M107 63 L99 53 L90 63 L99 73Z" fill="#23264f"/>
+  </g>
+  <path d="M25 63 L29 58 L34 63 L29 68Z M103 63 L99 58 L94 63 L99 68Z" fill="url(#eoa-ri-gem)"/>
+  <!-- Tip diamonds; entirely inside viewBox even at 24px. -->
+  <path d="M64 9 L76 32 L64 43 L52 32Z" fill="#201d49" stroke="url(#eoa-ri-gold)" stroke-width="3.3" stroke-linejoin="round"/>
+  <path d="M64 16 L71 31 L64 38 L57 31Z" fill="url(#eoa-ri-gem)" stroke="#eefbff" stroke-width=".9"/>
+  <path d="M64 100 L76 112 L64 125 L52 112Z" fill="#241e48" stroke="url(#eoa-ri-gold)" stroke-width="3.3" stroke-linejoin="round"/>
+  <path d="M64 105 L70 112 L64 120 L58 112Z" fill="url(#eoa-ri-gem)" stroke="#e8efff" stroke-width=".9"/>
+  <!-- Glass reflection and subtle highlights. -->
+  <path d="M34 49 Q42 34 52 37" fill="none" stroke="#f2fcff" stroke-opacity=".7" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M39 39 L36 42" stroke="#fff2cb" stroke-width="1.6" stroke-linecap="round"/>
+  <g class="relic-icon__glints" fill="#f4fbff">
+    <path d="M83 45 L84 41 L85 45 L89 46 L85 47 L84 51 L83 47 L79 46Z" opacity=".72"/>
+    <circle cx="43" cy="76" r="1.1" opacity=".77"/>
+  </g>
+</svg>

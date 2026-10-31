@@ -1,0 +1,76 @@
+/* Approved Alderhaven landing page and offline expedition planner. */
+.alderhaven-home .expedition-entry{position:relative;isolation:isolate;overflow:visible;padding:26px;margin-bottom:22px;min-height:0;background:radial-gradient(ellipse at 88% 8%,#a45c9b18,transparent 38%),linear-gradient(130deg,#292b2f,#1d1f22)}
+.expedition-entry .expedition-map-backdrop{position:absolute;inset:0 0 0 30%;width:70%;height:100%;object-fit:cover;opacity:.48;z-index:-2}
+.expedition-entry:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--panel) 10%,color-mix(in srgb,var(--panel) 85%,transparent) 48%,transparent)}
+.expedition-entry h2{margin:8px 0 10px;font-size:28px;color:#f2e9c9}
+.expedition-entry p{max-width:620px;color:var(--muted);margin:0 0 19px;line-height:1.55}
+.alderhaven-home button svg{width:18px;height:18px;flex-shrink:0}
+.alderhaven-home .primary{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.alderhaven-recovery{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:16px}
+.alderhaven-recovery small{display:block;color:var(--muted);margin-top:6px;font-size:11px}
+.healing-box{width:min(100%,440px);box-sizing:border-box;padding:10px 11px;background:#232529;border:1px solid #4a4c50;border-radius:6px;text-align:center}
+.healing-missing{margin:0 0 8px;color:#e6d58d;font-size:11px;font-weight:600;letter-spacing:.5px;text-align:center}
+.recovery-actions{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;gap:8px}
+.recovery-actions button{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:42px;padding:8px 10px;white-space:nowrap;font-size:12px}
+.recovery-actions #priestRestore{justify-content:center;text-align:center;border-color:#716246;background:#302e29}
+.priest-cost{color:#f0d77a;font-weight:700}
+.recovery-actions #priestRestore:disabled{opacity:.56}
+.healing-note{font-size:10px!important;text-align:center}
+.alderhaven-resources{display:flex;gap:20px;flex-wrap:wrap;font-size:12px}
+.expedition-actions{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-bottom:16px}
+.alderhaven-recovery>.expedition-actions{flex:1;margin:0;min-width:0}
+.expedition-actions>span{font-size:12px;color:var(--muted)}
+.expedition-actions .primary{padding:12px 17px}
+.alderhaven-links{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0}
+.alderhaven-links button{display:flex;text-align:left;align-items:center;gap:12px;padding:15px}
+.alderhaven-links strong{display:block;font-weight:500}
+.alderhaven-links small{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+.expedition-dialog{padding:0;width:calc(100% - 32px);max-width:704px;max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);box-shadow:0 20px 65px #000b;scrollbar-width:thin}
+.expedition-dialog::backdrop{background:#030b16c9;backdrop-filter:blur(2px)}
+.expedition-window{overflow:hidden}
+.expedition-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 22px 14px}
+.expedition-heading h2{font-size:24px;margin:5px 0 0}
+.expedition-close{display:grid;place-items:center;min-height:36px;min-width:36px;padding:6px;border-color:transparent;background:transparent}
+.expedition-close svg{width:19px;height:19px}
+.expedition-world-map{position:relative;margin:0 12px;aspect-ratio:1200/896;overflow:hidden;border-radius:5px;background:#243f52}
+.expedition-world-map>img{display:block;width:100%;height:100%;object-fit:contain}
+.expedition-world-map:after{content:'';position:absolute;inset:0;pointer-events:none;z-index:1;background:radial-gradient(ellipse at center,transparent 40%,#09132320 66%,#091323b8 100%);box-shadow:inset 0 0 32px 10px #08132188}
+.expedition-pins{position:absolute;inset:0;z-index:2;pointer-events:none}
+.expedition-world-map .expedition-pin{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);pointer-events:auto;display:grid;place-items:center;padding:0;width:38px;height:38px;min-height:38px;border-radius:50%;background:#203b31;border:2px solid #e9d69f;color:#fff0bf;box-shadow:0 0 0 4px #f0dea52b,0 0 18px #e6d18a60,0 3px 8px #000b}
+.expedition-pin>svg{width:20px;height:20px}
+.expedition-world-map .expedition-pin.locked{background:#18212de8;border:1px dashed #7e8999;color:#8d98a8;box-shadow:0 2px 8px #0009}
+.expedition-pin.locked>svg{opacity:.6}
+.expedition-world-map .expedition-pin.home{background:#dece9a;color:#263740;border-radius:6px;box-shadow:0 0 12px #decf9a55}
+.expedition-world-map .expedition-pin[aria-pressed=true]{outline:3px solid #b6d2f5;outline-offset:4px}
+.expedition-world-map .expedition-pin.locked[aria-pressed=true]{background:#293448;color:#bac5d4;box-shadow:0 0 0 3px #12243ccc}
+.expedition-pin .lock-badge{position:absolute;right:-6px;bottom:-5px;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#101824;border:1px solid #9aa6b8;color:#e0e5ec}
+.expedition-pin .lock-badge svg{width:12px;height:12px;stroke-width:2}
+.expedition-pin .level-label{position:absolute;top:calc(100% + 9px);left:50%;transform:translateX(-50%);white-space:nowrap;padding:2px 5px;border-radius:3px;background:#101824eb;color:#d6dfe9;font:11px/1.3 system-ui}
+.expedition-pin .open-dot{position:absolute;right:-2px;bottom:-2px;width:10px;height:10px;border-radius:50%;background:#addec1;border:2px solid #1c352c}
+.expedition-legend{padding:10px 20px 0;display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+.expedition-legend span{display:inline-flex;align-items:center;gap:6px}
+.expedition-legend .available{width:10px;height:10px;background:#e7d39d;border-radius:50%;box-shadow:0 0 6px #e7d39d66}
+.expedition-legend svg{width:13px;height:13px}
+.expedition-details{margin:16px 22px 0;padding:16px 0;display:grid;grid-template-columns:minmax(0,1fr);gap:14px;border-top:1px solid var(--line)}
+.expedition-details h3{font-size:23px;margin:5px 0}
+.expedition-details p{font-size:13px;color:var(--muted);margin:0 0 12px;line-height:1.6}
+.expedition-subtitle{font:italic 15px/1.4 Georgia,serif;color:var(--gold);margin:5px 0 10px}
+.expedition-facts{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.expedition-details .expedition-depart{justify-self:end;min-width:150px;padding:12px 18px}
+.expedition-summary{padding:0 22px 16px;color:var(--muted);font-size:12px}
+.expedition-lore{margin:0 22px 18px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font:italic 12px/1.6 Georgia,serif}
+@media(max-width:700px){.alderhaven-recovery{align-items:flex-start;flex-direction:column;gap:12px}.alderhaven-recovery>.expedition-actions{width:100%;align-items:stretch;flex-direction:column;gap:8px}.alderhaven-recovery>.expedition-actions .primary{width:100%}.healing-box{width:100%}.recovery-actions{width:100%;grid-template-columns:1fr 1fr}.recovery-actions button{width:100%}}
+@media(max-width:520px){.alderhaven-home .expedition-entry{padding:22px 19px}.expedition-entry .expedition-map-backdrop{left:0;width:100%;opacity:.25}.expedition-actions{align-items:stretch;flex-direction:column;gap:9px}.expedition-actions .primary{width:100%}.alderhaven-links{gap:8px}.alderhaven-links button{padding:11px;gap:7px}.expedition-dialog{width:calc(100% - 16px);max-height:calc(100dvh - 16px)}.expedition-heading{padding:16px}.expedition-heading h2{font-size:21px}.expedition-world-map{margin:0 6px}.expedition-world-map .expedition-pin{width:34px;height:34px;min-height:34px}.expedition-pin>svg{width:18px;height:18px}.expedition-details{margin:14px 16px 0;gap:10px}.expedition-details .expedition-depart{justify-self:stretch;width:100%}.expedition-summary{padding:0 16px 16px}.expedition-lore{margin:0 16px 18px}}
+@media(pointer:coarse){.expedition-pin:before{content:'';position:absolute;inset:-5px}}
+/* Potion preparation lives alongside the actual destination and departure action. */
+.expedition-details .departure-belt{grid-column:1/-1;width:100%;padding-top:18px;border-top:1px solid var(--line);margin-top:4px}
+.departure-belt-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.departure-belt-heading h3{margin:0}.departure-belt-heading>span{font-size:12px;color:var(--gold)}
+.departure-belt-slots{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin:16px 0}
+.departure-belt-slot{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-height:96px;padding:10px;background:#1c282e}.departure-belt-slot.empty{border-style:dashed;color:var(--muted)}
+.departure-belt-slot svg{width:28px;height:28px}.departure-belt-slot small{font-size:11px;color:var(--muted)}
+.departure-potion-stock{display:flex;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}.departure-potion-stock>svg{width:25px;height:25px;flex-shrink:0}.departure-potion-stock>div{flex:1}.departure-potion-stock strong,.departure-potion-stock small{display:block}.departure-potion-stock small{font-size:12px;color:var(--muted);margin-top:4px}.departure-potion-stock button{min-width:70px;min-height:44px}
+.departure-belt .healthPotion>svg{color:#df938b}.departure-belt .manaPotion>svg{color:#99b8e3}.expedition-details:has(.departure-belt) .expedition-depart{grid-column:1/-1;justify-self:stretch;width:100%}
+@media(max-width:500px){.departure-belt-heading{align-items:flex-start;flex-wrap:wrap}.departure-belt-slots{grid-template-columns:repeat(2,minmax(0,1fr))}.departure-potion-stock{gap:8px}.departure-potion-stock button{min-width:60px;padding:8px}.departure-belt-slot{font-size:12px}}
+
+.expedition-window .departure-map-loadout{grid-column:1;grid-row:3;padding:8px 20px 12px;min-width:0}.departure-map-loadout .departure-belt{border-top:1px solid var(--line);padding-top:12px}.departure-map-loadout .departure-belt-heading h3{font-size:17px}.departure-map-loadout .departure-belt-heading>span{white-space:nowrap}.departure-map-loadout .departure-belt-slots{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.departure-map-loadout .departure-belt-slot{flex:1;min-width:70px;min-height:64px;padding:6px;font-size:11px;gap:3px}.departure-map-loadout .departure-belt-slot svg{width:21px;height:21px}.departure-map-loadout .departure-belt-slot small{display:none}.departure-map-loadout .departure-potion-stock{padding:8px 0;gap:8px}.departure-map-loadout .departure-potion-stock>svg{width:20px;height:20px}.departure-map-loadout .departure-potion-stock button{padding:6px 10px;min-height:36px;min-width:56px}.departure-map-loadout .departure-potion-stock small{font-size:11px}.departure-map-loadout .departure-belt .tiny{font-size:11px;margin:8px 0 0}.expedition-window:has(.departure-map-loadout) .expedition-details{grid-row:2 / span 3;align-self:start}.expedition-window:has(.departure-map-loadout) .expedition-legend{grid-row:4;grid-column:1}
+@media(max-width:700px){.expedition-window .departure-map-loadout{grid-column:1/-1;grid-row:auto}.expedition-window:has(.departure-map-loadout) .expedition-details{grid-row:auto}.expedition-window:has(.departure-map-loadout) .expedition-legend{grid-row:auto}.departure-map-loadout .departure-belt-slot{min-width:60px}.departure-map-loadout .departure-potion-stock button{min-height:44px}}

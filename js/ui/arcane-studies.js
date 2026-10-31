@@ -1,0 +1,17 @@
+'use strict';
+const ABILITY_TRAINING_PRICE=60; // Approved workshop provisional price; centralized for future balance.
+const ABILITY_IDS=['magicMissile','earthSpike','mirror'];
+function validateLearnedAbilities(raw){
+ if(raw==null)return [...ABILITY_IDS]; // Existing saves retain all their spells.
+ if(!Array.isArray(raw)||raw.length<1||raw.length>3||new Set(raw).size!==raw.length||raw.some(x=>!ABILITY_IDS.includes(x)))throw Error('Invalid learned abilities');
+ return [...raw];
+}
+function knowsAbility(id,hero=s){return !!(hero&&Array.isArray(hero.learnedAbilities)&&hero.learnedAbilities.includes(id));}
+function learnAbility(id){
+ if(!s||!city()||s.dead||s.travel||!ABILITY_IDS.includes(id)||knowsAbility(id)||s.gold<ABILITY_TRAINING_PRICE)return false;
+ s.gold-=ABILITY_TRAINING_PRICE;s.learnedAbilities.push(id);save();render();notify(abilityDefs()[id].name+' learned for '+ABILITY_TRAINING_PRICE+' gold.');return true;
+}
+function studyCard(a,known){const def=abilityDefs()[a.id],icon=starterSpellIcon(a);
+ return `<article class="eoa-study-card ${known?'learned':''}"><div class="eoa-study-title">${icon}<div><h3>${a.name}</h3><small>${a.kind} · ${def.cost} mana</small></div></div><p>${a.desc}</p>${known?'<button type="button" disabled>✓ Learned</button>':`<button type="button" onclick="learnAbility('${a.id}')" ${!city()||s.gold<ABILITY_TRAINING_PRICE?'disabled':''}>${!city()?'Learn in Greyhaven':s.gold<ABILITY_TRAINING_PRICE?'Not enough gold':'Learn · '+ABILITY_TRAINING_PRICE+' gold'}</button>`}</article>`;
+}
+function arcaneStudiesView(){const known=STARTER_SPELLS.filter(x=>knowsAbility(x.id)),unknown=STARTER_SPELLS.filter(x=>!knowsAbility(x.id));return `<div class="eoa-studies"><div class="eoa-workshop-frame eoa-studies-frame"><div class="eoa-studies-head"><div><div class="eyebrow">Mage · Arcane training</div><h2>Arcane Studies</h2><p>Your first discipline was chosen at character creation. Expand your repertoire here using gold earned on expeditions.</p></div><div class="eoa-studies-actions"><button type="button" onclick="setTab('journey')">← Return to Main Street</button><div class="eoa-studies-gold">◈ ${s.gold} gold</div></div></div><div class="eoa-studies-content"><section class="eoa-studies-knowledge" aria-label="Spellbook mastery"><div><div class="eyebrow">Your spellbook</div><h3>${known.length} / ${STARTER_SPELLS.length} disciplines mastered</h3><p>Mastery is permanent. Spells are learned with gold, not level points.</p></div><div class="eoa-mastery-pips" aria-hidden="true">${STARTER_SPELLS.map((_,i)=>`<i class="${i<known.length?'known':''}"></i>`).join('')}</div></section><div class="eoa-studies-section"><div class="eoa-studies-section-head"><h3>Known abilities</h3><small>${known.length} of 3 disciplines learned</small></div><div class="eoa-studies-cards">${known.map(a=>studyCard(a,true)).join('')}</div></div><div class="eoa-studies-section"><div class="eoa-studies-section-head"><h3>Available to learn</h3><small>${unknown.length?ABILITY_TRAINING_PRICE+' gold per ability':'All available disciplines learned'}</small></div><div class="eoa-studies-cards">${unknown.length?unknown.map(a=>studyCard(a,false)).join(''):'<div class="eoa-studies-complete">✧ All three disciplines learned.</div>'}</div></div><p class="eoa-studies-note">Combat attributes come from equipped gear. Levels unlock dungeon difficulties. Learning a spell does not consume a level or perk point.</p></div></div></div>`;}

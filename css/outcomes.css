@@ -1,0 +1,31 @@
+/* A fatal hit lands before the character falls and the resurrection dialog appears. */
+.combat-portrait.player-defeat{animation:player-fall .6s ease-in forwards;opacity:1}
+@keyframes player-fall{0%{opacity:1;transform:translateY(0)}35%{opacity:.7;filter:grayscale(.5)}100%{opacity:.15;filter:grayscale(1);transform:translateY(12px)}}
+.death-result-layer{position:absolute;inset:0;z-index:50;isolation:isolate}
+.death-result-shade{position:absolute;inset:0;background:#030914b8;border-radius:inherit;backdrop-filter:blur(1.5px)}
+.death-result-dialog{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:calc(100% - 28px);max-width:390px;padding:25px 22px;text-align:center;background:color-mix(in srgb,var(--panel) 86%,#3b1926);border:1px solid #9c6464;border-radius:10px;box-shadow:0 18px 55px #0009}
+.death-result-emblem{color:#daa29a;display:flex;justify-content:center;margin-bottom:10px}
+.death-result-emblem svg{width:32px;height:32px}
+.death-result-dialog .eyebrow{color:#d9a59e}
+.death-result-dialog h2{font-size:32px;margin:10px 0 12px}
+.death-result-dialog p{font-size:13px;margin:0 0 18px}
+.death-result-losses{display:flex;justify-content:center;flex-wrap:wrap;gap:24px;color:#e5c4be;font-size:20px;margin:20px 0}
+.death-result-dialog .death-result-note{font-size:12px;color:var(--muted)}
+.death-result-dialog button{width:100%;margin-top:4px;min-height:44px}
+@media(max-width:600px){.death-result-dialog{padding:21px 15px}.death-result-dialog h2{font-size:28px}.death-result-losses{gap:16px;font-size:18px}}
+@media(prefers-reduced-motion:reduce){.combat-portrait.player-defeat{animation-duration:.1s}}
+/* Results cover the battlefield while combat controls keep their original space. */
+.victory-result-layer{position:absolute;inset:0;z-index:50;isolation:isolate}
+.victory-result-shade{position:absolute;inset:0;background:#030914b8;border-radius:inherit;backdrop-filter:blur(1.5px)}
+.arena .victory-result-dialog{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:calc(100% - 28px);max-width:390px;margin:0;padding:25px 22px;background:var(--panel);border:1px solid var(--gold);border-radius:10px;box-shadow:0 18px 55px #0009;animation:victory-popup-arrive .25s ease-out}
+.victory-result-emblem{color:var(--gold);font-size:32px;line-height:1;margin-bottom:12px}
+.victory-result-dialog .eyebrow{color:var(--gold)}
+.victory-result-dialog h2{font-size:30px;margin:10px 0}
+.victory-result-dialog .victory-result-subtitle{font-size:13px;margin:0;color:var(--muted)}
+.victory-result-dialog .reward-values{flex-wrap:wrap;gap:20px;font-size:20px;margin:22px 0 18px}
+.victory-result-note{color:var(--muted);font-size:12px;line-height:1.6;margin:0 0 18px}
+.victory-result-dialog button{display:block;width:100%;min-height:44px;margin-top:8px}
+.victory-result-dialog .tiny{margin:12px 0 0}
+@keyframes victory-popup-arrive{from{opacity:0}to{opacity:1}}
+@media(max-width:600px){.arena .victory-result-dialog{padding:21px 15px}.victory-result-dialog h2{font-size:27px}.victory-result-dialog .reward-values{gap:16px;font-size:18px}}
+@media(prefers-reduced-motion:reduce){.arena .victory-result-dialog{animation:none}}

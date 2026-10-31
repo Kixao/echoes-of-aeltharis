@@ -1,0 +1,65 @@
+/* Tier 1 relic interactions. New UI is scoped; bundled V7 masks/animations are untouched. */
+.relic-icon{display:inline-block;vertical-align:middle;width:24px;height:24px;flex:0 0 auto;object-fit:contain}
+.alderhaven-home .relic-entry-button{display:flex;align-items:center;gap:9px;min-height:44px;min-width:0;max-width:285px;padding:8px 12px;background:linear-gradient(135deg,#342c43,#202832);border-color:#947f62;box-shadow:inset 0 1px #ffffff16,0 3px 12px #0005;text-align:left}
+.alderhaven-home .relic-entry-button .relic-icon{width:39px;height:39px;filter:drop-shadow(0 0 7px #bc87f55c)}
+.relic-entry-button strong,.relic-entry-button small{display:block}.relic-entry-button strong{color:#f5dcab;font-size:13px}.relic-entry-button small{font-size:11px;color:#c9c4cf;line-height:1.35}
+.relic-entry-button:hover{border-color:#d9bd81;filter:brightness(1.08)}
+.relic-workshop-dialog{width:min(710px,calc(100% - 18px));max-height:calc(100dvh - 20px);padding:0;overflow-y:auto;overscroll-behavior:contain;border:1px solid #7b706b;border-radius:10px;background:linear-gradient(#29353d,#111a22);color:#f2e8cf;box-shadow:0 25px 75px #000d;scrollbar-width:thin}
+.relic-workshop-dialog::backdrop{background:#03070bdd;backdrop-filter:blur(3px)}
+.relic-workshop-frame{padding:18px 20px 15px}
+.relic-workshop-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.relic-workshop-heading h2{font-size:26px;font-weight:500;color:#f3e6c6;margin:6px 0 0}
+.relic-workshop-stock{display:flex;align-items:center;gap:5px;padding:6px 9px;border:1px solid #706a72;border-radius:6px;background:#1c2630;font-size:12px;white-space:nowrap}
+.relic-workshop-stock b{color:#efd49e;font-size:16px}.relic-workshop-stock img{width:28px;height:28px}
+.relic-workshop-intro{margin:12px 0 13px;color:#c5c5c1;font-size:13px;line-height:1.55}
+.relic-workshop-intro b{color:#eed28c}
+.relic-workshop-scene{position:relative;width:100%;overflow:hidden;border:1px solid #545e70;border-radius:6px;background:#0a1022}
+/* V7 was authored in a 720×470 viewBox. Preserve that aspect ratio exactly. */
+.relic-workshop-scene .eoa-v7{width:100%;max-width:none;border:none;border-radius:0;box-shadow:none;background:radial-gradient(ellipse at 50% 46%,#27345e 0%,#171d3a 45%,#0a1024 78%,#080c1a 100%)}
+.relic-workshop-scene .eoa-v7>svg{display:block;width:100%;height:auto;max-height:none;aspect-ratio:720/470}
+.relic-reveal[hidden]{display:none!important}
+.relic-reveal{position:absolute;z-index:5;left:50%;top:49.4%;transform:translate(-50%,-50%);width:min(48%,260px);pointer-events:none;animation:relic-item-reveal .48s cubic-bezier(.15,.84,.2,1.08) both}
+.relic-reveal-card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;padding:13px 10px 12px;border:1px solid #b8a17a;border-radius:8px;background:radial-gradient(ellipse at 50% 0%,#3b3b51f5,#18242af7 82%);box-shadow:0 0 0 5px #10172377,0 16px 36px #000b,0 0 28px #a389e56b;font-size:11px;line-height:1.4;backdrop-filter:blur(8px)}
+.relic-reveal-card.common{border-color:#c1b8a0}.relic-reveal-card.uncommon{border-color:#a5d89a;box-shadow:0 0 25px #70b88977,0 15px 32px #000b}.relic-reveal-card.rare{border-color:#b1a1ff;box-shadow:0 0 32px #a98aff88,0 15px 32px #000b}
+.relic-reveal-card .relic-reveal-eyebrow{color:#f0d3a0;text-transform:uppercase;font-size:10px;letter-spacing:1px}
+.relic-reveal-card svg{width:34px;height:34px;color:#e1d0a0;flex-shrink:0}.relic-reveal-card strong{color:#faf1dc;font:500 16px/1.25 Georgia,serif}.relic-reveal-card small{font-size:10px;color:#c3cbd1;line-height:1.45}.relic-reveal-card>span{margin-top:3px;color:#b4e4bf;font-size:10px}
+@keyframes relic-item-reveal{from{opacity:0;transform:translate(-50%,-43%) scale(.35);filter:blur(11px)}to{opacity:1;transform:translate(-50%,-50%) scale(1);filter:blur(0)}}
+.relic-workshop-status{min-height:20px;margin:10px 0;color:#d9c9e2;font-size:12px;text-align:center;line-height:1.35}
+.relic-workshop-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.relic-workshop-actions button{min-width:0;min-height:43px;padding:8px 7px;white-space:normal;line-height:1.25;font-size:12px}
+.relic-workshop-actions .primary{background:linear-gradient(#d8c18a,#9d7853);color:#1a1a1d;border-color:#e7c986}
+.relic-workshop-actions button:disabled{opacity:.52;cursor:not-allowed}
+.relic-workshop-footnote{font-size:11px;line-height:1.4;color:#a4afb4;text-align:center;margin:11px 0 0}
+.relic-reward-note:empty{display:none}
+.relic-reward-note,.relic-expedition-status,.battle-relic-counter,.reward-relic-icon,.relic-treasure-award{display:inline-flex;align-items:center;gap:5px}
+.relic-reward-note .relic-icon,.relic-expedition-status .relic-icon,.battle-relic-counter .relic-icon,.reward-relic-icon .relic-icon{width:23px;height:23px}
+.relic-treasure-award{padding:7px 12px;border:1px solid #8e739e;border-radius:4px;background:#2f2c44;color:#f4dfba;font-size:13px;margin:7px 0 12px}.relic-treasure-award .relic-icon{width:43px;height:43px}
+#sepulcher-enemy-symbol-restored .glyph .tile-relic-icon{width:75%;height:75%;max-height:none;filter:drop-shadow(0 0 4px #9d83e6)}
+#sepulcher-enemy-symbol-restored .big-glyph .tile-relic-icon{width:38px;height:38px;filter:drop-shadow(0 0 4px #b198eb)}
+#sepulcher-enemy-symbol-restored .cell.cleared:has(.tile-relic-icon) .chamber{border-color:#9786bc;box-shadow:inset 0 0 0 3px #202a31,0 0 8px #9983ba77}
+#sepulcher-enemy-symbol-restored .cell .nameplate{max-width:95%}
+/* Compact departure equipment mirror of the actual six-slot inventory display. */
+.expedition-window .departure-map-loadout{grid-column:1/-1;grid-row:4;padding:10px 20px 14px}
+.expedition-window:has(.departure-map-loadout) .expedition-details{grid-row:2/4;grid-column:2}
+.expedition-window:has(.departure-map-loadout) .expedition-legend{grid-row:3;grid-column:1}
+.departure-ready-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:13px;align-items:stretch}
+.departure-map-loadout .departure-belt,.departure-map-loadout .departure-equipped{box-sizing:border-box;min-width:0;padding:14px;border:1px solid #606b70;border-radius:6px;background:linear-gradient(145deg,#29353b,#19242a)}
+.departure-map-loadout .departure-belt{border-top:1px solid #606b70;padding-top:14px}
+.departure-map-loadout .departure-belt-heading{flex-wrap:wrap;gap:5px}
+.departure-map-loadout .departure-belt-heading h3,.departure-equipped-heading h3{color:#e7d9bc;font:500 17px/1.25 Georgia,serif;margin:0}
+.departure-map-loadout .departure-belt-heading>span,.departure-equipped-heading>span{font-size:11px;color:#e9d09c;white-space:nowrap}
+.departure-equipped-heading{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:11px}
+.departure-equipped-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.departure-gear-slot{display:flex;align-items:center;gap:7px;min-width:0;min-height:47px;padding:6px;background:#1a252c;border:1px solid #52616a;border-radius:4px;color:#eee3cf}
+.departure-gear-slot svg{width:21px;height:25px;flex-shrink:0;color:#c2b995}
+.departure-gear-slot>div{overflow:hidden;min-width:0}.departure-gear-slot small{display:block;font-size:10px;color:#bbc4c2}.departure-gear-slot strong{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px;font-weight:500}
+.departure-gear-slot.uncommon{border-color:#6f947d}.departure-gear-slot.rare{border-color:#9780b1}.departure-gear-slot.unfilled{border-style:dashed;opacity:.74}
+.departure-equipped>.tiny{font-size:11px;line-height:1.5;margin:10px 0 0;color:#aebcbd}
+.departure-equipment-link{display:inline;border:0!important;padding:0!important;min-height:0!important;background:none!important;color:#e5c687;text-decoration:underline;font:inherit;cursor:pointer}
+@media(max-width:700px){.expedition-window .departure-map-loadout{grid-column:1/-1;grid-row:auto;padding:10px 14px}.expedition-window:has(.departure-map-loadout) .expedition-details{grid-column:1;grid-row:auto}.expedition-window:has(.departure-map-loadout) .expedition-legend{grid-column:1;grid-row:auto}.departure-ready-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.alderhaven-home .relic-entry-button{max-width:none;width:100%}.relic-workshop-frame{padding:13px 10px}.relic-workshop-heading h2{font-size:20px}.relic-workshop-stock{padding:4px 6px}.relic-workshop-intro{font-size:12px}.relic-workshop-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.relic-reveal{width:min(54%,220px)}.relic-reveal-card{padding:6px 5px;gap:2px}.relic-reveal-card strong{font-size:12px}.relic-reveal-card svg{width:22px;height:22px}.relic-reveal-card small{font-size:9px}.departure-map-loadout .departure-belt,.departure-map-loadout .departure-equipped{padding:11px}.departure-gear-slot strong{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.relic-reveal{animation:none}}
+
+/* Item begins appearing with the shell-burst, rather than after the particles fade. */
+.relic-reveal{animation-duration:.28s}
+@keyframes relic-item-reveal{from{opacity:0;transform:translate(-50%,-48%) scale(.82);filter:blur(3px)}to{opacity:1;transform:translate(-50%,-50%) scale(1);filter:blur(0)}}

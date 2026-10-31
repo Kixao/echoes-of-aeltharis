@@ -1,0 +1,113 @@
+
+    #sepulcher-enemy-symbol-restored{--night:#0c1118;--blueblack:#121b24;--slate:#202b34;--tile:#465158;--frame:#748087;--bone:#e0d7c1;--faded:#a9b0ad;--amber:#e0ab4c;--bright:#f2d27e;--teal:#61b4bd;--pale-teal:#a1e2d7;--rust:#ad593e;box-sizing:border-box;width:100%;color:var(--bone);font:14px/1.45 Georgia,"Times New Roman",serif}
+    #sepulcher-enemy-symbol-restored *{box-sizing:border-box}
+    #sepulcher-enemy-symbol-restored .shell{max-width:1024px;margin:auto;overflow:hidden;border:1px solid #46525c;background:linear-gradient(145deg,#202932,#111820 66%,#182128);box-shadow:0 18px 48px #0009}
+    #sepulcher-enemy-symbol-restored .masthead{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;border-bottom:1px solid #424d55;background:linear-gradient(#303a41,#202a32)}
+    #sepulcher-enemy-symbol-restored .identity{display:flex;align-items:center;gap:12px;min-width:0}
+    #sepulcher-enemy-symbol-restored .crestag{display:grid;place-items:center;width:42px;height:42px;flex:none;border:2px solid #7f8a8d;border-radius:13px;background:linear-gradient(145deg,#4a565b,#26323a);color:#e2c16e;box-shadow:inset 0 0 0 3px #202932}
+    #sepulcher-enemy-symbol-restored .crestag svg{width:25px;height:25px}
+    #sepulcher-enemy-symbol-restored .game{color:#e6ddc6;font:11px system-ui,sans-serif;letter-spacing:2px}
+    #sepulcher-enemy-symbol-restored .region{margin-top:4px;color:#aab7b5;font:9px system-ui,sans-serif;letter-spacing:2.2px}
+    #sepulcher-enemy-symbol-restored .top-actions{display:flex;align-items:center;gap:14px}
+    #sepulcher-enemy-symbol-restored .expedition{color:#abb5b4;font:10px/1.4 system-ui,sans-serif;text-align:right}
+    #sepulcher-enemy-symbol-restored .expedition strong{display:block;color:#e4c571;font-weight:500}
+    #sepulcher-enemy-symbol-restored .renew{min-height:38px;padding:8px 13px;border:1px solid #c49a48;border-radius:3px;background:linear-gradient(#dcb85c,#9d6d35);color:#211c16;font:500 11px system-ui,sans-serif;box-shadow:inset 0 1px #fff1af55,0 3px 8px #0008}
+    #sepulcher-enemy-symbol-restored .renew:hover{background:linear-gradient(#edc96e,#b07939)}
+    #sepulcher-enemy-symbol-restored .content{padding:18px}
+    #sepulcher-enemy-symbol-restored .heading{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:12px}
+    #sepulcher-enemy-symbol-restored h1{margin:0;color:#eee5d2;font-size:25px;font-weight:400;line-height:1.08}
+    #sepulcher-enemy-symbol-restored .intro{margin:6px 0 0;color:#aab3b2;font:11px/1.45 system-ui,sans-serif}
+    #sepulcher-enemy-symbol-restored .map-count{flex:none;color:#aeb8b5;font:10px/1.45 system-ui,sans-serif;text-align:right}
+    #sepulcher-enemy-symbol-restored .map-count strong{display:block;color:#e4c976;font-size:12px;font-weight:500}
+    #sepulcher-enemy-symbol-restored .layout{display:grid;grid-template-columns:minmax(0,1fr) 244px;gap:15px;align-items:start}
+    #sepulcher-enemy-symbol-restored .map-well{position:relative;overflow:hidden;border:1px solid #505d66;border-radius:4px;background:radial-gradient(ellipse at 50% 45%,#26343c,#17212a 68%,#10171f);box-shadow:inset 0 0 35px #000c}
+    #sepulcher-enemy-symbol-restored .map-well:before{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,transparent 24%,#080d14a8 100%),repeating-linear-gradient(0deg,transparent 0 38px,#b6c5ca09 39px,#080c1266 41px),repeating-linear-gradient(90deg,transparent 0 38px,#b6c5ca09 39px,#080c1266 41px);content:"";pointer-events:none}
+    #sepulcher-enemy-symbol-restored .map{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:repeat(6,minmax(0,1fr));width:100%;aspect-ratio:4/3;padding:10px}
+    #sepulcher-enemy-symbol-restored .routes{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);z-index:0;overflow:visible;pointer-events:none}
+    #sepulcher-enemy-symbol-restored .route{fill:none;stroke:#9c7636;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 5px #e0ae4f88)}
+    #sepulcher-enemy-symbol-restored .route.optional{stroke:#337e88;stroke-width:6;stroke-dasharray:4 5;filter:drop-shadow(0 0 5px #58b5bd99)}
+    #sepulcher-enemy-symbol-restored .route.opened{stroke:#f0c96c;stroke-width:9;stroke-dasharray:none;filter:drop-shadow(0 0 7px #ffd470aa)}
+    #sepulcher-enemy-symbol-restored .route.optional.opened{stroke:#74d2d2}
+    #sepulcher-enemy-symbol-restored .cell{position:relative;z-index:1;display:grid;place-items:center;min-width:0;min-height:0;margin:3px;padding:0;border:0;background:transparent;color:var(--bone)}
+    #sepulcher-enemy-symbol-restored .cell.blank{pointer-events:none}
+    #sepulcher-enemy-symbol-restored .chamber{position:absolute;inset:1px;overflow:hidden;border:6px solid var(--frame);border-radius:15px;background-color:var(--tile);background-image:radial-gradient(circle at 50% 50%,#182128 0 43%,transparent 44%),linear-gradient(90deg,transparent 24%,#202a31 24% 27%,transparent 27% 48%,#202a31 48% 51%,transparent 51% 73%,#202a31 73% 76%,transparent 76%),linear-gradient(0deg,transparent 24%,#202a31 24% 27%,transparent 27% 48%,#202a31 48% 51%,transparent 51% 73%,#202a31 73% 76%,transparent 76%);box-shadow:inset 0 0 0 3px #202a31,inset 0 0 0 5px #5d686c,0 4px 7px #0009}
+    #sepulcher-enemy-symbol-restored .chamber:before{position:absolute;inset:0;background:linear-gradient(135deg,#fff2 0 2%,transparent 9% 87%,#0004);content:""}
+    #sepulcher-enemy-symbol-restored .chamber:after{position:absolute;inset:4px;border:1px solid #10181d;content:"";pointer-events:none}
+    #sepulcher-enemy-symbol-restored .cell:not(.placed) .chamber{display:none}
+    #sepulcher-enemy-symbol-restored .cell.main-path .chamber{border-color:#78858a}
+    #sepulcher-enemy-symbol-restored .cell.optional-path .chamber{border-color:#6e8b91}
+    #sepulcher-enemy-symbol-restored .cell.selected .chamber{border-color:#e4bd5e;box-shadow:inset 0 0 0 3px #202a31,inset 0 0 0 5px #857144,0 0 0 2px #f3cd7377,0 0 17px #ffca6188}
+    #sepulcher-enemy-symbol-restored .cell.cleared .chamber{border-color:#adb4a3}
+    #sepulcher-enemy-symbol-restored .cell.boss-mark .chamber{border-color:#d4a94e;box-shadow:inset 0 0 0 3px #202a31,inset 0 0 0 5px #837044,0 0 0 1px #e3b85377}
+    #sepulcher-enemy-symbol-restored .glyph{position:relative;z-index:2;display:grid;place-items:center;width:53%;height:56%;color:#e0d9c5;filter:drop-shadow(0 2px 2px #000b)}
+    #sepulcher-enemy-symbol-restored .glyph svg{display:block;width:100%;height:100%;overflow:visible}
+    #sepulcher-enemy-symbol-restored .cell.entry .glyph{color:#cbd2c4}
+    #sepulcher-enemy-symbol-restored .cell.boss-mark .glyph{width:68%;height:62%;color:#efc15b;filter:drop-shadow(0 0 4px #e0a74d88)}
+    #sepulcher-enemy-symbol-restored .cell .glyph .hot{color:#bb5047}
+    #sepulcher-enemy-symbol-restored .cell .glyph .warm{color:#dc9744}
+    #sepulcher-enemy-symbol-restored .nameplate{position:absolute;z-index:3;right:2px;bottom:1px;left:2px;color:#f0ead8;font:8px/1 system-ui,sans-serif;text-align:center;text-shadow:0 1px 3px #000,0 0 5px #000;letter-spacing:.4px}
+    #sepulcher-enemy-symbol-restored .fog{position:absolute;z-index:2;inset:0;border-radius:8px;background:repeating-linear-gradient(135deg,#252f36 0 4px,#303b42 4px 8px);opacity:.96}
+    #sepulcher-enemy-symbol-restored .cell.optional-path .fog{background:repeating-linear-gradient(135deg,#25383b 0 4px,#30494b 4px 8px)}
+    #sepulcher-enemy-symbol-restored .fog:after{position:absolute;inset:13px;border:1px solid #aeb8ab55;border-radius:50%;background:#1c252c99;content:""}
+    #sepulcher-enemy-symbol-restored .cell.boss-mark .fog{background:repeating-linear-gradient(135deg,#3c3325 0 4px,#50452c 4px 8px)}
+    #sepulcher-enemy-symbol-restored .cell.available .chamber{border-color:#ecd176;box-shadow:inset 0 0 0 3px #202a31,0 0 0 2px #f1cc6a66,0 0 14px #e2b74a99}
+    #sepulcher-enemy-symbol-restored .cell.optional-path.available .chamber{border-color:#70c4c4;box-shadow:inset 0 0 0 3px #202a31,0 0 0 2px #62bdc266,0 0 14px #4aaab399}
+    #sepulcher-enemy-symbol-restored .cell.available:hover{filter:brightness(1.2)}
+    #sepulcher-enemy-symbol-restored .legend{display:flex;flex-wrap:wrap;gap:8px 16px;padding:10px 12px;border-top:1px solid #46525a;background:#19232b;color:#d0d0c3;font:10px system-ui,sans-serif}
+    #sepulcher-enemy-symbol-restored .legend span{display:inline-flex;align-items:center;gap:6px}
+    #sepulcher-enemy-symbol-restored .keyline{width:20px;height:3px;border-radius:2px;background:#e0ab4c}
+    #sepulcher-enemy-symbol-restored .keyline.optional{height:0;border-top:2px dashed #61b4bd;background:none}
+    #sepulcher-enemy-symbol-restored .keyboss{width:13px;height:13px;border:1px solid #e4b54d;border-radius:3px;background:#413a2b}
+    #sepulcher-enemy-symbol-restored .keyfog{width:13px;height:13px;border:1px solid #748087;border-radius:4px;background:repeating-linear-gradient(135deg,#252f36 0 3px,#465158 3px 6px)}
+    #sepulcher-enemy-symbol-restored .goal{display:flex;align-items:center;gap:7px;margin:9px 2px 0;color:#c4c8bd;font:10px system-ui,sans-serif}
+    #sepulcher-enemy-symbol-restored .goal svg{width:18px;height:18px;color:#edc45d}
+    #sepulcher-enemy-symbol-restored .inspector{border:1px solid #59656a;border-radius:3px;background:linear-gradient(145deg,#29343b,#18222a);box-shadow:inset 0 0 0 4px #121a21,inset 0 0 0 5px #69777d55}
+    #sepulcher-enemy-symbol-restored .inspect-head{padding:13px 14px;border-bottom:1px solid #4c595f;background:linear-gradient(#354149,#263139)}
+    #sepulcher-enemy-symbol-restored .eyebrow{color:#d8b45c;font:9px system-ui,sans-serif;letter-spacing:1.6px;text-transform:uppercase}
+    #sepulcher-enemy-symbol-restored h2{margin:5px 0 0;color:#ece4d3;font-size:20px;font-weight:400;line-height:1.1}
+    #sepulcher-enemy-symbol-restored .inspect-body{padding:14px}
+    #sepulcher-enemy-symbol-restored .big-glyph{display:grid;place-items:center;width:50px;height:50px;margin:0 0 10px;border:4px solid #78858a;border-radius:12px;background:radial-gradient(circle,#202b32 0 47%,#4b575c 49% 100%);color:#e2c15f;box-shadow:inset 0 0 0 2px #202a31}
+    #sepulcher-enemy-symbol-restored .big-glyph svg{width:27px;height:27px}
+    #sepulcher-enemy-symbol-restored .status{display:flex;align-items:center;gap:7px;color:#c3cbc5;font:10px system-ui,sans-serif}
+    #sepulcher-enemy-symbol-restored .status-dot{width:7px;height:7px;border-radius:50%;background:#e0b852;box-shadow:0 0 6px #e0b85277}
+    #sepulcher-enemy-symbol-restored .status-dot.fogged{background:#87969a;box-shadow:none}
+    #sepulcher-enemy-symbol-restored .status-dot.side{background:#68bac2;box-shadow:0 0 6px #68bac277}
+    #sepulcher-enemy-symbol-restored .description{min-height:72px;margin:10px 0 13px;color:#d0d1c8;font:12px/1.55 system-ui,sans-serif}
+    #sepulcher-enemy-symbol-restored .action{width:100%;min-height:42px;padding:9px 10px;border:1px solid #c6a251;border-radius:3px;background:linear-gradient(#d5ae54,#926537);color:#211c16;font:500 12px system-ui,sans-serif;box-shadow:inset 0 1px #fff0ae66,0 3px 8px #0008}
+    #sepulcher-enemy-symbol-restored .action:hover{background:linear-gradient(#e6c163,#a77639)}
+    #sepulcher-enemy-symbol-restored .action:disabled{filter:grayscale(.7);opacity:.62}
+    #sepulcher-enemy-symbol-restored .note{margin:12px 0 0;padding-top:10px;border-top:1px solid #46545a;color:#b2bcb7;font:10px/1.45 system-ui,sans-serif}
+    #sepulcher-enemy-symbol-restored .icon-atlas{margin-top:18px;padding-top:13px;border-top:1px solid #4d5960}
+    #sepulcher-enemy-symbol-restored .atlas-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+    #sepulcher-enemy-symbol-restored .atlas-heading h2{margin:0;color:#e6ddc8;font-size:17px;font-weight:400}
+    #sepulcher-enemy-symbol-restored .atlas-heading p{margin:0;color:#aeb8b5;font:10px system-ui,sans-serif}
+    #sepulcher-enemy-symbol-restored .atlas-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+    #sepulcher-enemy-symbol-restored .atlas-item{display:grid;justify-items:center;gap:5px;min-width:0;color:#ddd9ca;font:10px/1.2 system-ui,sans-serif;text-align:center}
+    #sepulcher-enemy-symbol-restored .atlas-tile{position:relative;display:grid;place-items:center;width:min(100%,94px);aspect-ratio:1;border:6px solid #748087;border-radius:15px;background-color:#465158;background-image:radial-gradient(circle at 50% 50%,#182128 0 43%,transparent 44%),linear-gradient(90deg,transparent 24%,#202a31 24% 27%,transparent 27% 48%,#202a31 48% 51%,transparent 51% 73%,#202a31 73% 76%,transparent 76%),linear-gradient(0deg,transparent 24%,#202a31 24% 27%,transparent 27% 48%,#202a31 48% 51%,transparent 51% 73%,#202a31 73% 76%,transparent 76%);box-shadow:inset 0 0 0 3px #202a31,inset 0 0 0 5px #5d686c,0 4px 7px #0008}
+    #sepulcher-enemy-symbol-restored .atlas-tile svg{position:relative;z-index:1;width:53%;height:53%;filter:drop-shadow(0 2px 2px #0009)}
+    #sepulcher-enemy-symbol-restored .atlas-item.entry .atlas-tile{border-color:#b8c3c0}
+    #sepulcher-enemy-symbol-restored .atlas-item.enemy .atlas-tile{border-color:#aa8a6d}
+    #sepulcher-enemy-symbol-restored .atlas-item.treasure .atlas-tile{border-color:#d6a64b}
+    #sepulcher-enemy-symbol-restored .atlas-item.boss .atlas-tile{border-color:#e1b750}
+    #sepulcher-enemy-symbol-restored .svg-collection{position:absolute;width:0;height:0;overflow:hidden}
+    @media(max-width:760px){#sepulcher-enemy-symbol-restored .atlas-grid{grid-template-columns:repeat(5,minmax(0,1fr))}#sepulcher-enemy-symbol-restored .content{padding:14px}#sepulcher-enemy-symbol-restored .layout{grid-template-columns:1fr;gap:12px}#sepulcher-enemy-symbol-restored .inspector{display:grid;grid-template-columns:.8fr 1.2fr}#sepulcher-enemy-symbol-restored .inspect-head{border-right:1px solid #4c595f;border-bottom:0}#sepulcher-enemy-symbol-restored .description{min-height:0}}
+    @media(max-width:480px){#sepulcher-enemy-symbol-restored .atlas-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#sepulcher-enemy-symbol-restored .atlas-tile{width:min(100%,112px)}#sepulcher-enemy-symbol-restored .masthead{align-items:flex-start;padding:11px;flex-direction:column}#sepulcher-enemy-symbol-restored .top-actions{width:100%;justify-content:space-between}#sepulcher-enemy-symbol-restored .expedition{text-align:left}#sepulcher-enemy-symbol-restored .content{padding:11px}#sepulcher-enemy-symbol-restored .heading{align-items:flex-start;flex-direction:column;gap:5px}#sepulcher-enemy-symbol-restored h1{font-size:22px}#sepulcher-enemy-symbol-restored .map-count{text-align:left}#sepulcher-enemy-symbol-restored .map{padding:5px}#sepulcher-enemy-symbol-restored .routes{inset:5px;width:calc(100% - 10px);height:calc(100% - 10px)}#sepulcher-enemy-symbol-restored .cell{margin:2px}#sepulcher-enemy-symbol-restored .chamber{border-width:4px;border-radius:11px}#sepulcher-enemy-symbol-restored .nameplate{font-size:6px;letter-spacing:0}#sepulcher-enemy-symbol-restored .inspector{grid-template-columns:1fr}#sepulcher-enemy-symbol-restored .inspect-head{border-right:0;border-bottom:1px solid #4c595f}}
+    @media(prefers-reduced-motion:reduce){#sepulcher-enemy-symbol-restored *{transition:none!important}}
+
+    #sepulcher-enemy-symbol-restored{position:relative}
+    #sepulcher-enemy-symbol-restored .entry-overlay{position:absolute;inset:0;z-index:20;display:grid;place-items:center;background:#020407e8;backdrop-filter:blur(3px);padding:18px}
+    #sepulcher-enemy-symbol-restored .entry-overlay[hidden]{display:none}
+    #sepulcher-enemy-symbol-restored .entry-scene{position:relative;width:min(78vw,420px);height:360px;display:grid;place-items:center;perspective:900px;overflow:hidden}
+    #sepulcher-enemy-symbol-restored .entry-door-svg{width:min(78vw,420px);height:360px;background:transparent}
+    #sepulcher-enemy-symbol-restored .entry-message{position:absolute;bottom:12px;color:#e8dab9;text-align:center;font:12px system-ui,sans-serif;letter-spacing:1px;text-shadow:0 2px 7px #000}
+    #sepulcher-enemy-symbol-restored .encounter-card{position:absolute;z-index:2;max-width:360px;width:calc(100% - 36px);padding:24px;text-align:center;border:1px solid #9c814c;background:linear-gradient(#293238,#11171b);box-shadow:0 14px 40px #000;color:#e9dfc8}
+    #sepulcher-enemy-symbol-restored .encounter-card h2{font-weight:400;margin:0 0 8px}
+    #sepulcher-enemy-symbol-restored .encounter-card p{color:#bac0b7;font:13px system-ui,sans-serif}
+    #sepulcher-enemy-symbol-restored .encounter-card button{margin-top:12px;padding:10px 18px;border:1px solid #d0aa52;background:linear-gradient(#d8b45d,#906839);color:#211a12}
+  
+#sepulcher-enemy-symbol-restored .entry-overlay{align-items:start;justify-items:center;padding:28px 16px;background:#020407cc}
+#sepulcher-enemy-symbol-restored .entry-scene{width:100%;max-width:860px;height:clamp(340px,67vw,640px);margin:0 auto;display:block;overflow:hidden;border:1px solid #58625c;background:radial-gradient(ellipse at center,#293238,#010204 75%);box-shadow:0 24px 90px #000;perspective:none}
+#sepulcher-enemy-symbol-restored .entry-door-svg{display:block;width:100%;height:100%;background:transparent;overflow:hidden}
+#sepulcher-enemy-symbol-restored .entry-message{top:40px;bottom:auto;left:24px;right:24px;pointer-events:none}
+#sepulcher-enemy-symbol-restored .encounter-card{top:160px}
+#sepulcher-enemy-symbol-restored .encounter-card[hidden]{display:none}

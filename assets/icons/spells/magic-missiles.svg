@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Magic Missiles: three luminous arcane darts streaking upward">
+<defs>
+  <linearGradient id="mm2-bolt" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#634bdf"/><stop offset=".42" stop-color="#75dfff"/><stop offset=".78" stop-color="#e3feff"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="mm2-trail" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#663bc2" stop-opacity="0"/><stop offset=".45" stop-color="#8a72ff" stop-opacity=".7"/><stop offset=".9" stop-color="#70efff"/><stop offset="1" stop-color="#efffff"/></linearGradient>
+  <radialGradient id="mm2-halo"><stop stop-color="#8aefff" stop-opacity=".65"/><stop offset=".35" stop-color="#8b8aff" stop-opacity=".26"/><stop offset="1" stop-color="#556bfa" stop-opacity="0"/></radialGradient>
+  <filter id="mm2-blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<g class="mm2-halo"><ellipse cx="68" cy="67" rx="59" ry="52" fill="url(#mm2-halo)"/></g>
+<g class="mm2-trails" fill="none" stroke-linecap="round">
+  <path d="M13 108 C44 108 71 82 93 38" stroke="#9381ff" stroke-width="12" opacity=".46" filter="url(#mm2-blur)"/>
+  <path d="M13 108 C44 108 71 82 93 38" stroke="url(#mm2-trail)" stroke-width="5.5"/>
+  <path d="M13 108 C44 108 71 82 93 38" stroke="#d6faff" stroke-width="1.4" opacity=".85"/>
+  <path d="M11 76 C36 82 56 54 78 22" stroke="#8aa5ff" stroke-width="9" opacity=".5" filter="url(#mm2-blur)"/>
+  <path d="M11 76 C36 82 56 54 78 22" stroke="url(#mm2-trail)" stroke-width="4.3"/>
+  <path d="M35 119 C69 109 91 88 111 68" stroke="#8c79ff" stroke-width="10" opacity=".5" filter="url(#mm2-blur)"/>
+  <path d="M35 119 C69 109 91 88 111 68" stroke="url(#mm2-trail)" stroke-width="4.5"/>
+</g>
+<g class="mm2-darts">
+  <g class="mm2-dart mm2-dart-a">
+    <path d="M72 65 L88 35 L111 13 L102 42 L84 58 Z" fill="#65c8ff" opacity=".6" filter="url(#mm2-blur)"/>
+    <path d="M74 61 L91 34 L111 13 L101 43 L85 58 Z" fill="url(#mm2-bolt)" stroke="#d1faff" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M111 13 L93 39 L85 58 L96 43Z" fill="#eafcff" opacity=".75"/>
+    <path d="M74 61 L91 34 L111 13" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+  <g class="mm2-dart mm2-dart-b">
+    <path d="M57 48 L70 28 L89 8 L83 34 L67 48 Z" fill="#77dfff" opacity=".6" filter="url(#mm2-blur)"/>
+    <path d="M57 48 L70 28 L89 8 L83 34 L67 48 Z" fill="url(#mm2-bolt)" stroke="#d5faff" stroke-width="1.1" stroke-linejoin="round"/>
+    <path d="M89 8 L75 29 L67 48 L80 33Z" fill="#eeffff" opacity=".7"/>
+  </g>
+  <g class="mm2-dart mm2-dart-c">
+    <path d="M88 93 L101 70 L125 51 L115 75 L101 90Z" fill="#7987ff" opacity=".6" filter="url(#mm2-blur)"/>
+    <path d="M88 93 L101 70 L125 51 L115 75 L101 90Z" fill="url(#mm2-bolt)" stroke="#d5fbff" stroke-width="1.1" stroke-linejoin="round"/>
+    <path d="M125 51 L107 73 L101 90 L115 75Z" fill="#f5ffff" opacity=".7"/>
+  </g>
+</g>
+<g class="mm2-sparks" fill="#e8fdff">
+  <path d="M33 43 L35 49 L41 51 L35 53 L33 59 L31 53 L25 51 L31 49Z"/>
+  <path d="M101 103 L103 108 L108 110 L103 112 L101 117 L99 112 L94 110 L99 108Z"/>
+  <circle cx="51" cy="86" r="2"/><circle cx="17" cy="92" r="1.5"/><circle cx="113" cy="35" r="1.4"/><circle cx="55" cy="20" r="1.4"/>
+</g>
+</svg>

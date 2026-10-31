@@ -1,0 +1,31 @@
+/* v0.0.39 — room badge alignment, clearer rarity tags, combat controls spacing. */
+/* Both inspected items show their rarity and Tier 1 tags beneath their names. */
+.gear-detail-tags{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:6px 0 9px}
+.gear-detail-tags .gear-tier-tag{margin:0}
+.gear-rarity-tag{display:inline-flex;align-items:center;justify-content:center;padding:3px 8px;border:1px solid currentColor;border-radius:4px;font:700 10px/1.15 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;background:#273039}
+.gear-rarity-tag.common{color:var(--rarity-common)!important;background:#393b3c;border-color:#a5a29a}
+.gear-rarity-tag.uncommon{color:var(--rarity-uncommon)!important;background:#233c31;border-color:#649676}
+.gear-rarity-tag.rare{color:var(--rarity-rare)!important;background:#253d58;border-color:#5c8fbf}
+.gear-rarity-tag.epic{color:var(--rarity-epic)!important;background:#3a2c50;border-color:#8e6ab7}
+#gearFloatingLayer .comparison-pair .gear-detail-tags{margin-top:8px}
+#gearFloatingLayer .comparison-pair h4{overflow-wrap:anywhere}
+/* Icon and relic badge share a horizontal band in the inspector body. */
+#sepulcher-enemy-symbol-restored .inspect-head{padding-right:14px}
+#sepulcher-enemy-symbol-restored .dungeon-inspector-symbol-row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:50px;margin-bottom:10px}
+#sepulcher-enemy-symbol-restored .dungeon-inspector-symbol-row .big-glyph{flex:0 0 50px;margin:0}
+#sepulcher-enemy-symbol-restored .dungeon-inspector-symbol-row .dungeon-relics-held{position:static;top:auto;right:auto;flex:0 0 auto;margin:0}
+#sepulcher-enemy-symbol-restored .inspector:has(.dungeon-relics-held:not([hidden])) .inspect-body{padding-top:14px}
+/* The sidebar Combat Readiness block needs internal space around its text. */
+.layout>aside .combat-stats{padding:14px 12px 16px}
+/* Combat action-state labels now have generous internal gutters. */
+.arena .encounter-header.combat-round-header{padding-inline:24px;gap:12px}
+.arena .combat-round-indicator{padding-inline:24px;min-height:34px}
+/* Tighten dead space between the combatants and their quickslots / commands. */
+.arena .duel:has(eoa-combat-model){padding-bottom:4px}
+.arena .combat-actions-shell{margin-top:-20px}
+@media(max-width:540px){
+ .arena .encounter-header.combat-round-header{padding-inline:10px;gap:7px}
+ .arena .combat-round-indicator{padding-inline:13px;min-width:0;flex:1}
+ .arena .duel:has(eoa-combat-model){padding-bottom:5px}
+ .arena .combat-actions-shell{margin-top:-12px}
+}
