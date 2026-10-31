@@ -3,28 +3,46 @@ name: Deploy Echoes of Aeltharis to Pages
 on:
   release:
     types: [published]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Published GitHub Release tag to deploy (for example v1.01-alpha)"
+        required: true
+        type: string
 
 permissions:
   contents: read
+  actions: write
   pages: write
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-release
   cancel-in-progress: false
 
 jobs:
+  queue-deployment:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Queue deployment from main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main -f release_tag="$RELEASE_TAG"
+
   deploy:
-    if: github.event.release.prerelease == false || github.event.release.prerelease == true
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Download game archive from this release
+      - name: Download selected published release ZIP
         env:
           GH_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
         run: |
           mkdir -p incoming
           gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern '*.zip' --dir incoming
@@ -39,6 +57,7 @@ jobs:
           archives = list(Path("incoming").glob("*.zip"))
           if len(archives) != 1:
               raise SystemExit(f"Expected exactly one ZIP release asset, found {len(archives)}")
+
           dest = Path("site")
           dest.mkdir()
           with ZipFile(archives[0]) as archive:
@@ -58,6 +77,7 @@ jobs:
                   target.parent.mkdir(parents=True, exist_ok=True)
                   with archive.open(member) as source, target.open("wb") as output:
                       shutil.copyfileobj(source, output)
+
           if not (dest / "index.html").is_file():
               raise SystemExit("Release archive does not contain a root index.html")
           print(f"Validated {len(members)} files from {archives[0].name}")
