@@ -1,9 +1,8 @@
 name: Deploy Echoes of Aeltharis to Pages
 
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+  release:
+    types: [published]
 
 permissions:
   contents: read
@@ -12,23 +11,66 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    if: github.event.release.prerelease == false || github.event.release.prerelease == true
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout release
-        uses: actions/checkout@v4
-      - name: Configure Pages
+      - name: Download game archive from this release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          mkdir -p incoming
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern '*.zip' --dir incoming
+
+      - name: Validate and extract static game
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import shutil
+
+          archives = list(Path("incoming").glob("*.zip"))
+          if len(archives) != 1:
+              raise SystemExit(f"Expected exactly one ZIP release asset, found {len(archives)}")
+          dest = Path("site")
+          dest.mkdir()
+          with ZipFile(archives[0]) as archive:
+              members = [m for m in archive.infolist() if not m.is_dir()]
+              for member in members:
+                  path = Path(member.filename)
+                  if path.is_absolute() or ".." in path.parts or "\\" in member.filename:
+                      raise SystemExit(f"Unsafe ZIP entry: {member.filename}")
+              roots = {Path(m.filename).parts[0] for m in members}
+              strip_root = len(roots) == 1 and all(len(Path(m.filename).parts) > 1 for m in members)
+              for member in members:
+                  parts = Path(member.filename).parts
+                  relative = Path(*parts[1:]) if strip_root else Path(*parts)
+                  if not relative.parts:
+                      continue
+                  target = dest / relative
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  with archive.open(member) as source, target.open("wb") as output:
+                      shutil.copyfileobj(source, output)
+          if not (dest / "index.html").is_file():
+              raise SystemExit("Release archive does not contain a root index.html")
+          print(f"Validated {len(members)} files from {archives[0].name}")
+          PY
+
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload static site
+
+      - name: Upload game
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
-      - name: Deploy to GitHub Pages
+          path: site
+
+      - name: Deploy game
         id: deployment
         uses: actions/deploy-pages@v4
